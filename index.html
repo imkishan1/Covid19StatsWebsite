@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="Images/virus-png.png">
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- //Bootstrap -->
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- //Font Awsome -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //Google Fonts -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!--// CSS -->
+
+    <title>Covid19 Stats</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="container">
+          <div class="page-title">
+            <h2><i class="fas fa-viruses"></i> CovidStats</h2>
+          </div>
+          <div class="search-box">
+            <p id="date-time-clock">--/--/--</p>
+            <!-- <i class="fas fa-search"></i
+            ><input class="search-here" id="Search" type="text" placeholder="Type to Search..." /> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="background">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+               <!-- Card -->
+          <div class="card-base">
+            <div class="card-elements">
+              <div class="card-heading">
+                  <h2 id="country-name">India</h2>
+              </div>
+              <div class="data-1">
+                  <div class="total-cases">
+                      <h3>Cases</h3>
+                      <p id="total-cases">0</p>
+                  </div>
+                  <div class="active-cases">
+                    <h3>Active</h3>
+                    <p id="active-cases">0</p>
+                  </div>
+            </div>
+            <div class="data-1">
+                  <div class="recovred-cases">
+                    <h3>Recovered</h3>
+                    <p id="recovered">0</p>
+                  </div>
+                  <div class="death">
+                    <h3>Deceased</h3>
+                    <p id="death">0</p>
+                  </div>
+            </div>
+            <div class="data-1">
+                  <div class="new-cases">
+                    <h3>New Cases Today</h3>
+                    <p><span id="new-confirm">0</span> <i class="fas fa-chart-line"></i></p>
+                  </div>
+                </div>
+                <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headline">
+              <h1>Cases State-Wise <i class="fas fa-map-marked-alt"></i></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name"></h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="bihar-conf">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="bihar-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="bihar-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="bihar-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p><span id="bihar-new"></span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                        <div class="last-updated-on">
+                            <p>Last Updated<br>
+                                <span id="date-time-2">--/--/--</span></p>
+                        </div>
+                        <div class="last-updated-on">
+                            <p>Source<br>Covid19india.org<br>
+                            
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-3">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="mh-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="mh-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="mh-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="mh-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="mh-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                        <div class="last-updated-on">
+                            <p>Last Updated<br>
+                                <span id="date-time-3">--/--/--</span></p>
+                        </div>
+                        <div class="last-updated-on">
+                            <p>Source<br>Covid19india.org<br>
+                            
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-4">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="kl-case"></p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="kl-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="kl-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="kl-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="kl-new"></span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-4">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-5">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ka-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ka-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ka-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ka-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ka-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-5">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-6">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ap-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ap-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ap-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ap-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ap-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-6">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-7">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="tn-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="tn-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="tn-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="tn-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="tn-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-7">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-8">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="dl-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="dl-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="dl-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="dl-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="dl-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-8">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-9">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="up-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="up-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="up-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="up-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="up-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-9">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-10">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="wb-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="wb-active">20</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="wb-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="wb-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="wb-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-10">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-12"></h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="cg-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="cg-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="cg-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="cg-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="cg-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-11">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-13">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="rj-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="rj-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="rj-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="rj-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="rj-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-13">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-gj">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="gj-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="gj-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="gj-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="gj-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="gj-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-gj">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-mp">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="mp-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="mp-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="mp-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="mp-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="mp-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-mp">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-od">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="od-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="od-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="od-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="od-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="od-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-od">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-tg">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="tg-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="tg-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="tg-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="tg-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="tg-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-tg">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-hr">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="hr-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="hr-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="hr-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="hr-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="hr-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-hr">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-pb">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="pb-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="pb-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="pb-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="pb-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="pb-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-pb">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-ass">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ass-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ass-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ass-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ass-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ass-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-ass">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-jh">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="jh-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="jh-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="jh-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="jh-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="jh-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-jh">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-jnk">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="jnk-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="jnk-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="jnk-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="jnk-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="jnk-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <!-- <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated on: <br>
+                        <span id="date-time-jnk">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source: <br> Covid19india.org<br>
+                    
+                </div>
+                </div> -->
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-ut">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ut-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ut-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ut-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ut-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ut-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-ut">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-hp">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="hp-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="hp-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="hp-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="hp-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="hp-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-hp">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-goa">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="goa-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="goa-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="goa-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="goa-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="goa-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-goa">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-py">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="py-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="py-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="py-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="py-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="py-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-py">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+              <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-tri">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="tri-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="tri-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="tri-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="tri-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="tri-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-tri">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-mani">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="mani-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="mani-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="mani-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="mani-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="mani-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-mani">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-cgh">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="cgh-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="cgh-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="cgh-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="cgh-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="cgh-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-cgh">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-ar">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ar-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ar-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ar-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ar-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ar-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-ar">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-ml">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ml-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ml-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ml-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ml-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ml-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-ml">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-nl">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="nl-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="nl-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="nl-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="nl-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="nl-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-nl">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-la">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="la-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="la-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="la-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="la-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="la-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-la">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-sk">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="sk-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="sk-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="sk-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="sk-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="sk-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-sk">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-an">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="an-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="an-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="an-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="an-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="an-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <!-- <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated on: <br>
+                        <span id="date-time-an">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source: <br> Covid19india.org<br>
+                    
+                </div>
+                </div> -->
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="state-name-mz">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="mz-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="mz-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="mz-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="mz-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="mz-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-mz">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- Card 6th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-dn">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="dn-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="dn-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="dn-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="dn-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="dn-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <!-- <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated on: <br>
+                        <span id="date-time-dn">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source: <br> Covid19india.org<br>
+                    
+                </div>
+                </div> -->
+                      </div>
+                    </div>
+            </div>
+            <!-- //Card 6th -->
+            <!-- card 7th -->
+            <div class="col-lg-4">
+                <div class="card-base">
+                    <div class="card-elements">
+                      <div class="card-heading">
+                          <h2 id="st-name-ld">--</h2>
+                      </div>
+                      <div class="data-1">
+                          <div class="total-cases">
+                              <h3>Cases</h3>
+                              <p id="ld-case">0</p>
+                          </div>
+                          <div class="active-cases">
+                            <h3>Active</h3>
+                            <p id="ld-active">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="recovred-cases">
+                            <h3>Recovered</h3>
+                            <p id="ld-rec">0</p>
+                          </div>
+                          <div class="death">
+                            <h3>Deceased</h3>
+                            <p id="ld-death">0</p>
+                          </div>
+                    </div>
+                    <div class="data-1">
+                          <div class="new-cases">
+                            <h3>New Cases Today</h3>
+                            <p> <span id="ld-new">0</span> <i class="fas fa-chart-line"></i></p>
+                          </div>
+                    </div>
+                       <div class="data-1">
+                <div class="last-updated-on">
+                    <p>Last Updated<br>
+                        <span id="date-time-ld">--/--/--</span></p>
+                </div>
+                <div class="last-updated-on">
+                    <p>Source<br>Covid19india.org<br>
+                    
+                </div>
+                </div>
+                      </div>
+                    </div>
+            </div>
+            <!-- //card 7th -->
+        </div>
+      </div>
+      <!-- <h1>This is Covid-o-Meter</h1> -->
+    </div>
+</div>
+<footer>
+  <div class="footer-element">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Made by Kisalaya&nbsp; | Powered by <a href="http://Covid19india.org" target="_blank">Covid19india.org</a></p>
+        </div>
+        <div class="col-lg-6">
+          <div class="icons-set2">
+            <a href="https://www.linkedin.com/in/kisalaya-kishan-442858192/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/imkishan01/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/imkishan1" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://use.fontawesome.com/ff15909ecd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/340a598582.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/search.js"></script>
+    <!-- //Scripts -->
+  </body>
+</html>

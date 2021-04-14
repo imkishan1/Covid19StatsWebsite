@@ -176,10 +176,10 @@ async function getcovidapiIn(){
    apcnf.innerText =`${ap.confirmed}`;
 
    let aprec= document.querySelector('#ap-rec');
-   aprec.innerText = `${ka.recovered}`;
+   aprec.innerText = `${ap.recovered}`;
 
    let apdeath= document.querySelector('#ap-death');
-   apdeath.innerText = `${ka.deaths}`;
+   apdeath.innerText = `${ap.deaths}`;
 
    let apnew= document.querySelector('#ap-new');
    apnew.innerText = `${ap.deltaconfirmed}`;

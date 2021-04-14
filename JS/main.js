@@ -16,7 +16,9 @@ async function getcovidapiIn(){
     // const jsondata = await fetch('https://api.rootnet.in/covid19-in/stats/latest');
     // const jsondata = await fetch('https://api.rootnet.in/covid19-in/unofficial/sources');
     const jsdata = await jsondata.json();
+    const vaccinedata = jsdata.tested[399];
     console.log(jsdata.statewise);
+
     // console.log(jsdata.statewise);
     // console.log(jsdata.Countries[76]);
 
@@ -59,7 +61,9 @@ async function getcovidapiIn(){
     const dn = jsdata.statewise[35];
     const ld = jsdata.statewise[36];
 
-  
+    let vaccinedose = document.querySelector('#vaccine-dose');
+    vaccinedose.innerText = `${vaccinedata.totaldosesadministered}`;
+
     let city = document.querySelector('#active-cases');
     city.innerText = `${finaldata.active}`;
 

@@ -128,6 +128,35 @@ nav {
 /* //Background */
 
 /* Card-base */
+.card-rectangle {
+    max-width: 350px;
+    max-height: 40px;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    /* background-color: #363941; */
+    margin-bottom: 40px;
+    /* border: 1px solid black; */
+    /* background-color: rgba(219, 85, 129, 0.125); */
+    background-color: #db558120;
+
+
+}
+.card-rectangle .rec-elements .bi.bi-shield-check{
+   
+    margin: 0 auto;
+    transform: translateY(2px);
+  
+}
+
+.card-rectangle .rec-elements p {
+    /* border: 1px solid green; */
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+    color: rgb(219, 85, 129);
+}
     .card-base {
         /* border: 2px solid red; */
         max-width: 350px;

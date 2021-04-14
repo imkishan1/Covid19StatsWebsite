@@ -155,7 +155,11 @@ nav {
     font-size: 14px;
     padding: 0px;
     text-align: center;
+   
     color: rgb(219, 85, 129);
+}
+#vaccine-dose {
+    letter-spacing:1.2px;
 }
     .card-base {
         /* border: 2px solid red; */

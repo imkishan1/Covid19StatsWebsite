@@ -20,7 +20,9 @@ async function getcovidapiIn(){
     const vaccinedata = Object.keys(jsdata.tested).length;
     const vaccinedatafinal = jsdata.tested[vaccinedata-1];
 
-    console.log(jsdata.statewise);
+    const size = Object.keys(jsdata.cases_time_series).length;
+    const yesterdayupdate = jsdata.cases_time_series[size-1];
+    // console.log(jsdata.statewise);
 
     // console.log(jsdata.statewise);
     // console.log(jsdata.Countries[76]);
@@ -64,9 +66,28 @@ async function getcovidapiIn(){
     const dn = jsdata.statewise[35];
     const ld = jsdata.statewise[36];
 
+    // yesterday's log
+    let yesterdaydate = document.querySelector('#yesterday-date');
+    yesterdaydate.innerText = `${yesterdayupdate.date}`;
+
+    let dailycnf = document.querySelector('#daily-conf');
+    dailycnf.innerText = `${yesterdayupdate.dailyconfirmed}`;
+
+    let dailyrec = document.querySelector('#daily-rec');
+    dailyrec.innerText = `${yesterdayupdate.dailyrecovered}`;
+
+    let dailydeath = document.querySelector('#daily-death');
+    dailydeath.innerText = `${yesterdayupdate.dailydeceased}`;
+
+    let dailyupdatedon = document.querySelector('#date-time-last');
+    dailyupdatedon.innerText = `${yesterdayupdate.dateymd}`;
+
+   // yesterday's log
+
+//    vaccine 
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${vaccinedatafinal.totaldosesadministered}`;
-
+//      vaccine
     let city = document.querySelector('#active-cases');
     city.innerText = `${finaldata.active}`;
 

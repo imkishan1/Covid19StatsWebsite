@@ -301,7 +301,12 @@ nav {
     }
 
 /* //Card-base */
-
+.bi.bi-patch-check-fill{
+    /* border: 1px solid red; */
+    width: 12px;
+    clear: both;
+    transform: translate(50px,-31px);
+}
 /* footer */
 footer {
     /* border: 2px solid red; */

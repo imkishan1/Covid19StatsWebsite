@@ -381,6 +381,13 @@ footer .footer-element p a {
         transition: 0.2s ease-out;
         /* color: var(--buttons-Boston-before); */
       }
+      .card-rectangle {
+          max-width: fit-content;
+          /* padding: 8px; */
+      }
+      .card-rectangle .rec-elements p {
+          font-size: 13px;
+      }
       /* .navbar .search-box i{
         border: 1px solid red;
         margin-right: -20px;

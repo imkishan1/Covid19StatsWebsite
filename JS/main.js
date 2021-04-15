@@ -16,7 +16,7 @@ async function getcovidapiIn(){
     // const jsondata = await fetch('https://api.rootnet.in/covid19-in/stats/latest');
     // const jsondata = await fetch('https://api.rootnet.in/covid19-in/unofficial/sources');
     const jsdata = await jsondata.json();
-    const vaccinedata = jsdata.tested[399];
+    const vaccinedata = jsdata.tested[400];
     console.log(jsdata.statewise);
 
     // console.log(jsdata.statewise);

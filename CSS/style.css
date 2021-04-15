@@ -120,7 +120,8 @@ nav {
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
-    background-color: rgb(31, 43, 53);
+    /* background-color: rgb(31, 43, 53); */
+    background-color: #161625;
     height: fit-content;
     padding-bottom: 50px;
     position: relative;

@@ -278,7 +278,7 @@ nav {
         
     }
     .card-base .data-1 .new-cases.title{
-        color: var(--white-text);
+        color: var(--white-text-light);
         /* border: 2px solid yellowgreen; */
         margin: 14px;
     }
@@ -286,7 +286,7 @@ nav {
         /* border: 2px solid #2567A5; */
         /* margin: 0 auto; */
         padding: 0px;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 20px;
     }
     .card-base .data-1 .last-updated-on {

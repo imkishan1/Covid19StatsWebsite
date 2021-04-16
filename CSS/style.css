@@ -223,7 +223,8 @@ nav {
         width: 50%;
         text-align: center;
         margin: 0 auto;
-        color: #106bc0;
+        /* color: #106bc0; */
+        color: #007bff;
     }
     .card-base .data-1 .active-cases p{
         text-align: center; 
@@ -239,6 +240,7 @@ nav {
         text-align: center;
         margin: 0 auto;
         color: #72C217;
+       
     }
     .card-base .data-1 .recovred-cases p{
         text-align: center;
@@ -248,7 +250,8 @@ nav {
     }
     .card-base .data-1 .death {
         /* border: 2px solid rgb(201, 150, 87); */
-        color: #e72208;
+        /* color: #e72208; */
+        color: #ff073a;
         display: block;
         width: 50%;
         text-align: center;

@@ -363,10 +363,7 @@ footer .footer-element p a {
         padding-top: 40px;
       
     }
-    .mychart {
-        width: 280px;
-        height: 280px;
-    }
+
     footer .footer-element p{
         text-align: center;
         /* border: 1px solid green; */
@@ -440,7 +437,6 @@ footer .footer-element p a {
         height: 20px;
         margin-bottom: 0px;
 }
-
     
 }
 
@@ -466,45 +462,3 @@ footer .footer-element p a {
 }
 
 }
-
-
-/* Chart */
-
-
-        /* Chart.js styling */
-
-
-        .chartjs {
-            /* border: 2px solid red; */
-            max-width: 100%;
-            max-height: 440px;
-            min-height: 440px;
-            outline: none;
-            border-radius: 20px;
-            padding: 30px;
-            margin: 0 auto;
-            /* background-color: #363941; */
-            background-color: #31364686;
-            margin-bottom: 40px;
-
-            
-        }
-
-        .chartjs .chart-heading h2{
-         border: 1px solid blue;
-         text-align: center;
-         width: 30%;
-         margin: 0 auto;
-        }
-        .mychart {
-            width: 600px;
-            height: 600px;
-            margin: 0 auto;
-            /* border: 1px solid bisque; */
-            margin-top: 40px;
-
-        }
-
-
-        /* //Chart.js styling */
-/* //Chart */

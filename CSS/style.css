@@ -250,8 +250,8 @@ nav {
     }
     .card-base .data-1 .death {
         /* border: 2px solid rgb(201, 150, 87); */
-        /* color: #e72208; */
-        color: #ff073a;
+        color: #e72208;
+        /* color: #ff073a; */
         display: block;
         width: 50%;
         text-align: center;

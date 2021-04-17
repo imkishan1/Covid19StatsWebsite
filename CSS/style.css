@@ -171,10 +171,11 @@ nav {
         padding: 30px;
         margin: 0 auto;
         /* background-color: #db558120; */
-        /* background-color: #363941; main bg*/ 
-        background-color: #313646be;
+        /* background-color: #363941;  */
+
+        background-color: #313646be;     
         margin-bottom: 40px;
-        /* background-color: #407284; */
+        
     }
     
     .card-base .card-heading h2{

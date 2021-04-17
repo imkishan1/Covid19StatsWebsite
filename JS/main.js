@@ -1,6 +1,6 @@
 
 $(window).scroll(function(){
-    if($(window).scrollTop()>10){
+    if($(window).scrollTop()){
         $("nav").addClass("black");
     }
     else{

@@ -359,7 +359,7 @@ footer .footer-element p a {
   /* chart */
   
   .chartjs {
-    /* border: 2px solid red; */
+    
     max-width: fit-content;
     max-width: 90%;
     /* max-height: 440px;
@@ -369,24 +369,16 @@ footer .footer-element p a {
     border-radius: 20px;
     padding: 30px;
     margin: 0 auto;
-    /* background-color: #363941; */
     background-color: #31364686;
     margin-bottom: 40px;
 
     
 }
 
-.chartjs .chart-heading h2{
- border: 1px solid blue;
- text-align: center;
- width: 30%;
- margin: 0 auto;
-}
 .mychart {
     width: 700px;
     height: 700px;
     margin: 0 auto;
-    /* border: 1px solid bisque; */
     /* margin-top: 40px; */
 
 }

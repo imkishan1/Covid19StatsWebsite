@@ -33,7 +33,7 @@ async function getcoviddata(){
             
             labels: xaxis,
             datasets: [{
-                label: 'No. of confirmed cases [Daily]',
+                label: 'Daily Confirmed Cases',
                 data: yaxis,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
@@ -55,7 +55,7 @@ async function getcoviddata(){
                 borderWidth: 1
             },
             {
-                label: 'Daily recovered cases',
+                label: 'Daily Recovered Cases',
                 data: dailyrecoverd,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',

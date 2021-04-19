@@ -376,8 +376,10 @@ footer .footer-element p a {
 }
 
 .mychart {
+    /* width: 700px; */
     width: 700px;
-    height: 700px;
+    height: fit-content;
+    height: 200px;
     margin: 0 auto;
     /* margin-top: 40px; */
 

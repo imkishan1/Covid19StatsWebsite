@@ -11,8 +11,16 @@ async function getcoviddata(){
     var yaxis=[];
     for(i=(xlen-31);i<(xlen);i++)
     {
-         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed);        
-        xaxis.push(graphdata.cases_time_series[i].dateymd);
+
+         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed); 
+        date = graphdata.cases_time_series[i].dateymd;
+        var vals = date.split('-');
+        var year = vals[0];
+        var month = vals[1];
+        var day = vals[2];
+        var newdate = vals[2]+'-'+vals[1];
+        xaxis.push(newdate);       
+        // xaxis.push(graphdata.cases_time_series[i].dateymd);
     
     }
 

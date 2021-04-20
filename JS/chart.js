@@ -93,7 +93,7 @@ async function getcoviddata(){
             labels: xaxis,
             datasets: [
             {
-                label: 'Daily Decesased',
+                label: 'Daily Deceased',
                 data: deaths,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',

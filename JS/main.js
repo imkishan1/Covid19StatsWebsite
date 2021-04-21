@@ -921,21 +921,7 @@ let lastupdateld= document.querySelector('#date-time-ld');
 lastupdateld.innerText = `${ld.lastupdatedtime}`;
 
 }
-
-// async function getcovidapiState()
-// {
-//     const statedata = await fetch('https://api.covid19india.org/data.json');
-//     const statejsdata = await statedata.json();
-//     console.log(statejsdata);
-// }
 getcovidapiIn();
-// getcovidapiState();
-
-// function getResults(jsdata)
-// {
-//     let country-name = document.querySelector('#country-name');
-//     country-name.innerText = `${jsdata.Countries[76].Country}`;
-// }
 
 
 

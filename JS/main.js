@@ -8,24 +8,15 @@ $(window).scroll(function(){
     }
 })
 
-// https://api.covid19api.com/summary
 
 async function getcovidapiIn(){
-    // const jsondata = await fetch('https://api.covid19api.com/summary');
+
     const jsondata = await fetch('https://api.covid19india.org/data.json');
-    // const jsondata = await fetch('https://api.rootnet.in/covid19-in/stats/latest');
-    // const jsondata = await fetch('https://api.rootnet.in/covid19-in/unofficial/sources');
     const jsdata = await jsondata.json();
-    // const vaccinedata = jsdata.tested[400];
     const vaccinedata = Object.keys(jsdata.tested).length;
     const vaccinedatafinal = jsdata.tested[vaccinedata-1];
-
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
-    // console.log(jsdata.statewise);
-
-    // console.log(jsdata.statewise);
-    // console.log(jsdata.Countries[76]);
 
     const finaldata = jsdata.statewise[0];
     const statebihar = jsdata.statewise[15];
@@ -43,7 +34,6 @@ async function getcovidapiIn(){
     const mp = jsdata.statewise[12];
     const od = jsdata.statewise[13];
     const tg = jsdata.statewise[14];
-    // const br = jsdata.statewise[15];
     const hr = jsdata.statewise[16];
     const pb = jsdata.statewise[17];
     const ass = jsdata.statewise[18];

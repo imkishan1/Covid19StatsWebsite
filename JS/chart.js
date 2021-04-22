@@ -38,12 +38,14 @@ async function getcoviddata(){
                 label: 'Daily Confirmed Cases',
                 data: yaxis,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+                    // 'rgba(255, 99, 132, 0.2)',
+                    'rgba(214, 49, 82, 0.2)',
                  
                    
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
+                    // 'rgba(255, 99, 132, 1)',
+                    'rgba(214, 49, 82, 1)',
                 
                 ],
                 borderWidth: 1
@@ -52,11 +54,13 @@ async function getcoviddata(){
                 label: 'Daily Recovered Cases',
                 data: dailyrecoverd,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+                    // 'rgba(255, 99, 132, 0.2)',
+                    'rgba(114, 194, 23, 0.2)'
                    
                 ],
                 borderColor: [
-                    'rgba(75, 192, 192, 1)',
+                    // 'rgba(75, 192, 192, 1)',
+                    'rgba(114, 194, 23, 1)',
                     
                 ],
                 borderWidth: 1
@@ -84,7 +88,8 @@ async function getcoviddata(){
                 label: 'Daily Deceased',
                 data: deaths,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+                    // 'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 7, 58, 0.2)'
                    
                 ],
                 borderColor: [

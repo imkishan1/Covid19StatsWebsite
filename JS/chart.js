@@ -11,7 +11,7 @@ async function getcoviddata(){
     var yaxis=[];
     var dailyrecoverd=[];
     var deaths=[];
-    for(i=(xlen-31);i<(xlen);i++)
+    for(i=(xlen-150);i<(xlen);i++)
     {
 
         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed); 
@@ -30,7 +30,7 @@ async function getcoviddata(){
 
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             
             labels: xaxis,
@@ -79,7 +79,7 @@ async function getcoviddata(){
 
     var ctx = document.getElementById('myChart2').getContext('2d');
     var myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             labels: xaxis,

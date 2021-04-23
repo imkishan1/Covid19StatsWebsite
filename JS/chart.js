@@ -11,7 +11,7 @@ async function getcoviddata(){
     var yaxis=[];
     var dailyrecoverd=[];
     var deaths=[];
-    for(i=(0);i<(xlen);i++)
+    for(i=(xlen-150);i<(xlen);i++)
     {
 
         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed); 

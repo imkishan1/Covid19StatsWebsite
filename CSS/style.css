@@ -150,12 +150,14 @@ nav {
     max-width: 350px;
     margin-bottom: 20px;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
    
 }
-.card-rectangle.size:hover{
+
+/* .card-rectangle.size:hover{
     background-color: #bb194f3a;
 
-}
+} */
 .card-rectangle .rec-elements .bi.bi-shield-check{
    
     margin: 0 auto;
@@ -168,7 +170,7 @@ nav {
     /* border: 2px solid red; */
     align-items: center;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .card-rectangle .rec-elements p {
@@ -475,6 +477,7 @@ footer .footer-element p a {
       }
       .card-rectangle {
           max-width: fit-content;
+          border-radius: 8px;
           /* padding: 8px; */
       }
       .card-rectangle .rec-elements p {
@@ -485,7 +488,7 @@ footer .footer-element p a {
       }
 
       .card-rectangle.size .rec-elements .verified-source{
-          font-size: 15px;
+          font-size: 14px;
       }
       /* .navbar .search-box i{
         border: 1px solid red;

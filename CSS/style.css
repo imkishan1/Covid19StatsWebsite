@@ -145,11 +145,24 @@ nav {
 
 
 }
+.card-rectangle.size{
+   border-radius: 5px;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
 .card-rectangle .rec-elements .bi.bi-shield-check{
    
     margin: 0 auto;
     transform: translateY(2px);
   
+}
+
+
+.card-rectangle.size .rec-elements .verified-source {
+    /* border: 2px solid red; */
+    align-items: center;
+    margin: 0 auto;
+    font-size: 16px;
 }
 
 .card-rectangle .rec-elements p {
@@ -159,6 +172,11 @@ nav {
     text-align: center;
    
     color: rgb(219, 85, 129);
+}
+
+.card-rectangle .rec-elements a{
+    text-decoration: none;
+    font-size: 16px;
 }
 #vaccine-dose {
     letter-spacing:1.2px;
@@ -455,6 +473,13 @@ footer .footer-element p a {
       }
       .card-rectangle .rec-elements p {
           font-size: 13px;
+      }
+      .card-rectangle.size{
+          max-width: fit-content;
+      }
+
+      .card-rectangle.size .rec-elements .verified-source{
+          font-size: 15px;
       }
       /* .navbar .search-box i{
         border: 1px solid red;

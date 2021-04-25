@@ -687,7 +687,7 @@ padding: 18px;
 
 #color-4 {
     background-color: var(--active);
-    margin-top:0px;
+    margin-top:-2px;
 }
 
 #crowd-para {
@@ -699,7 +699,7 @@ padding: 18px;
     text-decoration: none;
     color: vAR(--active);
     text-align: center;
-padding-top: 10px;
+/* padding-top: 5px; */
 }
 
 /* #title-crowdsource {

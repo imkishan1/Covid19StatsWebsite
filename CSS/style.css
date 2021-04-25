@@ -5,7 +5,11 @@
 --text:#275961;
 --white-text:#FBF2EA;
 --white-text-light:#fbf2ea88;
-
+--recovered:#72C217;
+--active:#007bff;
+--newcases:#D63152;
+--totalcases:#883ED5;
+--deceased:#e72208;
 }
 
 html {
@@ -387,7 +391,7 @@ footer .footer-element p a {
   .chartjs {
     
     max-width: fit-content;
-    max-width: 90%;
+    max-width: 100%;
     /* max-height: 440px;
     min-height: 440px; */
     height: fit-content;
@@ -585,3 +589,132 @@ footer .footer-element p a {
     }
 
 }
+
+
+
+/* Average Card */
+.sqr-card {
+    /* border: 2px solid red; */
+  
+    border-radius: 5px;
+    max-width: 220px;
+    min-width: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    background-color: #31364686;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+ .sqr-ele {
+    /* border: 2px solid green; */
+width: fit-content;
+padding: 18px;
+
+}
+
+.sqr-ele .elec-group {
+    /* border: 1px solid honeydew; */
+    /* margin-top: 45px; */
+    height: fit-content;
+
+
+}
+
+
+.sqr-card .first-title {
+    /* border: 2px/ solid blue; */
+}
+
+.sqr-card .sqr-ele .para p{
+        font-size: 14px;
+        font-weight: 300;
+        color: rgb(185, 184, 184);
+        height: fit-content;
+        margin-bottom: 0px;
+        /* margin-top: 16px; */
+        
+}
+
+.sqr-card .redborder {
+    /* border: 2px solid pink; */
+    width: 220px;
+    margin: 0 auto;
+    clear: both;
+  
+    /* padding: 0px; */
+   z-index: -10;
+    height:15px;
+   
+    /* transform: translateY(65px); */
+    
+}
+#avg {
+    font-size: 22px;
+    color:var(--newcases);
+}
+
+#recov {
+    font-size: 22px;
+    color:var(--recovered);
+}
+
+#mort {
+    font-size: 22px;
+    color:   var(--deceased);
+}
+#avg-last {
+    font-size: 22px;
+    color:  var(--newcases);
+}
+
+#color-3 {
+    background-color:var(--deceased);
+    margin-top:10px;
+}
+
+#color-2 {
+    background-color:var(--recovered);
+    margin-top:10px;
+}
+
+#color-1 {
+    background-color: var(--newcases);
+    margin-top:10px;
+}
+
+#color-4 {
+    background-color: var(--active);
+    margin-top:0px;
+}
+
+#crowd-para {
+    font-size: 12px;
+     /* color: red; */
+}
+
+.elec-group a {
+    text-decoration: none;
+    color: vAR(--active);
+    text-align: center;
+padding-top: 10px;
+}
+
+/* #title-crowdsource {
+    color: var(--active);
+} */
+
+/* #conf-avg {
+    color: var(--newcases);
+}
+
+#rec-avg{
+    color: var(--recovered);
+}
+
+#dea-avg {
+    color: var(--deceased);
+} */
+/* //Average Card */

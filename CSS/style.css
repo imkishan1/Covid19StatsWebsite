@@ -5,8 +5,8 @@
 --text:#275961;
 --white-text:#FBF2EA;
 --white-text-light:#fbf2ea88;
-/* --recovered:#72C217; */
---recovered:#28A745;;
+--recovered:#72C217;
+/* --recovered:#28A745;; */
 --active:#007bff;
 --newcases:#D63152;
 --totalcases:#883ED5;
@@ -274,8 +274,8 @@ nav {
         width: 50%;
         text-align: center;
         margin: 0 auto;
-        /* color: #72C217; */
-        color: #28A745; 
+        color: #72C217;
+        /* color: #28A745;  covid19 org*/
        
     }
     .card-base .data-1 .recovred-cases p{

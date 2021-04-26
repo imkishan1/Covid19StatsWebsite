@@ -482,15 +482,17 @@ footer .footer-element p a {
         /* color: var(--buttons-Boston-before); */
       }
       .card-rectangle {
-          max-width: fit-content;
+          /* max-width: fit-content; */
+          max-width:100%;
           /* border-radius: 8px; */
           /* padding: 8px; */
       }
+    
       .card-rectangle .rec-elements p {
           font-size: 13px;
       }
       .card-rectangle.size{
-          max-width: fit-content;
+          max-width: 100%;
       }
 
       .card-rectangle.size .rec-elements .verified-source{

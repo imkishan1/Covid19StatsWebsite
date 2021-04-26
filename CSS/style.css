@@ -689,7 +689,7 @@ padding: 18px;
 
 #color-4 {
     background-color: var(--active);
-    margin-top:-2px;
+    margin-top:0px;
 }
 
 #crowd-para {

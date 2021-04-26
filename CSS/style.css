@@ -9,7 +9,8 @@
 --active:#007bff;
 --newcases:#D63152;
 --totalcases:#883ED5;
---deceased:#e72208;
+/* --deceased:#ff073a; */
+--deceased: rgba(108, 117, 125, 1);
 }
 
 html {
@@ -282,7 +283,8 @@ nav {
     }
     .card-base .data-1 .death {
         /* border: 2px solid rgb(201, 150, 87); */
-        color: #e72208;
+        /* color: #e72208; */
+        color: var(--deceased);
         /* color: #ff073a; */
         display: block;
         width: 50%;

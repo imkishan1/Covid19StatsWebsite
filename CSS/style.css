@@ -138,7 +138,7 @@ nav {
 /* Card-base */
 .card-rectangle {
     max-width: 350px;
-    max-height: 40px;
+    height: 40px;
     outline: none;
     border-radius: 6px;
     padding: 10px;
@@ -157,6 +157,7 @@ nav {
     margin-bottom: 20px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    height: 50px;
    
 }
 
@@ -177,6 +178,7 @@ nav {
     align-items: center;
     margin: 0 auto;
     font-size: 14px;
+    transform:translateY(5px);
 }
 
 .card-rectangle .rec-elements p {

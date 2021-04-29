@@ -19,7 +19,7 @@ async function getcoviddata(){
     var avgrecov;
     for(i=(xlen-365);i<(xlen);i++)
     {
-
+        
         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed); 
         date = graphdata.cases_time_series[i].dateymd;
         var vals = date.split('-');

@@ -712,6 +712,8 @@ padding: 18px;
     text-decoration: none;
     color: vAR(--active);
     text-align: center;
+   
+    /* border: 1px solid red; */
 /* padding-top: 5px; */
 }
 

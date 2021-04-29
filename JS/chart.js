@@ -45,13 +45,13 @@ async function getcoviddata(){
     avg = Math.round((sum)/7).toString();
   
     let sevendayavg = document.getElementById('avg');
-    sevendayavg.innerText = `${avg.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")}`;
+    sevendayavg.innerText = `${avg.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     let sevendayavgmort = document.getElementById('mort');
-    sevendayavgmort.innerText = `${avgmort.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")}`;
+    sevendayavgmort.innerText = `${avgmort.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     let sevendayavgrecov = document.getElementById('recov');
-    sevendayavgrecov.innerText = `${avgrecov.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")}`;
+    sevendayavgrecov.innerText = `${avgrecov.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
     // console.log(avg);
 
     var ctx = document.getElementById('myChart').getContext('2d');

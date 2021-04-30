@@ -6,6 +6,7 @@
 --white-text:#FBF2EA;
 --white-text-light:#fbf2ea88;
 --recovered:#72C217;
+--background-dark-blue:#1e1e30;
 /* --recovered:#28A745;; */
 --active:#007bff;
 --newcases:#D63152;
@@ -145,7 +146,7 @@ nav {
     margin: 0 auto;
     /* background-color: #363941; */
     margin-bottom: 10px;
-    /* border: 1px solid black; */
+    /* border: 1px solid rgb(175, 24, 24); */
     /* background-color: rgba(219, 85, 129, 0.125); */
     background-color: #db558120;
 
@@ -209,7 +210,7 @@ nav {
         /* background-color: #363941;  */
 
         /* background-color: #313646be;      */
-        background-color: #1e1e30;     
+        background-color: #232336;     
         margin-bottom: 40px;
         
     }
@@ -408,7 +409,7 @@ footer .footer-element p a {
     padding: 30px;
     margin: 0 auto;
     /* background-color: #31364686; */
-    background-color: #1e1e30;
+    background-color: #232336;
     margin-bottom: 40px;
 
     
@@ -617,7 +618,7 @@ footer .footer-element p a {
     min-height: 220px;
     max-height: 220px;
     /* background-color: #31364686; */
-    background-color: #1e1e30;
+    background-color: #232336;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 25px;

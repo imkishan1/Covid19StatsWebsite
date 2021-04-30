@@ -619,7 +619,7 @@ footer .footer-element p a {
     margin: 0 auto;
     margin-bottom: 25px;
     position: relative;
-    
+       
 }
  .sqr-ele {
     /* border: 2px solid green; */
@@ -632,6 +632,7 @@ padding: 18px;
     /* border: 1px solid honeydew; */
     /* margin-top: 45px; */
     height: fit-content;
+    
 
 
 }

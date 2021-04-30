@@ -79,8 +79,9 @@ nav {
 
 }
 #date-time-clock{
-    
+    /* border: 1px solid red; */
     /* margin-right: -20px; */
+    text-align: center;
     transform: translateY(8px);
     color:var(--white-text-light);
 }

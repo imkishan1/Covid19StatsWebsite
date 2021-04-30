@@ -208,7 +208,8 @@ nav {
         /* background-color: #db558120; */
         /* background-color: #363941;  */
 
-        background-color: #313646be;     
+        /* background-color: #313646be;      */
+        background-color: #1e1e30;     
         margin-bottom: 40px;
         
     }
@@ -406,7 +407,8 @@ footer .footer-element p a {
     border-radius: 20px;
     padding: 30px;
     margin: 0 auto;
-    background-color: #31364686;
+    /* background-color: #31364686; */
+    background-color: #1e1e30;
     margin-bottom: 40px;
 
     
@@ -614,7 +616,8 @@ footer .footer-element p a {
     min-width: 220px;
     min-height: 220px;
     max-height: 220px;
-    background-color: #31364686;
+    /* background-color: #31364686; */
+    background-color: #1e1e30;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 25px;

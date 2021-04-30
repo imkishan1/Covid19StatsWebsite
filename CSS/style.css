@@ -369,10 +369,9 @@ footer .footer-element p{
     /* border: 1px solid green; */
     margin: 0 auto;
     height: 100%;
-    
     font-size: 15px;
     font-weight: 300;
-    color: var(--white-text-light);
+    color: var(--white-text-light);   
 }
 
 
@@ -395,6 +394,7 @@ footer .footer-element p a {
       transition: 0.2s ease-in;
       color: #8d8b8b;
   }
+
 
   /* chart */
   

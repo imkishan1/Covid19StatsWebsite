@@ -57,10 +57,7 @@ async function getcovidapiIn(){
     const ld = jsdata.statewise[36];
 
     $(document).ready(function(){
-        $("#vaccine-dose").counterUp({
-    delay:10,
-    time: 500
-        });
+     
         $("#daily-conf").counterUp({
             delay:10,
             time: 500

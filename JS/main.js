@@ -56,6 +56,48 @@ async function getcovidapiIn(){
     const dn = jsdata.statewise[35];
     const ld = jsdata.statewise[36];
 
+    $(document).ready(function(){
+        $("#vaccine-dose").counterUp({
+    delay:10,
+    time: 500
+        });
+        $("#daily-conf").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#daily-rec").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#daily-death").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#active-cases").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#total-cases").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#recovered").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#death").counterUp({
+            delay:10,
+            time: 500
+                });
+        $("#new-confirm").counterUp({
+            delay:10,
+            time: 500
+                });
+      });
+
+  
+
+
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');
     yesterdaydate.innerText = `${yesterdayupdate.date}`;

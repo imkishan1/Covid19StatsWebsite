@@ -208,7 +208,10 @@ nav {
       /* border: 1px solid red; */
 }
 .vaccine p{
-    letter-spacing:1.2px;
+    letter-spacing: 1.5px;
+    text-align: center; 
+    /* margin-top: 16px; */
+    font-weight: 300;
 }
     .card-base {
         /* border: 2px solid red; */
@@ -304,7 +307,10 @@ nav {
     }
     .size-delta {
         font-size: 14px;
-        letter-spacing:1.2px;
+        letter-spacing:1.5px;
+       
+    text-align: center; 
+
     }
     .card-base .data-1 .death {
         /* border: 2px solid rgb(201, 150, 87); */

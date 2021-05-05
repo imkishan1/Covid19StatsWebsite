@@ -188,7 +188,6 @@ nav {
     font-size: 14px;
     padding: 0px;
     text-align: center;
-   
     color: rgb(219, 85, 129);
 }
 
@@ -197,6 +196,18 @@ nav {
     font-size: 16px;
 }
 #vaccine-dose {
+    letter-spacing:1.2px;
+}
+.vaccine {
+    
+    color: rgb(219, 85, 129);
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+      /* border: 1px solid red; */
+}
+.vaccine p{
     letter-spacing:1.2px;
 }
     .card-base {
@@ -293,6 +304,7 @@ nav {
     }
     .size-delta {
         font-size: 14px;
+        letter-spacing:1.2px;
     }
     .card-base .data-1 .death {
         /* border: 2px solid rgb(201, 150, 87); */

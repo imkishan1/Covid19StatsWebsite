@@ -17,7 +17,7 @@ async function getcovidapiIn(){
     const vaccinedatafinal = jsdata.tested[vaccinedata-1];
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
-
+    const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     const finaldata = jsdata.statewise[0];
     const statebihar = jsdata.statewise[15];
     const mh = jsdata.statewise[1];
@@ -74,9 +74,21 @@ async function getcovidapiIn(){
     let dailyupdatedon = document.querySelector('#date-time-last');
     dailyupdatedon.innerText = `${yesterdayupdate.dateymd}`;
 
+    let todayvac = parseInt(vaccinedatafinal.totaldosesadministered)
+    let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
+    let deltavaccine = (todayvac-deltavac).toString();
+    // console.log(deltavaccine);
+
+    let todaysvac = document.querySelector('#deltavac');
+    todaysvac.innerText = `${deltavaccine.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+
    // yesterday's log
 
 //    vaccine 
+
+
+
+
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${(vaccinedatafinal.totaldosesadministered).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 //      vaccine
@@ -95,6 +107,12 @@ async function getcovidapiIn(){
     const newconfirm= document.querySelector('#new-confirm');
     newconfirm.innerText = `${finaldata.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
+    const newrecovered= document.querySelector('#deltarec');
+    newrecovered.innerText = `+${finaldata.deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    
+    const newdeath= document.querySelector('#delta-death');
+    newdeath.innerText = `+${finaldata.deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+
     const lastupdate= document.querySelector('#date-time');
     lastupdate.innerText = `${finaldata.lastupdatedtime}`;
 
@@ -106,6 +124,7 @@ async function getcovidapiIn(){
 
     const lastupdate4= document.querySelector('#date-time-4');
     lastupdate4.innerText = `${finaldata.lastupdatedtime}`;
+
 
 // bihar
 

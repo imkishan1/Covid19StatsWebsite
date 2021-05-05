@@ -215,7 +215,9 @@ nav {
         margin-bottom: 40px;
         
     }
-    
+    .card-base.content-fit{
+        max-height: 460px;
+    }
     .card-base .card-heading h2{
         margin: 0 auto;
         font-size: 1.8em;
@@ -288,6 +290,9 @@ nav {
         /* margin-top: 16px; */
         font-weight: 300;
         letter-spacing: 1.5px;
+    }
+    .size-delta {
+        font-size: 14px;
     }
     .card-base .data-1 .death {
         /* border: 2px solid rgb(201, 150, 87); */

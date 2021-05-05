@@ -68,7 +68,7 @@
         <div class="col-lg-6 col-sm-6">
                <!-- Card -->
           <div data-aos="fade-up"
-          data-aos-duration="500" class="card-base">
+          data-aos-duration="500" class="card-base content-fit">
             <div  data-aos="fade-up" class="card-elements">
               <div class="card-heading">
                   <h2 id="country-name">India</h2>
@@ -86,10 +86,12 @@
             <div class="data-1">
                   <div class="recovred-cases">
                     <h3>Recovered</h3>
+                    <span id="deltarec"class="size-delta">+0</span>
                     <p id="recovered">0</p>
                   </div>
                   <div class="death">
                     <h3>Deceased</h3>
+                    <span id="delta-death" class="size-delta">+0</span>
                     <p id="death">0</p>
                   </div>
             </div>
@@ -120,7 +122,7 @@
           <div class="col-lg-6 col-sm-6">
             <!-- Card -->
        <div data-aos="fade-up"
-       data-aos-duration="500" class="card-base">
+       data-aos-duration="500" class="card-base content-fit">
          <div class="card-elements">
            <div class="card-heading">
                <h2 id="country-name">Yesterday's Stats</h2>
@@ -132,10 +134,14 @@
             <p><span id="yesterday-date">--</span></p>
           </div>
         </div>
-         <div class="data-1">
+        <div class="data-1">
           <div class="new-cases">
-            <h3>Cases Registered</h3>
+            <h3>Confirmed</h3>
             <p><span id="daily-conf">0</span> </p>
+          </div>
+          <div class="new-cases vaccine">
+            <h3>Vaccinated</h3>
+            <p><span id="deltavac">0</span> </p>
           </div>
         </div>
          <div class="data-1">

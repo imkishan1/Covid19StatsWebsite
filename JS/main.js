@@ -20,8 +20,6 @@ async function getcovidapiIn(){
     const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     const finaldata = jsdata.statewise[0];
     const statebihar = jsdata.statewise[15];
-
-    const vaccinedatafinal = jsdata.tested
     const mh = jsdata.statewise[1];
     const kl = jsdata.statewise[2];
     const ka = jsdata.statewise[3];

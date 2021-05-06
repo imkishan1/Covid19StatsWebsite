@@ -229,6 +229,7 @@ nav {
         margin-bottom: 40px;
         
     }
+    
     .card-base.content-fit{
         max-height: 460px;
     }
@@ -744,6 +745,11 @@ padding: 18px;
    
     /* border: 1px solid red; */
 /* padding-top: 5px; */
+}
+
+.avgposratio{
+    font-size: 22px;
+    color:   var(--deceased);
 }
 
 /* #title-crowdsource {

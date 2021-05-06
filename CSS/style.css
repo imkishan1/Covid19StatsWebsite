@@ -269,7 +269,7 @@ nav {
     .card-base .data-1 .total-cases p{
          text-align: center;
          /* margin-top: 16px; */
-         font-weight: 300;
+         font-weight: 400;
          letter-spacing: 1.5px;
     }
     .card-base .data-1 .active-cases {
@@ -285,7 +285,7 @@ nav {
     .card-base .data-1 .active-cases p{
         text-align: center; 
         /* margin-top: 16px; */
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 1.5px;
     }
     .card-base .data-1 .recovred-cases {
@@ -302,14 +302,14 @@ nav {
     .card-base .data-1 .recovred-cases p{
         text-align: center;
         /* margin-top: 16px; */
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 1.5px;
     }
     .size-delta {
         font-size: 14px;
         letter-spacing:1.5px;
-       
-    text-align: center; 
+        text-align: center; 
+        opacity: 0.7;
 
     }
     .card-base .data-1 .death {
@@ -326,7 +326,7 @@ nav {
 
     .card-base .data-1 .death p {
         /* margin-top: 16px; */
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 1.5px;
         text-align: center;
     }
@@ -340,7 +340,7 @@ nav {
         color: #D63152;
     }
     .card-base .data-1 .new-cases p{
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: 1.5px;
         text-align: center;
         

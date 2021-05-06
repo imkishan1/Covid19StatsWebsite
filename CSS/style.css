@@ -531,6 +531,9 @@ footer .footer-element p a {
       .card-rectangle.size .rec-elements .verified-source{
           font-size: 14px;
       }
+      .background {
+        padding-top: 140px;
+      }
       /* .navbar .search-box i{
         border: 1px solid red;
         margin-right: -20px;

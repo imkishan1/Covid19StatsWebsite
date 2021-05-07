@@ -223,12 +223,15 @@ var datavaccine;
                 label: 'Vaccine Doses Administered',
                 data: vaccinelast,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+                    // 'rgba(255, 99, 132, 0.2)',
+                    'rgba(219, 85, 129,0.2)',
                     // 'rgba(114, 194, 23, 0.2)'
                    
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
+                    // 'rgba(255, 99, 132, 1)',
+
+                    'rgba(219, 85, 129,1)',
                     // 'rgba(54, 162, 235, 1)',
                     // 'rgba(255, 206, 86, 1)',
                     // 'rgba(114, 194, 23, 1)',

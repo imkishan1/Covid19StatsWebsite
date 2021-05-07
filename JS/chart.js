@@ -244,6 +244,7 @@ var datavaccine;
         ]
         },
         options: {
+            responsive: true,
             scales: {
                 y: {
                     beginAtZero: true

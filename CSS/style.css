@@ -225,11 +225,10 @@ nav {
         margin: 0 auto;
         /* background-color: #db558120; */
         /* background-color: #363941;  */
-
         /* background-color: #313646be;      */
-        /* background-color: #232336;    */
-        background-color: rgba(108, 117, 125, 0.11);
 
+        background-color: #232336;   
+        /* background-color: rgba(108, 117, 125, 0.11); */
         margin-bottom: 40px;
         
     }

@@ -21,6 +21,11 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--// AOS -->
 
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- swiper -->
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -234,7 +239,7 @@
 <!-- //Chart -->
 
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-lg-3 col-sm-6 col-xs-6">
     <div class="sqr-card" data-aos="fade-up">
       <div class="sqr-ele">
@@ -304,7 +309,7 @@
         <div class="elec-group">
       <div class="first-title">
         <h4 id="title-crowdsource">Emergency Services</h4>
-        <!-- <h6>Verified<h6> -->
+        <h6>Verified<h6> comment this out
       </div>
       <div class="para">
         <p id="crowd-para">
@@ -320,7 +325,107 @@
     </div>
   </div>
 
+</div> -->
+
+
+<!-- Swiper --> <!-- Swiper --> <!-- Swiper -->
+
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="sqr-card" data-aos="fade-up">
+        <div class="sqr-ele">
+          <div class="elec-group">
+        <div class="first-title">
+          <h4 id="conf-avg">New Confirmed</h4>
+          <h6>7 Day Average</h6>
+        </div>
+        <div class="para">
+          <p id="avg-data">
+          7 day average new Confirmed cases in India <br><b><span id="avg">0</span></b>
+            </p>
+        </div>
+        </div>
+        </div>
+        <div class="redborder" id="color-1">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="sqr-card" data-aos="fade-up">
+        <div class="sqr-ele">
+          <div class="elec-group">
+        <div class="first-title">
+          <h4 id="rec-avg">Daily Recovered</h4>
+          <h6>7 Day Average</h6>
+        </div>
+        <div class="para">
+          <p id="avg-data">
+            7 day average daily Recovered cases in India <b><span id="recov">0</span></b>
+          </p>
+        </div>
+        </div>
+        </div>
+        <div class="redborder" id="color-2">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="sqr-card" data-aos="fade-up">
+        <div class="sqr-ele">
+          <div class="elec-group">
+        <div class="first-title">
+          <h4 id="dea-avg">Daily Deceased</h4>
+          <h6>7 Day Average</h6>
+        </div>
+        <div class="para">
+          <p id="avg-data">
+            7 day average daily Deceased cases in India <br><b><span id="mort">0</span></b>
+          </p>
+        </div>
+        </div>
+        </div>
+        <div class="redborder" id="color-3">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="sqr-card" data-aos="fade-up">
+        <div class="sqr-ele">
+          <div class="elec-group">
+        <div class="first-title">
+          <h4 id="title-crowdsource">Emergency Services</h4>
+          <!-- <h6>Verified<h6> comment this out -->
+        </div>
+        <div class="para">
+          <p id="crowd-para">
+            The links are of independent and governmental aggregators who are providing resources to those in need.
+          </p>
+        </div>
+        <a href="https://www.covid19india.org/resources" target="_blank">Click Here</a>
+        </div>
+        </div>
+        <div class="redborder" id="color-4">
+        </div>
+      </div>
+    </div>
+    <!-- ... -->
+  </div>
+  <!-- If we need pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <!-- If we need navigation buttons -->
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
 </div>
+
+
+<!-- //Swiper --> <!-- //Swiper --> <!-- //Swiper -->
 
         <div class="row">
           <div class="col-lg-12">
@@ -2162,12 +2267,38 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
   crossorigin="anonymous"
 ></script>
-
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script
   src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"
 ></script>
+<script>
+  const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  autoplay: true,
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+
 <script src="JS/chart.js"></script>
 <script src="JS/main.js"></script>
 <script src="JS/search.js"></script>

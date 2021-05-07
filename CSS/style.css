@@ -465,7 +465,10 @@ footer .footer-element p a {
     /* margin-top: 40px; */
 
 }
-
+.swiper-container {
+    width: 600px;
+    height: fit-content;
+  }
   /*// chart */
   
 /* Media queries */
@@ -494,6 +497,10 @@ footer .footer-element p a {
      margin: 2px;
      
     }
+    .swiper-container {
+        width: 600px;
+        height: fit-content;
+      }
 }
 @media only screen and (max-width: 500px) {
     footer {
@@ -520,6 +527,12 @@ footer .footer-element p a {
         color: inherit;
         cursor: pointer;
     }
+
+    .swiper-container {
+        width: 350px;
+        height: fit-content;
+        /* border: 1px solid green; */
+      }
     /* //footer */
     .icons-set2 i {
         padding: 6px;
@@ -632,6 +645,10 @@ footer .footer-element p a {
         width: 100%;
         height: 20px;
     }
+    .swiper-container {
+        width: 300px;
+        height: fit-content;
+      }
 
     .chartjs{
         width: 100%;
@@ -788,3 +805,4 @@ padding: 18px;
     color: var(--deceased);
 } */
 /* //Average Card */
+

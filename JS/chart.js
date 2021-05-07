@@ -66,7 +66,7 @@ var datavaccine;
     for(var i=(testedlen-365);i<testedlen;i++)
     {
         datavaccine = graphdata.tested[i].totaldosesadministered-graphdata.tested[i-1].totaldosesadministered;
-        updatetime = graphdata.tested[i].updatetimestamp;
+        updatetime = graphdata.tested[i-1].updatetimestamp;
         var vals2 = updatetime.split('/');
         var year1 = vals2[2];
         var date2 = vals2[0];

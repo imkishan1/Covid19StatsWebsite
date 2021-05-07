@@ -17,7 +17,9 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-user-select: none; 
   }
+
 ::-webkit-scrollbar{
     width: 10px;
     background: transparent;
@@ -434,12 +436,25 @@ footer .footer-element p a {
     padding: 30px;
     margin: 0 auto;
     /* background-color: #31364686; */
-    background-color: #232336;
+    /* background-color: #232336; */
+    
     margin-bottom: 40px;
 
     
 }
+.chartjs.conf{
+    /* background-color:rgba(204, 39, 72, 0.11); */
+    background-color: rgba(108, 117, 125, 0.11);
+}
 
+.chartjs.recove {
+    /* background-color: rgba(114, 194, 23, 0.11); */
+    background-color: rgba(108, 117, 125, 0.11);
+}
+
+.chartjs.death-new{
+    background-color: rgba(108, 117, 125, 0.11);
+}
 .mychart {
     /* width: 700px; */
     width: 700px;
@@ -651,6 +666,7 @@ footer .footer-element p a {
     margin: 0 auto;
     margin-bottom: 25px;
     position: relative;
+    cursor: pointer;
        
 }
  .sqr-ele {

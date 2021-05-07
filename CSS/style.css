@@ -538,7 +538,7 @@ footer .footer-element p a {
     }
 
     .swiper-container {
-        width: 350px;
+        width: 370px;
         height: 300px;
        
       }
@@ -691,7 +691,6 @@ footer .footer-element p a {
     background-color: #232336;
     overflow: hidden;
     margin: 0 auto;
-    margin-bottom: 25px;
     position: relative;
     cursor: pointer;
        

@@ -467,7 +467,15 @@ footer .footer-element p a {
 }
 .swiper-container {
     width: 600px;
-    height: fit-content;
+    height: 300px;
+    margin-bottom: 30px;
+ 
+  }
+  .swiper-container  .swiper-scrollbar {
+    background-color: rgba(108, 117, 125, 0.11);
+      width: 100%;
+      margin: 0 auto;
+    
   }
   /*// chart */
   
@@ -499,7 +507,8 @@ footer .footer-element p a {
     }
     .swiper-container {
         width: 600px;
-        height: fit-content;
+        height: 300px;
+
       }
 }
 @media only screen and (max-width: 500px) {
@@ -530,8 +539,8 @@ footer .footer-element p a {
 
     .swiper-container {
         width: 350px;
-        height: fit-content;
-        /* border: 1px solid green; */
+        height: 300px;
+       
       }
     /* //footer */
     .icons-set2 i {
@@ -647,7 +656,7 @@ footer .footer-element p a {
     }
     .swiper-container {
         width: 300px;
-        height: fit-content;
+        height: 300px;
       }
 
     .chartjs{

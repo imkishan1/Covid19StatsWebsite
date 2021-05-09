@@ -270,7 +270,7 @@ var datavaccine;
             labels: xaxis,
             datasets: [
             {
-                label: 'Tested',
+                label: 'Samples Tested',
                 data: tests,
                 backgroundColor: [
                     'rgba(153, 102, 255, 0.2)',

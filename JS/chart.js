@@ -57,9 +57,16 @@ async function getcoviddata(){
 
     // tests data
     var tests=[];
+    var xaxisdatadate=[];
+    var datetested;
+  
     for(var j=(testlen-365);j<testlen;j++)
     {
-        tests.push(graphdata.tested[j].samplereportedtoday); 
+        tests.push(graphdata.tested[j].samplereportedtoday);
+        datetested = graphdata.tested[j-1].updatetimestamp;
+        var vals3 = datetested.split('/');
+        datetested = vals3[0]+'-'+ vals3[1];
+        xaxisdatadate.push(datetested);
     }
     
 
@@ -78,10 +85,7 @@ var datavaccine;
         datavaccine = graphdata.tested[i].totaldosesadministered-graphdata.tested[i-1].totaldosesadministered;
         updatetime = graphdata.tested[i-1].updatetimestamp;
         var vals2 = updatetime.split('/');
-        var year1 = vals2[2];
-        var date2 = vals2[0];
-        var mon = vals2[1];
-        updatetime = date2+'-'+mon;
+        updatetime = vals2[0]+'-'+vals2[1];
         xaxisdata.push(updatetime);
         vaccinelast.push(datavaccine);
         
@@ -267,7 +271,7 @@ var datavaccine;
         type: 'bar',
         data: {
             // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            labels: xaxis,
+            labels: xaxisdatadate,
             datasets: [
             {
                 label: 'Samples Tested',

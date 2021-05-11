@@ -433,15 +433,18 @@ footer .footer-element p a {
     min-height: 440px; */
     height: fit-content;
     outline: none;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 5px;
     padding: 30px;
     margin: 0 auto;
     /* background-color: #31364686; */
     /* background-color: #232336; */
     
-    margin-bottom: 40px;
+    margin-bottom: 10px;    
+}
 
-    
+#margin {
+    margin-bottom: 60px;
 }
 .chartjs.conf{
     /* background-color:rgba(204, 39, 72, 0.11); */

@@ -220,7 +220,7 @@ nav {
         max-width: 350px;
         max-height: 440px;
         outline: none;
-        border-radius: 5px;
+        border-radius: 20px;
         padding: 30px;
         margin: 0 auto;
         /* background-color: #db558120; */
@@ -229,8 +229,7 @@ nav {
 
         background-color: #232336;   
         /* background-color: rgba(108, 117, 125, 0.11); */
-        /* margin-bottom: 40px; */
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         
     }
     

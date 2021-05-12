@@ -232,6 +232,9 @@ nav {
         margin-bottom: 30px;
         
     }
+    #yesterday{
+        margin-bottom: 40px;
+    }
     
     .card-base.content-fit{
         max-height: 460px;

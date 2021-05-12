@@ -19,12 +19,12 @@ async function getcovidapiIn(){
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     const finaldata = jsdata.statewise[0];
-    const statebihar = jsdata.statewise[15];
+    const statebihar = jsdata.statewise[5];
     const mh = jsdata.statewise[1];
     const kl = jsdata.statewise[2];
     const ka = jsdata.statewise[3];
     const ap = jsdata.statewise[4];
-    const tn = jsdata.statewise[5];
+    const tn = jsdata.statewise[15];
     const dl = jsdata.statewise[6];
     const up = jsdata.statewise[7];
     const wb = jsdata.statewise[8];

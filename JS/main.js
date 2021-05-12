@@ -567,8 +567,8 @@ jnkdeath.innerText = `${jnk.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 let jnknew= document.querySelector('#jnk-new');
 jnknew.innerText = `${jnk.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-// let lastupdatejnk= document.querySelector('#date-time-jnk');
-// lastupdatejnk.innerText = `${jnk.lastupdatedtime}`;
+let lastupdatejnk= document.querySelector('#date-time-jnk');
+lastupdatejnk.innerText = `${jnk.lastupdatedtime}`;
 
 // uk
 
@@ -593,6 +593,7 @@ lastupdateut.innerText = `${ut.lastupdatedtime}`;
 
 let utnew= document.querySelector('#ut-new');
 utnew.innerText = `${ut.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+
 
 
 // hp
@@ -875,6 +876,9 @@ andeath.innerText = `${an.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 let annew= document.querySelector('#an-new');
 annew.innerText = `${an.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
+let lastupdatean= document.querySelector('#date-time-an');
+lastupdatean.innerText = `${mz.lastupdatedtime}`;
+
 
 // mizo
 let mzname = document.querySelector('#state-name-mz');
@@ -917,6 +921,9 @@ dndeath.innerText = `${dn.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
 let dnnew= document.querySelector('#dn-new');
 dnnew.innerText = `${dn.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+
+let lastupdatedn= document.querySelector('#date-time-dn');
+lastupdatedn.innerText = `${ld.lastupdatedtime}`;
 
 // lakshwadeep
 

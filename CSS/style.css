@@ -245,7 +245,9 @@ nav {
         margin-bottom: 20px;
         border-bottom: 2px solid #D63152;
     }
-
+    #admnic {
+        font-size: 14px;
+    }
     .card-base .data-1 {
         /* border: 2px solid green; */
         padding: 10px;

@@ -7,6 +7,7 @@
 --white-text-light:#fbf2ea88;
 --recovered:#72C217;
 --background-dark-blue:#1e1e30;
+--background-dark-blue2:#232333;
 /* --recovered:#28A745;; */
 --active:#007bff;
 --newcases:#D63152;
@@ -518,6 +519,10 @@ footer .footer-element p a {
         height: 300px;
 
       }
+      .fixedright {
+        position: sticky;
+        left: 0;
+    }
 }
 @media only screen and (max-width: 500px) {
     footer {
@@ -822,4 +827,71 @@ padding: 18px;
     color: var(--deceased);
 } */
 /* //Average Card */
+
+
+
+table {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 13px;
+    /* border: 1px solid blue; */
+        /* padding: 10px; */
+    
+       
+}
+
+
+.tablerow {
+    margin: 0 auto;
+    display: flex;
+  
+}
+.tablerow th {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-dark-blue);
+  
+    padding: 10px;
+    margin:2px;
+    min-width: 120px;
+    font-weight:500;
+    color: #6c757d;
+    border-radius: 3px;
+    
+}
+.color{
+    background-color: var(--background-dark-blue) !important;
+    font-weight:500 !important;
+}
+
+.tablerow td {
+   
+    background-color: var(--background-dark-blue2);
+    padding: 10px;
+    margin:2px;
+    min-width: 120px;
+    max-width: 120px;
+    font-weight:400;
+    color: #6c757d;
+    border-radius: 3px;
+  
+}
+.dataletterspacing {
+    letter-spacing: 1.3px;
+}
+
+.delta-confirmed {
+    font-size: 12px;
+    letter-spacing:1.5px;
+    text-align: center; 
+    color: var(--newcases);
+   
+}
+
+.recovered {
+    color: var(--recovered);
+}
+.deaths {
+    color: var(--deceased);
+}
+
 

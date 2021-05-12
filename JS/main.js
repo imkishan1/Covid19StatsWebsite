@@ -49,7 +49,7 @@ async function getcovidapiIn(){
     const ar = jsdata.statewise[28];
     const ml = jsdata.statewise[29];
     const nl = jsdata.statewise[30];
-    const la = jsdata.statewise[31];
+    const la = jsdata.statewise[37];
     const sk = jsdata.statewise[32];
     const an = jsdata.statewise[33];
     const mz = jsdata.statewise[34];
@@ -317,8 +317,8 @@ wbdeath.innerText = `${wb.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 let wbnew= document.querySelector('#wb-new');
 wbnew.innerText = `${wb.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-let lastupdate10= document.querySelector('#date-time-10');
-lastupdate10.innerText = `${wb.lastupdatedtime}`;
+// let lastupdate10= document.querySelector('#date-time-10');
+// lastupdate10.innerText = `${wb.lastupdatedtime}`;
 
 // cg
 

@@ -895,3 +895,7 @@ table {
 }
 
 
+.fixedright {
+    position: sticky;
+    left: 0;
+}

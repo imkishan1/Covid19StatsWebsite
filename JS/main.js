@@ -24,7 +24,6 @@ async function getcovidapiIn(){
     const kl = jsdata.statewise[2];
     const ka = jsdata.statewise[3];
     const ap = jsdata.statewise[4];
-    const tn = jsdata.statewise[15];
     const dl = jsdata.statewise[6];
     const up = jsdata.statewise[7];
     const wb = jsdata.statewise[8];
@@ -34,6 +33,7 @@ async function getcovidapiIn(){
     const mp = jsdata.statewise[12];
     const od = jsdata.statewise[13];
     const tg = jsdata.statewise[14];
+    const tn = jsdata.statewise[15];
     const hr = jsdata.statewise[16];
     const pb = jsdata.statewise[17];
     const ass = jsdata.statewise[18];

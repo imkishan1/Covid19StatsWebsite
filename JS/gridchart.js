@@ -3,7 +3,7 @@ async function getcovidapiInf(){
     const jsondata2 = await fetch('https://api.covid19india.org/data.json');
     const jsdata2 = await jsondata2.json();
     const dataforchart = jsdata2.statewise;
-    console.log(jsdata2);
+   
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;

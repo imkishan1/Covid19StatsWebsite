@@ -846,7 +846,13 @@ table {
 .tablerow {
     margin: 0 auto;
     display: flex;
+    cursor: pointer;
   
+}
+
+tr:hover td{
+    transition: 0.1s ease-in-out;
+    background-color: var(--background-dark-blue);
 }
 
 .tablerow th {

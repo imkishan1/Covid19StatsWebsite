@@ -855,6 +855,8 @@ table {
     padding: 10px;
     margin:2px;
     min-width: 120px;
+    max-width: 120px;
+    min-width: 120px;
     font-weight:500;
     color: #6c757d;
     border-radius: 3px;
@@ -900,4 +902,10 @@ table {
 .fixedright {
     position: sticky;
     left: 0;
+}
+.tests {
+    color: var(--totalcases) !important;
+}
+.vaccinated {
+    color:rgb(219, 85, 129);
 }

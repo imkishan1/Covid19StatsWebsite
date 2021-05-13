@@ -4,7 +4,7 @@ async function getcovidapiInf(){
     const jsdata2 = await jsondata2.json();
     const dataforchart = jsdata2.statewise;
    
-    dataforchart.shift();
+  
     const jsondata3 = await fetch('https://api.covid19india.org/v4/min/data.min.json');
     const dataj = await jsondata3.json();
 
@@ -12,12 +12,47 @@ async function getcovidapiInf(){
 
     const statedeltadata = Object.values(dataj);
 
-    console.log(statedeltadata[7]);
+  
+
+    var result = statedeltadata.splice(33, 1);
+    dataforchart.splice(31, 1);
+   
+   var second =  result.splice(0,1);
+    // console.log(second);
+    statedeltadata.unshift(second[0]);
+
+
 
 //   Swapping the testing data for delhi and dadra nagra haveli
-  var temp = statedeltadata[8];
-  statedeltadata[8] = statedeltadata[7]
-  statedeltadata[7]=temp;
+var temp = statedeltadata[9];
+statedeltadata[9] = statedeltadata[8]
+statedeltadata[8]=temp;
+
+var temp1 = statedeltadata[13];
+statedeltadata[13] = statedeltadata[12]
+statedeltadata[12]=temp1;
+
+var temp2 = statedeltadata[15];
+statedeltadata[15] = statedeltadata[14]
+statedeltadata[14]=temp2;
+
+var temp3 = statedeltadata[21];
+statedeltadata[21] = statedeltadata[20]
+statedeltadata[20]=temp3;
+
+var temp4 = statedeltadata[23];
+statedeltadata[23] = statedeltadata[20]
+statedeltadata[20]=temp4;
+
+var temp5 = statedeltadata[28];
+statedeltadata[28] = statedeltadata[27]
+statedeltadata[27]=temp5;
+
+var temp6 = statedeltadata[32];
+statedeltadata[32] = statedeltadata[31]
+statedeltadata[31]=temp6;
+
+
 //   statedeltadata[8].delta7.tested= '0';
 
 //   the json data file has some glitchh so

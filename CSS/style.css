@@ -904,7 +904,7 @@ table {
     left: 0;
 }
 .tests {
-    color: var(--totalcases) !important;
+    color: var(--totalcases);
 }
 .vaccinated {
     color:rgb(219, 85, 129);

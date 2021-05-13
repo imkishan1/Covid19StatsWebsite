@@ -414,11 +414,14 @@ footer .footer-element p a {
     cursor: pointer;
 }
 /* //footer */
+
 .icons-set2 i {
+    /* float: right; */
     padding: 6px;
     margin-left: 10px;
     font-size: 18px;
     cursor: pointer;
+    
     color: var(--sub-headline);
     transition: 0.2s ease-out;
     /* color: var(--buttons-Boston-before); */
@@ -504,8 +507,7 @@ footer .footer-element p a {
     
         
     }
-    
-    
+
     .mychart {
         width: 400px;
         height: 100%;

@@ -22,9 +22,9 @@ async function getcovidapiInf(){
             <td class="dataletterspacing">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed recovered">+${dataforchart[i].deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</span><br>${dataforchart[i].recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed deaths">+${dataforchart[i].deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</span><br>${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing"> <span class="delta-confirmed vaccinated">+${dataj[dataforchart[i].statecode].delta7.vaccinated.toLocaleString('en-IN')}</span><br>${dataj[dataforchart[i].statecode].total.vaccinated.toLocaleString('en-IN')}</td>
-            <td class="dataletterspacing tests">${dataj[dataforchart[i].statecode].total.tested.toLocaleString('en-IN')}</td>
-            <td class="dataletterspacing">${dataj[dataforchart[i].statecode].meta.population.toLocaleString('en-IN')}</td>
+            <td class="dataletterspacing"> <span class="delta-confirmed vaccinated">+${numDifferentiation(dataj[dataforchart[i].statecode].delta7.vaccinated)}</span><br>${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated)}</td>
+            <td class="dataletterspacing tests">${numDifferentiation(dataj[dataforchart[i].statecode].total.tested)}</td>
+            <td class="dataletterspacing">${numDifferentiation(dataj[dataforchart[i].statecode].meta.population)}</td>
 
         </tr>`
             table2.innerHTML += row;
@@ -33,3 +33,14 @@ async function getcovidapiInf(){
 }
 getcovidapiInf();
 
+
+
+function numDifferentiation (val) {
+    if (val >= 10000000) {
+      val = (val / 10000000).toFixed(1) + 'Cr';
+    } else if (val >= 100000) {
+      val = (val / 100000).toFixed(1) + 'L';
+    }
+    else if(val >= 1000) val = (val/1000).toFixed(1) + 'K';
+    return val;
+  }

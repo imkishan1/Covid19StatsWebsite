@@ -8,7 +8,6 @@ $(window).scroll(function(){
     }
 })
 
-
 async function getcovidapiIn(){
 
     const jsondata = await fetch('https://api.covid19india.org/data.json');
@@ -19,12 +18,7 @@ async function getcovidapiIn(){
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     const finaldata = jsdata.statewise[0];
-    const statebihar = jsdata.statewise[5];
-
-
-
-
-
+  
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');
     yesterdaydate.innerText = `${yesterdayupdate.date}`;
@@ -83,18 +77,8 @@ async function getcovidapiIn(){
     const lastupdate= document.querySelector('#date-time');
     lastupdate.innerText = `${finaldata.lastupdatedtime}`;
 
-    const lastupdate2= document.querySelector('#date-time-2');
-    lastupdate2.innerText = `${finaldata.lastupdatedtime}`;
-
-    const lastupdate3= document.querySelector('#date-time-3');
-    lastupdate3.innerText = `${finaldata.lastupdatedtime}`;
-
-    const lastupdate4= document.querySelector('#date-time-4');
-    lastupdate4.innerText = `${finaldata.lastupdatedtime}`;
-
-
-
 }
+
 getcovidapiIn();
 
 

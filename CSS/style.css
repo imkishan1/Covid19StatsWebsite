@@ -917,27 +917,26 @@ tr:hover td{
     color:rgb(219, 85, 129);
 }
 
-
+/* 
 .mapcard {
-    /* border: 1px solid red; */
-    min-width: 550px;
-    max-width: 550px;
+
+    min-width: 100%;
+    max-width: 100%;
     padding: 6px;
     height: fit-content;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 30px;
     padding-top:20px ;
     background-color: rgba(108, 117, 125, 0.11);
 
 }
 .mapcard .chart-elements {
-    /* border: 1px solid red; */
+ 
 }
 
 .mapcard .chart-elements .mychart {
     width:500px;
     align-items: center;
     justify-content: center;
-    /* height: 160%; */
-    /* border: 1px solid salmon; */
-}
+   
+} */

@@ -3,33 +3,13 @@ async function getcovidapiInf(){
     const jsondata2 = await fetch('https://api.covid19india.org/data.json');
     const jsdata2 = await jsondata2.json();
     const dataforchart = jsdata2.statewise;
-   
-  
     const jsondata3 = await fetch('https://api.covid19india.org/v4/min/data.min.json');
     const dataj = await jsondata3.json();
-
-
-
-    const statedeltadata = Object.values(dataj);
-
-  
-
+    // const statedeltadata = Object.values(dataj);
     dataforchart.splice(31, 1);
- 
-
-
-
-
-
-//   statedeltadata[8].delta7.tested= '0';
-
-//   the json data file has some glitchh so
-
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;
-    
-
     for(i = 0;i < lengthofdata; i++){
         if(dataforchart[i].state=='State Unassigned')
         {
@@ -48,10 +28,8 @@ async function getcovidapiInf(){
 
         </tr>`
             table2.innerHTML += row;
-          
         }
     }
-
 }
 getcovidapiInf();
 

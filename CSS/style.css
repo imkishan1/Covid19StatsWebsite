@@ -891,6 +891,7 @@ tr:hover td{
 }
 
 .delta-confirmed {
+    /* font-weight: 400; */
     font-size: 12px;
     letter-spacing:1.5px;
     text-align: center; 

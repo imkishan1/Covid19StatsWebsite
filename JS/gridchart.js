@@ -11,7 +11,7 @@ async function getcovidapiInf(){
     const table2 = document.getElementById('tableid');
     var i=0;
     for(i=0;i < lengthofdata; i++){
-        if(dataforchart[0].deltaconfirmed=='0')
+        if(dataforchart[0].deltaconfirmed=='0' && false)
         {
             var row = `<tr class="tablerow">
             <td class="fixedright color">${dataforchart[i].state}</td>

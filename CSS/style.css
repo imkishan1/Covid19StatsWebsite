@@ -119,8 +119,8 @@ nav {
 /* //Navbar ended here */
 .headline {
     padding: 30px;
-    margin-bottom: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .headline h1{ 
     text-align: center;
@@ -592,7 +592,7 @@ footer .footer-element p a {
           font-size: 14px;
       }
       .background {
-        padding-top: 50px;
+        padding-top: 40px;
       }
   
     .navbar .page-title{

@@ -620,7 +620,9 @@ footer .footer-element p a {
         margin: 2px;
      
     }
-    
+    .mapcard{
+        margin-bottom: 10px;
+    }
 
     #color-4 {
         margin-top:-2px;
@@ -865,7 +867,7 @@ tr:hover td{
     padding: 6px;
     height: fit-content;
     border-radius: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: rgba(108, 117, 125, 0.11);
 
 }

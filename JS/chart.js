@@ -59,7 +59,7 @@ async function getcoviddata(){
 
     let sevendayavgrecov = document.getElementById('recov');
     sevendayavgrecov.innerText = `${avgrecov.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-    console.log(avg);
+    
 
     // tests data
     var tests=[];

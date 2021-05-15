@@ -11,7 +11,7 @@ async function getcovidapiInf(){
     const table2 = document.getElementById('tableid');
     var i=0;
     for(i=0;i < lengthofdata; i++){
-        if(dataforchart[0].deltaconfirmed=='0' && false)
+        if(false)
         {
             var row = `<tr class="tablerow">
             <td class="fixedright color">${dataforchart[i].state}</td>
@@ -54,3 +54,5 @@ function numDifferentiation (val) {
     else if(val >= 1000) val = (val/1000).toFixed(1) + 'K';
     return val;
   }
+
+  // dataforchart[0].deltaconfirmed=='0' && 

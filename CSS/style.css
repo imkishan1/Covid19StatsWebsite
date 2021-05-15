@@ -567,7 +567,7 @@ footer .footer-element p a {
     /* //footer */
     .icons-set2 i {
         padding: 6px;
-        margin-left: 10px;
+        margin: 4px;
         font-size: 18px;
         cursor: pointer;
         color: var(--sub-headline);

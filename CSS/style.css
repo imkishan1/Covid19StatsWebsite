@@ -716,6 +716,10 @@ footer .footer-element p a {
    
     /* transform: translateY(65px); */
     
+} 
+
+.swiper-container {
+    margin-top: 40px;
 }
 #avg {
     font-size: 22px;

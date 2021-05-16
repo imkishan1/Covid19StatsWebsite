@@ -12,6 +12,7 @@
 --active:#007bff;
 --newcases:#D63152;
 --totalcases:#883ED5;
+--tested: rgba(153, 102, 255, 1);
 /* --deceased:#ff073a; */
 --deceased: rgba(108, 117, 125, 1);
 }
@@ -868,7 +869,7 @@ tr:hover td{
     left: 0;
 }
 .tests {
-    color: var(--totalcases);
+    color: var(--tested);
 }
 .vaccinated {
     color:rgb(219, 85, 129);

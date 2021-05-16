@@ -897,4 +897,9 @@ tr:hover td{
    
 }
 
-
+.notes {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--deceased);
+    margin-left: 60px;
+}

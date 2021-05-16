@@ -11,22 +11,8 @@ async function getcovidapiInf(){
     const table2 = document.getElementById('tableid');
     var i=0;
     for(i=0;i < lengthofdata; i++){
-      if(dataj[dataforchart[i].statecode].delta.tested==null)
-      {
-       
-        dataj[dataforchart[i].statecode].delta.tested="0";
-      }
-      if(dataj[dataforchart[i].statecode].delta.deceased==null)
-      {
-        
-        dataj[dataforchart[i].statecode].delta.deceased="0";
-      }
-      if(dataj[dataforchart[i].statecode].delta.vaccinated==null)
-      {
-        
-        dataj[dataforchart[i].statecode].delta.vaccinated="0";
-      }
-        if(dataforchart[0].deltaconfirmed=='0')
+    
+        if(false)
         {
         
             var row = `<tr class="tablerow">
@@ -70,3 +56,21 @@ function numDifferentiation (val) {
     else if(val >= 1000) val = (val/1000).toFixed(1) + 'K';
     return val;
   }
+
+  // if(dataj[dataforchart[i].statecode].delta.tested==null)
+  // {
+   
+  //   dataj[dataforchart[i].statecode].delta.tested="0";
+  // }
+  // if(dataj[dataforchart[i].statecode].delta.deceased==null)
+  // {
+    
+  //   dataj[dataforchart[i].statecode].delta.deceased="0";
+  // }
+  // if(dataj[dataforchart[i].statecode].delta.vaccinated==null)
+  // {
+    
+  //   dataj[dataforchart[i].statecode].delta.vaccinated="0";
+  // }
+
+  // dataforchart[0].deltaconfirmed=='0'

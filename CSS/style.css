@@ -43,6 +43,7 @@ body {
     background-color: #161625;
     /* background-color: var(--text); */
     font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     box-sizing: border-box;
     overflow: overlay;
   }

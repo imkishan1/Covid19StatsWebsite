@@ -839,7 +839,7 @@ ul li {
 }
 .result .result-element {
     width: 350px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .results .centernames {
     list-style: none;

@@ -808,7 +808,8 @@ tr:hover td{
     /* margin: 5px; */
     margin-top: 16px;
     padding: 5px;
-    border: none;
+    /* border: none; */
+    border: 2px solid rgba(80, 48, 155, 0.568);
     background-color: rgb(98, 60, 187);
     color: #fff;
     border-radius: 3px;

@@ -17,6 +17,7 @@
 --vaccine: rgb(216, 48, 102);
 --vaccine-dark: rgb(185, 40, 86,1);
 --vaccine-border: rgb(185, 40, 86,0.5);
+--vaccine-hospital: rgb(111, 45, 110);
 /* --vaccine: rgb(219, 85, 129); */
 --tested: rgba(153, 102, 255, 1);
 /* --deceased:#ff073a; */
@@ -832,10 +833,10 @@ tr:hover td{
     border: 2px solid var(--vaccine-border);
     background-color:var(--vaccine-dark);
 }
-.vaccineslots button:active {
+/* .vaccineslots button:active {
     border: 2px solid rgba(80, 48, 155, 0.568);
     background-color:rgb(73, 43, 143);
-}
+} */
 .vaccineslots button:focus{
     outline: none;
 }
@@ -894,7 +895,7 @@ ul li {
     display: block;
     /* background-color: rgb(157, 60, 187); */
     /* background-color: rgb(98, 60, 187); */
-    background-color: var(--vaccine);
+    background-color: var(--vaccine-hospital);
     
 }
 
@@ -950,7 +951,7 @@ ul li {
 
 .circle {
     /* background-color: rgb(98, 60, 187); */
-    background-color:var(--vaccine);
+    background-color:var(--vaccine-hospital);
     padding: 3px;
     width: 20px;
     height: 20px;

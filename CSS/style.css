@@ -8,6 +8,8 @@
 --recovered:#72C217;
 --background-dark-blue:#1e1e30;
 --background-dark-blue2:#232333;
+/* --white-text-grey:#f0f0f0; */
+/* --white-text-grey:rgb(219, 85, 129); */
 /* --recovered:#28A745;; */
 --active:#007bff;
 --newcases:#D63152;
@@ -496,196 +498,6 @@ footer .footer-element p a {
   }
   /*// chart */
   
-/* Media queries */
-@media only screen and (max-width: 800px){
-    .chartjs {
-
-
-        /* height: 700px; */
-        /* background-color: #31364686; */
-        /* background-color: transparent; */
-        /* margin-bottom: 40px; */
-        /* overflow: hidden; */
-        padding: 2px;
-        max-width: 100%;
-        
-    
-        
-    }
-
-    .mychart {
-        width: 400px;
-        height: 100%;
-     /* transform: rotate(90deg); */
-     /* margin-top: 100px; */
-     margin: 2px;
-     
-    }
-    
-    .swiper-container {
-        width: 600px;
-        height: 300px;
-
-      }
-      .fixedright {
-        position: sticky;
-        left: 0;
-    }
-    .mapcard {
-        min-width: 300px;
-        max-width: 350px;
-    }
-}
-@media only screen and (max-width: 500px) {
-    footer {
-   
-        height: 140px;
-        padding-top: 40px;
-      
-    }
-
-    footer .footer-element p{
-        text-align: center;
-        /* border: 1px solid green; */
-        margin: 0 auto;
-        height: 100%;
-        margin-bottom: 10px;
-        font-size: 15px;
-        font-weight: 300;
-        color: var(--white-text-light);
-    }
-    
-    
-    footer .footer-element p a {
-        text-decoration: none;
-        color: inherit;
-        cursor: pointer;
-    }
-
-    .swiper-container {
-        width: 370px;
-        height: 300px;
-       
-      }
-    /* //footer */
-    .icons-set2 i {
-        padding: 2px;
-        margin: 4px;
-        font-size: 20px;
-        cursor: pointer;
-        color: var(--sub-headline);
-        transition: 0.2s ease-out;
-        /* color: var(--buttons-Boston-before); */
-      }
-      .card-rectangle {
-          /* max-width: fit-content; */
-          max-width:100%;
-          /* border-radius: 8px; */
-          /* padding: 8px; */
-      }
-    
-      .card-rectangle .rec-elements p {
-          font-size: 13px;
-      }
-      .card-rectangle.size{
-          max-width: 100%;
-      }
-
-      .card-rectangle.size .rec-elements .verified-source{
-          font-size: 14px;
-      }
-      .background {
-        padding-top: 40px;
-      }
-  
-    .navbar .page-title{
-        /* border: 2px solid red; */
-        /* float: left; */
-        padding-top: 8px;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .search-box {
-        width: 100%;
-    }
-    #date-time-clock {
-        /* margin-top: 5px; */
-        text-align: center;
-        /* border:2px solid blue; */
-        width: 100%;
-        height: 20px;
-        margin-bottom: 0px;
-    }
-
-    .mychart {
-        width: 400px;
-        height: 100%;
-        margin: 2px;
-     
-    }
-    .mapcard{
-        margin-bottom: 10px !important;
-    }
-
-    #color-4 {
-        margin-top:-2px;
-    }
-    .headline {
-        padding: 10px;
-    }
-    .headline.headmargin
-    {
-        margin-top: 30px !important;
-        margin-bottom: 20px !important;
-    }
-    
-}
-
-@media only screen and (max-width: 361px) {
-    .navbar .page-title{
-        /* border: 2px solid red; */
-        /* float: left; */
-        padding-top: 8px;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    .search-box {
-        width: 100%;
-    }
-    #date-time-clock {
-        /* margin-top: 5px; */
-        text-align: center;
-        /* border:2px solid blue; */
-        width: 100%;
-        height: 20px;
-    }
-    .swiper-container {
-        width: 300px;
-        height: 300px;
-      }
-   
- .mychart {
-        width:300px;
-        height: 160%;
-    }
-
-    .mapcard {
-     
-        min-width: 300px;
-        max-width: 350px;
-        margin-bottom: 10px !important;
-    }
-    /* .col-lg-12 {
-        padding: 8px;
-    } */
-
-}
-
-
 
 /* Average Card */
 .sqr-card {
@@ -909,3 +721,569 @@ tr:hover td{
     color: var(--deceased);
     margin-left: 60px;
 }
+
+.buttn {
+    /* border: 1px solid red; */
+    width: fit-content;
+    padding: 10px;
+    background-color:rgba(98, 60, 187, 0.295);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+.buttn a {
+    color: #fff;
+    text-decoration: none;
+}
+.buttn:hover{ 
+    background-color:rgba(89, 55, 168, 0.425);
+}
+
+
+
+.maindiv {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 100%;
+
+    /* border-radius: 3px; */
+    /* background-color: rgba(80, 48, 155, 0.192); */
+    /* background-color: rgba(155, 48, 123, 0.192); */
+    /* background-color: var(--white-text-grey); */
+}
+
+.heading {
+    /* border: 1px solid white; */
+    /* width: 340px; */
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /* float: right; */
+    padding: 10px;
+}
+
+.heading h2 {
+    font-size: 16px;
+    color: #6c757d;
+    font-weight: 500;
+    text-align: center;
+}
+.vaccineslots {
+    /* border: 1px solid red; */
+    width: 325px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #6c757d;
+}
+
+.vaccineslots input {
+    /* border: 1px solid blue; */
+    /* margin: 5px; */
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0.2px solid rgba(189, 188, 188, 0.452);
+    background-color: transparent;
+    /* background-color: rgb(250, 250, 250); */
+    color: #6c757d;
+    transition: 0.4s all ease-in-out;
+
+}
+.vaccineslots input:focus {
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid #6c757d70; */
+}
+.vaccineslots button {
+    width: 100%;
+    /* margin: 5px; */
+    margin-top: 16px;
+    padding: 5px;
+    border: 2px solid rgba(80, 48, 155, 0.568);
+    background-color: rgb(98, 60, 187);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    font-size: 14px;
+    /* width: 200px; */
+    text-align: center;
+}
+
+.vaccineslots button:hover{
+    background-color:rgb(80, 48, 155);
+}
+.vaccineslots button:active {
+    background-color:rgb(73, 43, 143);
+}
+
+ul li {
+    color: black;
+}
+.results {
+    margin: 0 auto;
+    /* border: 1px solid orange; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+   max-height: fit-content;
+}
+
+.results .centernames {
+    list-style: none;
+    display: block;
+    margin-left: 0px;
+    padding-left: 0px;
+    min-height: fit-content;
+   
+}
+
+.results .centernames li{
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    min-width:220px ;
+    max-width:300px;
+    max-height: 120px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+.results .centernames li .result-element {
+    display: flex;
+    max-height:fit-content;
+    /* background-color: #fff; */
+}
+
+.results .centernames li .result-element .hospitalname {
+    margin: 0 auto;
+    width:100%;
+    padding: 15px;
+    max-height: 120px;
+    border-radius: 4px 0px 0px 4px;
+    color: #fff;
+    display: block;
+    /* background-color: rgb(157, 60, 187); */
+    background-color: rgb(98, 60, 187);
+    
+}
+
+.results .centernames li .result-element .hospitalname h5{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    /* border: 1px solid orange; */
+   
+}
+
+.results .centernames li .result-element .hospitalname .hospital-address {
+    font-size: 12px;
+    font-weight: 400;
+    /* border: 1px solid red; */
+}
+
+.results .centernames li .result-element .slotsavail{
+   
+    padding: 10px;
+}
+
+.results .centernames li .result-element .slotsavail h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6c757d;
+    /* border: 1px solid yellowgreen; */
+    margin-top: 16px;
+}
+
+
+.results .centernames li .result-element .slotsavail h6 {
+    font-weight: 600;
+    color: #6c757d;
+    
+}
+
+.maindiv .mainheading {
+ 
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+.maindiv .mainheading h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(98, 60, 187);
+    /* font-family: hez; */
+}   
+
+.circle {
+    background-color: rgb(98, 60, 187);
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 50%;
+    transform: translate(145px,-115px);
+}
+.circle  h6 {
+    /* margin: 0 auto; */
+    text-align: center;
+    transform: translateY(2px);
+    font-size: 9px;
+    font-weight: 300;
+}
+.notfound {
+    background-color: rgba(98, 60, 187, 0.521);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.notfound .notfoundtxt{
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.vaccinename {
+    /* border: 1px solid red; */
+    margin-bottom: 0px;
+}
+.vaccinename p{
+    margin-top: 5px;
+    font-size: 11px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+
+/* Media queries */
+/* Media queries */
+
+@media only screen and (max-width: 800px){
+    .chartjs {
+
+
+        /* height: 700px; */
+        /* background-color: #31364686; */
+        /* background-color: transparent; */
+        /* margin-bottom: 40px; */
+        /* overflow: hidden; */
+        padding: 2px;
+        max-width: 100%;
+        
+    
+        
+    }
+
+    .mychart {
+        width: 400px;
+        height: 100%;
+     /* transform: rotate(90deg); */
+     /* margin-top: 100px; */
+     margin: 2px;
+     
+    }
+    
+    .swiper-container {
+        width: 600px;
+        height: 300px;
+
+      }
+      .fixedright {
+        position: sticky;
+        left: 0;
+    }
+    .mapcard {
+        min-width: 300px;
+        max-width: 350px;
+    }
+    
+  .heading{
+    /* border: 1px solid black; */
+    /* width:250px !important; */
+    /* text-align: center; */
+    margin-bottom: 10px;
+   
+}
+.heading h2{
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center !important;
+
+}
+.vaccineslots{
+  /* border: 2px solid green; */
+  width: 280px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.vaccineslots input{
+  /* border: 1px solid blue; */
+  margin-left: 0px;
+  margin-bottom: 10px;
+
+}
+.vaccineslots button{
+margin: 0 auto;
+margin-left: 0px;
+margin-top: 12px;
+}
+}
+@media only screen and (max-width: 500px) {
+    footer {
+   
+        height: 140px;
+        padding-top: 40px;
+      
+    }
+
+    footer .footer-element p{
+        text-align: center;
+        /* border: 1px solid green; */
+        margin: 0 auto;
+        height: 100%;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--white-text-light);
+    }
+    
+    
+    footer .footer-element p a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    .swiper-container {
+        width: 370px;
+        height: 300px;
+       
+      }
+    /* //footer */
+    .icons-set2 i {
+        padding: 2px;
+        margin: 4px;
+        font-size: 20px;
+        cursor: pointer;
+        color: var(--sub-headline);
+        transition: 0.2s ease-out;
+        /* color: var(--buttons-Boston-before); */
+      }
+      .card-rectangle {
+          /* max-width: fit-content; */
+          max-width:100%;
+          /* border-radius: 8px; */
+          /* padding: 8px; */
+      }
+    
+      .card-rectangle .rec-elements p {
+          font-size: 13px;
+      }
+      .card-rectangle.size{
+          max-width: 100%;
+      }
+
+      .card-rectangle.size .rec-elements .verified-source{
+          font-size: 14px;
+      }
+      .background {
+        padding-top: 40px;
+      }
+  
+    .navbar .page-title{
+        /* border: 2px solid red; */
+        /* float: left; */
+        padding-top: 8px;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .search-box {
+        width: 100%;
+    }
+    #date-time-clock {
+        /* margin-top: 5px; */
+        text-align: center;
+        /* border:2px solid blue; */
+        width: 100%;
+        height: 20px;
+        margin-bottom: 0px;
+    }
+
+    .mychart {
+        width: 400px;
+        height: 100%;
+        margin: 2px;
+     
+    }
+    .mapcard{
+        margin-bottom: 10px !important;
+    }
+
+    #color-4 {
+        margin-top:-2px;
+    }
+    .headline {
+        padding: 10px;
+    }
+    .headline.headmargin
+    {
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+    }
+    .buttn {
+        /* border: 1px solid red; */
+      margin: 0 auto;
+    }
+
+    .maindiv .mainheading h1{
+        font-size: 32px;
+      
+    }   
+    .circle {     
+        transform: translate(148px,-110px);
+    }
+      
+}
+@media only screen and (max-width: 412px)
+{
+    .vaccineslots{
+        /* border: 2px solid green; */
+        width: 280px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .vaccineslots input{
+        /* border: 1px solid blue; */
+        margin-left: 0px;
+        margin-bottom: 10px;
+        width:100%;
+        /* padding: 8px; */
+        /* margin-bottom: 12px; */
+        /* font-size: 14px; */
+    }
+    
+    .vaccineslots button{
+      margin: 0 auto;
+      margin-left: 0px;
+      margin-top: 12px;
+      }
+    
+      .heading {
+          width: 280px;
+          margin-top: 0px;
+      }
+      .heading h2{
+      font-size: 16px;
+      }
+      .circle {     
+          transform: translate(130px,-110px);
+      }
+}
+
+@media only screen and (max-width: 390px)
+{
+    .vaccineslots{
+     
+        width: 250px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .vaccineslots input{
+        margin: 0 auto;
+        /* border: 1px solid blue; */
+        margin-left: 0px;
+        margin-bottom: 10px;
+        width:100%;
+        /* padding: 8px; */
+        /* margin-bottom: 12px; */
+        /* font-size: 14px; */
+    }
+    .vaccineslots button {
+        margin: 0 auto;
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .heading {
+        width: 250px;
+        margin-top: 0px;
+    }
+    .heading h2{
+      font-size: 16px;
+      
+    }
+  
+    .maindiv {
+        width: 95%;
+    }
+    .circle {     
+      transform: translate(125px,-110px);
+  }
+   
+    .mainheading h1{
+        font-size:28px !important;
+    }
+}
+
+
+@media only screen and (max-width: 361px) {
+    .navbar .page-title{
+        /* border: 2px solid red; */
+        /* float: left; */
+        padding-top: 8px;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .search-box {
+        width: 100%;
+    }
+    #date-time-clock {
+        /* margin-top: 5px; */
+        text-align: center;
+        /* border:2px solid blue; */
+        width: 100%;
+        height: 20px;
+    }
+    .swiper-container {
+        width: 300px;
+        height: 300px;
+      }
+   
+ .mychart {
+        width:300px;
+        height: 160%;
+    }
+
+    .mapcard {
+     
+        min-width: 300px;
+        max-width: 350px;
+        margin-bottom: 10px !important;
+    }
+    /* .col-lg-12 {
+        padding: 8px;
+    } */
+
+}
+

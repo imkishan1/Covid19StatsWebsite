@@ -803,6 +803,7 @@ tr:hover td{
     /* border: 1px solid #6c757d70; */
     color: rgba(255, 255, 255, 0.822);
 }
+
 .vaccineslots button {
     width: 100%;
     /* margin: 5px; */
@@ -824,6 +825,9 @@ tr:hover td{
 }
 .vaccineslots button:active {
     background-color:rgb(73, 43, 143);
+}
+.vaccineslots button:focus{
+    outline: none;
 }
 
 ul li {

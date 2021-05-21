@@ -67,3 +67,5 @@ var pincode = document.getElementById("pin").value;
 {/* <div class="vaccinename">
 <p>${getdata.centers[i].sessions[0].vaccine}</p>
 </div> */}
+
+

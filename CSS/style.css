@@ -792,8 +792,8 @@ tr:hover td{
     font-size: 14px;
     font-weight: 400;
     border: 0.2px solid rgba(189, 188, 188, 0.452);
-    background-color: transparent;
-    /* background-color: rgb(250, 250, 250); */
+    /* background-color: transparent; */
+    background-color: rgb(250, 250, 250);
     color: #6c757d;
     transition: 0.4s all ease-in-out;
 

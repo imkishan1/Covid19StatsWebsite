@@ -799,8 +799,9 @@ tr:hover td{
 
 }
 .vaccineslots input:focus {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     /* border: 1px solid #6c757d70; */
+    color: rgba(255, 255, 255, 0.822);
 }
 .vaccineslots button {
     width: 100%;

@@ -14,8 +14,9 @@
 --active:#007bff;
 --newcases:#D63152;
 --totalcases:#883ED5;
---vaccine: rgb(139, 54, 221);
---vaccine-border: rgba(115, 45, 182, 0.5);
+--vaccine: rgb(216, 48, 102);
+--vaccine-dark: rgb(185, 40, 86,1);
+--vaccine-border: rgb(185, 40, 86,0.5);
 /* --vaccine: rgb(219, 85, 129); */
 --tested: rgba(153, 102, 255, 1);
 /* --deceased:#ff073a; */
@@ -827,8 +828,9 @@ tr:hover td{
 }
 
 .vaccineslots button:hover{
-    border: 2px solid rgba(80, 48, 155, 0.568);
-    background-color:rgb(80, 48, 155);
+    /* border: 2px solid rgba(80, 48, 155, 0.568); */
+    border: 2px solid var(--vaccine-border);
+    background-color:var(--vaccine-dark);
 }
 .vaccineslots button:active {
     border: 2px solid rgba(80, 48, 155, 0.568);

@@ -150,6 +150,7 @@ ul li {
 .results .centernames li .result-element {
   display: flex;
   max-height: fit-content;
+  align-items: center;
   /* background-color: #fff; */
 }
 

@@ -47,7 +47,6 @@ function getstatus()
         cardul.innerHTML+=card;
           }
     }
-    getcowinapidata(pincode,date);
     if(pincode==false)
     {
       click=0;
@@ -61,6 +60,7 @@ function getstatus()
         window.location.reload();
       }
     }
+    getcowinapidata(pincode,date);
 }
 
 

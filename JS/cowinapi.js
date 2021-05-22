@@ -50,15 +50,18 @@ function getstatus()
         
     }
     getcowinapidata(pincode,date);
-    var btn = document.getElementById('btn');
-    click+=1;
-    if(pincode!=null)
+    if(pincode==false)
     {
-      btn.innerText = 'Refresh Page';
+      click=0;
     }
-    if(click>1)
-    {
-      window.location.reload();
+    else {
+      var btn = document.getElementById('btn');
+      btn.innerText = 'Refresh Page';
+      click+=1;
+      if(click>1)
+      {
+        window.location.reload();
+      }
     }
 }
 

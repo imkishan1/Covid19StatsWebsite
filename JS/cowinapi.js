@@ -68,7 +68,7 @@ function getstatus()
 function SetMinDate() {
     var now = new Date();
     var day = parseInt(("0" + now.getDate()).slice(-2));
-    day = day;
+    day = day+1;
     day = day.toString();
     var month = ("0" + (now.getMonth() + 1)).slice(-2);
     var year = now.getFullYear();

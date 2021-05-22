@@ -751,6 +751,9 @@ tr:hover td {
     padding: 30px;
     margin-bottom: 20px;
   }
+  .bg {
+      background: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {

@@ -9,6 +9,7 @@ function getstatus()
         const jsonurl = await fetch(url);
         const getdata = await jsonurl.json();
         const size = Object.keys(getdata.centers).length;
+        
         const cardul = document.getElementById('ulid');
         var text = "Sorry, No Vaccination center is available for booking.";
         if(size!=0)
@@ -54,7 +55,8 @@ function SetMinDate() {
     day = day;
     day = day.toString();
     var month = ("0" + (now.getMonth() + 1)).slice(-2);
-    var today = now.getFullYear() + "-" + (month) + "-" + (day);
+    var year = now.getFullYear();
+    var today = (day) + "-" + (month) + "-" + (year);
     $('#date').val(today);
     $('#date').attr('min', today);
 }

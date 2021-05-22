@@ -1,300 +1,284 @@
-
 .buttn {
-    /* border: 1px solid red; */
-    width: fit-content;
-    /* width: 100%; */
-    padding: 10px;
-    margin-top: 8px;
-    background-color:rgba(202, 46, 95, 0.76);
-    background-color:var(--vaccine);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s all ease-in-out;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: rgba(202, 46, 95, 0.76);
+  background-color: var(--vaccine);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
 }
 
 .buttn a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
-.buttn:hover{ 
-    background-color:rgba(189, 41, 88, 0.76);
+.buttn:hover {
+  background-color: rgba(189, 41, 88, 0.76);
 }
-
-
 
 .maindiv {
-    /* border: 1px solid red; */
-    margin: 0 auto;
-    /* margin-top: 20px; */
-    margin-bottom: 0px;
-    padding: 10%;
-    width: 100%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  margin-bottom: 0px;
+  padding: 10%;
+  width: 100%;
 
-    /* border-radius: 3px; */
-    /* background-color: rgba(80, 48, 155, 0.13); */
-    /* background-color: rgba(155, 48, 123, 0.192); */
-    background-color: var(--white-text-grey);
+  /* border-radius: 3px; */
+  /* background-color: rgba(80, 48, 155, 0.13); */
+  /* background-color: rgba(155, 48, 123, 0.192); */
+  background-color: var(--white-text-grey);
 }
 
 .heading {
-    /* border: 1px solid white; */
-    /* width: 340px; */
-    width: 300px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    /* float: right; */
-    padding: 10px;
+  /* border: 1px solid white; */
+  /* width: 340px; */
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* float: right; */
+  padding: 10px;
 }
 
 .heading h2 {
-    font-size: 16px;
-    color: #6c757d;
-    font-weight: 500;
-    text-align: center;
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 500;
+  text-align: center;
 }
 .vaccineslots {
-    /* border: 1px solid red; */
-    width: 325px;
-    margin: 0 auto;
-    padding: 10px;
-    color: #6c757d;
+  /* border: 1px solid red; */
+  width: 325px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #6c757d;
 }
 
 .vaccineslots input {
-    /* border: 1px solid blue; */
-    /* margin: 5px; */
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 8px;
-    margin-bottom: 16px;
-    border-radius: 3px;
-    font-size: 14px;
-    font-weight: 400;
-    border: 0.2px solid rgba(189, 188, 188, 0.452);
-    /* background-color: transparent; */
-    background-color: rgb(248, 248, 248);
-    color: #6c757d;
-    transition: 0.4s all ease-in-out;
-
+  /* border: 1px solid blue; */
+  /* margin: 5px; */
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0.2px solid rgba(189, 188, 188, 0.452);
+  /* background-color: transparent; */
+  background-color: rgb(248, 248, 248);
+  color: #6c757d;
+  transition: 0.4s all ease-in-out;
 }
 .vaccineslots input:focus {
-    background-color: rgb(255, 255, 255);
-    /* color: rgba(255, 255, 255, 0.822); */
+  background-color: rgb(255, 255, 255);
+  /* color: rgba(255, 255, 255, 0.822); */
 }
 
 .vaccineslots button {
-    width: 100%;
-    /* margin: 5px; */
-    margin-top: 16px;
-    padding: 5px;
-    /* border: none; */
-    /* border: 2px solid rgba(80, 48, 155, 0.568); */
-    border: 2px solid var(--vaccine-border);
-    /* border: 2px solid rgb(168, 65, 99,0.5); */
-    /* background-color: rgb(98, 60, 187); */
-    background-color: var(--vaccine);
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s all ease-in-out;
-    font-size: 14px;
-    /* width: 200px; */
-    text-align: center;
+  width: 100%;
+  /* margin: 5px; */
+  margin-top: 16px;
+  padding: 5px;
+  /* border: none; */
+  /* border: 2px solid rgba(80, 48, 155, 0.568); */
+  border: 2px solid var(--vaccine-border);
+  /* border: 2px solid rgb(168, 65, 99,0.5); */
+  /* background-color: rgb(98, 60, 187); */
+  background-color: var(--vaccine);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  font-size: 14px;
+  /* width: 200px; */
+  text-align: center;
 }
 
-.vaccineslots button:hover{
-    /* border: 2px solid rgba(80, 48, 155, 0.568); */
-    border: 2px solid var(--vaccine-border);
-    background-color:var(--vaccine-dark);
+.vaccineslots button:hover {
+  /* border: 2px solid rgba(80, 48, 155, 0.568); */
+  border: 2px solid var(--vaccine-border);
+  background-color: var(--vaccine-dark);
 }
 /* .vaccineslots button:active {
     border: 2px solid rgba(80, 48, 155, 0.568);
     background-color:rgb(73, 43, 143);
 } */
-.vaccineslots button:focus{
-    outline: none;
+.vaccineslots button:focus {
+  outline: none;
 }
 
 ul li {
-    color: black;
+  color: black;
 }
 .results {
-    margin: 0 auto;
-    /* border: 1px solid orange; */
-    text-align: center;
-    /* padding: 10px; */
-    border-radius: 3px;
-    margin-top: 20px;
-   max-height: fit-content;
+  margin: 0 auto;
+  /* border: 1px solid orange; */
+  text-align: center;
+  /* padding: 10px; */
+  border-radius: 3px;
+  margin-top: 20px;
+  max-height: fit-content;
 }
 .result .result-element {
-    width: 350px;
-    /* border: 1px solid red; */
+  width: 350px;
+  /* border: 1px solid red; */
 }
 .results .centernames {
-    list-style: none;
-    display: block;
-    margin-left: 0px;
-    padding-left: 0px;
-    min-height: fit-content;
-   
+  list-style: none;
+  display: block;
+  margin-left: 0px;
+  padding-left: 0px;
+  min-height: fit-content;
 }
 
-.results .centernames li{
-    margin: 0 auto;
-    /* border: 1px solid blue; */
-    min-width:220px ;
-    max-width:300px;
-    /* max-height: 120px; */
-    max-height: fit-content;
-    background-color: #fff;
-    border-radius: 3px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    
+.results .centernames li {
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  min-width: 220px;
+  max-width: 300px;
+  /* max-height: 120px; */
+  max-height: fit-content;
+  background-color: #fff;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .results .centernames li .result-element {
-    display: flex;
-    max-height:fit-content;
-    /* background-color: #fff; */
+  display: flex;
+  max-height: fit-content;
+  /* background-color: #fff; */
 }
 
 .results .centernames li .result-element .hospitalname {
-    margin: 0 auto;
-    width:100%;
-    padding: 15px;
-    /* max-height: 120px; */
-    max-height: fit-content;
-    border-radius: 3px 0px 0px 3px;
-    color: #fff;
-    display: block;
-    /* background-color: rgb(157, 60, 187); */
-    /* background-color: rgb(98, 60, 187); */
-    background-color: var(--vaccine);
-    
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px;
+  /* max-height: 120px; */
+  max-height: fit-content;
+  border-radius: 3px 0px 0px 3px;
+  color: #fff;
+  display: block;
+  /* background-color: rgb(157, 60, 187); */
+  /* background-color: rgb(98, 60, 187); */
+  background-color: var(--vaccine);
 }
 
-.results .centernames li .result-element .hospitalname h5{
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    /* border: 1px solid orange; */
-   
+.results .centernames li .result-element .hospitalname h5 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  /* border: 1px solid orange; */
 }
 
 .results .centernames li .result-element .hospitalname .hospital-address {
-    font-size: 12px;
-    font-weight: 400;
-    /* border: 1px solid red; */
+  font-size: 12px;
+  font-weight: 400;
+  /* border: 1px solid red; */
 }
-.results .centernames li .result-element .hospitalname .hospital-address p{
-    margin-bottom: 0px;
-    margin-top: 5px;
-    font-weight: 500;
+.results .centernames li .result-element .hospitalname .hospital-address p {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-weight: 500;
 }
-.results .centernames li .result-element .slotsavail{
-   
-    padding: 10px;
+.results .centernames li .result-element .slotsavail {
+  padding: 10px;
 }
 
 .results .centernames li .result-element .slotsavail h5 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #6c757d;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-
 .results .centernames li .result-element .slotsavail h6 {
-    font-weight: 500;
-    color: #6c757d;
-    margin-bottom: 0px;
-    
+  font-weight: 500;
+  color: #6c757d;
+  margin-bottom: 0px;
 }
 
 .maindiv .mainheading {
- 
-    text-align: center;
-    margin-bottom: 10px;
-   
+  text-align: center;
+  margin-bottom: 10px;
 }
-.maindiv .mainheading h1{
-    font-size: 35px;
-    font-weight: 700;
-    margin: 0 auto;
-    text-align: center;
-    color:var(--vaccine);
-    /* color: rgb(98, 60, 187); */
-    /* font-family: hez; */
-}   
+.maindiv .mainheading h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--vaccine);
+  /* color: rgb(98, 60, 187); */
+  /* font-family: hez; */
+}
 
 .slotsavail .circle {
-    /* background-color: rgb(98, 60, 187); */
-    background-color:var(--vaccine);
-   /* position: relative; */
-    padding: 3px;
-    width:100%;
-    border-radius: 0px 30px;
-    height: 20px;
-    color: #fff;
-    margin: 0 auto;
-    /* border-radius: 50%; */
-    /* transform: translate(145px,-115px); */
+  /* background-color: rgb(98, 60, 187); */
+  background-color: var(--vaccine);
+  /* position: relative; */
+  padding: 3px;
+  width: 100%;
+  border-radius: 0px 30px;
+  height: 20px;
+  color: #fff;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  /* transform: translate(145px,-115px); */
 }
-.slotsavail .circle  h6 {
-    color: #fff !important;
-    margin: 0 auto;
-    font-size: 10px;
-    font-weight: 600;
+.slotsavail .circle h6 {
+  color: #fff !important;
+  margin: 0 auto;
+  font-size: 10px;
+  font-weight: 600;
 }
 .free {
-    background-color: rgba(255, 255, 255, 0.342);
-   /* position: relative; */
-    padding: 2px;
-    width:50%;
-    border-radius:30px;
-    height: 16px;
-    color: #fff;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    /* border-radius: 50%; */
-    /* transform: translate(145px,-115px); */
+  background-color: rgba(255, 255, 255, 0.342);
+  /* position: relative; */
+  padding: 2px;
+  width: 50%;
+  border-radius: 30px;
+  height: 16px;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  /* border-radius: 50%; */
+  /* transform: translate(145px,-115px); */
 }
 .free h6 {
-    color: #fff !important;
-    margin: 0 auto;
-    font-size: 11px;
-    font-weight: 400;
-    margin-bottom: 0px;
+  color: #fff !important;
+  margin: 0 auto;
+  font-size: 11px;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 .notfound {
-    background-color: rgba(98, 60, 187, 0.521);
-    width: fit-content;
-    padding: 5px;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-bottom: 15px;
+  background-color: rgba(98, 60, 187, 0.521);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
-.notfound .notfoundtxt{
-    font-size: 12px;
-    color: #fff;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-weight: 400;
+.notfound .notfoundtxt {
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
 }
 
 .vaccinename {
-    /* border: 1px solid red; */
-    margin-bottom: 0px;
+  /* border: 1px solid red; */
+  margin-bottom: 0px;
 }
-.vaccinename p{
-    margin-top: 5px;
-    font-size: 11px;
-    margin-bottom: 0px;
-    font-weight: 700;
+.vaccinename p {
+  margin-top: 5px;
+  font-size: 11px;
+  margin-bottom: 0px;
+  font-weight: 700;
 }
-

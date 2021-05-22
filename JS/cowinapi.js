@@ -46,8 +46,6 @@ function getstatus()
         var card = `<div class="notfound"><p class="notfoundtxt">${text}</p></div>`
         cardul.innerHTML+=card;
           }
-    
-        
     }
     getcowinapidata(pincode,date);
     if(pincode==false)

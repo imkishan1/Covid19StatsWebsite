@@ -22,17 +22,19 @@ function getstatus()
                 <h5 id="name">${getdata.centers[i].name}</h5>
                 <div id="add" class="hospital-address">
                   ${getdata.centers[i].address}
+                  <p>${getdata.centers[i].sessions[0].vaccine}</p> 
                 </div>
               </div>
               <div class="slotsavail">
+              <div class="circle">
+              <h6>${getdata.centers[i].sessions[0].min_age_limit+'+'}</h6>
+            </div>
                 <h5>Slots Available</h5>
                 <h6 id="slots">${getdata.centers[i].sessions[0].available_capacity}</h6>
               </div>
             </div>
           </li>
-          <div class="circle">
-          <h6>${getdata.centers[i].sessions[0].min_age_limit+'+'}</h6>
-        </div>`
+       `
           cardul.innerHTML +=card;
 
         }

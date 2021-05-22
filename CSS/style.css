@@ -871,7 +871,8 @@ ul li {
     /* border: 1px solid blue; */
     min-width:220px ;
     max-width:300px;
-    max-height: 120px;
+    /* max-height: 120px; */
+    max-height: fit-content;
     background-color: #fff;
     border-radius: 3px;
     font-size: 18px;
@@ -889,7 +890,8 @@ ul li {
     margin: 0 auto;
     width:100%;
     padding: 15px;
-    max-height: 120px;
+    /* max-height: 120px; */
+    max-height: fit-content;
     border-radius: 3px 0px 0px 3px;
     color: #fff;
     display: block;
@@ -912,7 +914,11 @@ ul li {
     font-weight: 400;
     /* border: 1px solid red; */
 }
-
+.results .centernames li .result-element .hospitalname .hospital-address p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-weight: 500;
+}
 .results .centernames li .result-element .slotsavail{
    
     padding: 10px;
@@ -920,16 +926,17 @@ ul li {
 
 .results .centernames li .result-element .slotsavail h5 {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     color: #6c757d;
-    /* border: 1px solid yellowgreen; */
-    margin-top: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 
 .results .centernames li .result-element .slotsavail h6 {
-    font-weight: 600;
+    font-weight: 500;
     color: #6c757d;
+    margin-bottom: 0px;
     
 }
 
@@ -949,23 +956,24 @@ ul li {
     /* font-family: hez; */
 }   
 
-.circle {
+.slotsavail .circle {
     /* background-color: rgb(98, 60, 187); */
     background-color:var(--vaccine);
+   /* position: relative; */
     padding: 3px;
-    width: 20px;
+    width:100%;
+    border-radius: 0px 30px;
     height: 20px;
     color: #fff;
     margin: 0 auto;
-    border-radius: 50%;
-    transform: translate(145px,-115px);
+    /* border-radius: 50%; */
+    /* transform: translate(145px,-115px); */
 }
-.circle  h6 {
-    /* margin: 0 auto; */
-    text-align: center;
-    transform: translateY(2px);
-    font-size: 9px;
-    font-weight: 300;
+.slotsavail .circle  h6 {
+    color: #fff !important;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 600;
 }
 .notfound {
     background-color: rgba(98, 60, 187, 0.521);
@@ -1182,7 +1190,7 @@ margin-top: 12px;
       
     }   
     .circle {     
-        transform: translate(148px,-110px);
+        /* transform: translate(148px,-110px); */
     }
       
 }
@@ -1218,7 +1226,7 @@ margin-top: 12px;
       font-size: 16px;
       }
       .circle {     
-          transform: translate(130px,-110px);
+          /* transform: translate(130px,-110px); */
       }
 }
 
@@ -1258,7 +1266,7 @@ margin-top: 12px;
         width: 95%;
     }
     .circle {     
-      transform: translate(125px,-110px);
+      /* transform: translate(125px,-110px); */
   }
    
     .mainheading h1{

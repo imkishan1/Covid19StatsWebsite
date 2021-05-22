@@ -748,12 +748,14 @@ tr:hover td {
   }
   .maindiv {
     background-color: transparent;
+    /* background-color: rgba(40,40,54,255); */
     padding: 30px;
     margin-bottom: 20px;
   }
   .bg {
       background: none;
   }
+  
 }
 
 @media only screen and (max-width: 500px) {

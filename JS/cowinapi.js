@@ -15,6 +15,7 @@ function getstatus()
         var text = "Sorry, No Vaccination center is available for booking.";
         if(size!=0)
         {
+          $('#ulid .centerdetails').empty().append();
         for(var i =0;i<size;i++)
         {
             var card = `  <li class="centerdetails">
@@ -47,19 +48,7 @@ function getstatus()
         cardul.innerHTML+=card;
           }
     }
-    if(pincode==false)
-    {
-      click=0;
-    }
-    else {
-      var btn = document.getElementById('btn');
-      btn.innerText = 'Refresh Page';
-      click+=1;
-      if(click>1)
-      {
-        window.location.reload();
-      }
-    }
+  
     getcowinapidata(pincode,date);
 }
 

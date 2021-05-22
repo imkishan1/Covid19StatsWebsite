@@ -975,6 +975,27 @@ ul li {
     font-size: 10px;
     font-weight: 600;
 }
+.free {
+    background-color: rgba(255, 255, 255, 0.342);
+   /* position: relative; */
+    padding: 1px;
+    width:50%;
+    border-radius:30px;
+    height: 16px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /* border-radius: 50%; */
+    /* transform: translate(145px,-115px); */
+}
+.free h6 {
+    color: #fff !important;
+    margin: 0 auto;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
 .notfound {
     background-color: rgba(98, 60, 187, 0.521);
     width: fit-content;

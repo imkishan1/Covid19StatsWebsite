@@ -1,3 +1,4 @@
+var click=0;
 function getstatus()
 {   
     var date = document.querySelector('#date').value;
@@ -22,7 +23,9 @@ function getstatus()
                 <h5 id="name">${getdata.centers[i].name}</h5>
                 <div id="add" class="hospital-address">
                   ${getdata.centers[i].address}
-                  <p>${getdata.centers[i].sessions[0].vaccine}</p> 
+                  <p>${getdata.centers[i].sessions[0].vaccine}</p>
+                  <div class="free"><h6>${getdata.centers[i].fee_type}</h6> 
+                  </div>
                 </div>
               </div>
               <div class="slotsavail">
@@ -47,6 +50,16 @@ function getstatus()
         
     }
     getcowinapidata(pincode,date);
+    var btn = document.getElementById('btn');
+    click+=1;
+    if(pincode!=null)
+    {
+      btn.innerText = 'Refresh Page';
+    }
+    if(click>1)
+    {
+      window.location.reload();
+    }
 }
 
 

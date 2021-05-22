@@ -1,4 +1,3 @@
-var click=0;
 function getstatus()
 {   
     var date = document.querySelector('#date').value;
@@ -44,7 +43,7 @@ function getstatus()
         }
       }
       else{
-        var card = `<div class="notfound"><p class="notfoundtxt">${text}</p></div>`
+        var card =  `<li class="centerdetails"><div class="notfound"><p class="notfoundtxt">${text}</p></div></li>`;
         cardul.innerHTML+=card;
           }
     }

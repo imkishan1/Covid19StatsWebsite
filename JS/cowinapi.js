@@ -43,6 +43,7 @@ function getstatus()
         }
       }
       else{
+        $('#ulid .centerdetails').empty().append();
         var card =  `<li class="centerdetails"><div class="notfound"><p class="notfoundtxt">${text}</p></div></li>`;
         cardul.innerHTML+=card;
           }

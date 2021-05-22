@@ -726,25 +726,13 @@ tr:hover td{
 
 @media only screen and (max-width: 800px){
     .chartjs {
-
-
-        /* height: 700px; */
-        /* background-color: #31364686; */
-        /* background-color: transparent; */
-        /* margin-bottom: 40px; */
-        /* overflow: hidden; */
         padding: 2px;
         max-width: 100%;
-        
-    
-        
     }
 
     .mychart {
         width: 400px;
         height: 100%;
-     /* transform: rotate(90deg); */
-     /* margin-top: 100px; */
      margin: 2px;
      
     }
@@ -764,54 +752,42 @@ tr:hover td{
     }
     
   .heading{
-    /* border: 1px solid black; */
-    /* width:250px !important; */
-    /* text-align: center; */
     margin-bottom: 10px;
-   
     }
     .heading h2{
         font-size: 20px;
         margin: 0 auto;
         text-align: center !important;
-
     }
     .vaccineslots{
-    /* border: 2px solid green; */
-    width: 280px;
-    margin: 0 auto;
-    padding: 10px;
+        width: 280px;
+        margin: 0 auto;
+        padding: 10px;
     }
     .vaccineslots input{
-    /* border: 1px solid blue; */
-    margin-left: 0px;
-    margin-bottom: 10px;
-
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
     .vaccineslots button{
-    margin: 0 auto;
-    margin-left: 0px;
-    margin-top: 12px;
+        margin: 0 auto;
+        margin-left: 0px;
+        margin-top: 12px;
     }
     .maindiv{
         background-color: transparent;
         padding: 12%;
         margin-bottom: 20px;
     }
-    
-
 }
+
 @media only screen and (max-width: 500px) {
     footer {
-   
         height: 140px;
         padding-top: 40px;
-      
     }
 
     footer .footer-element p{
         text-align: center;
-        /* border: 1px solid green; */
         margin: 0 auto;
         height: 100%;
         margin-bottom: 10px;
@@ -819,19 +795,16 @@ tr:hover td{
         font-weight: 300;
         color: var(--white-text-light);
     }
-    
-    
     footer .footer-element p a {
         text-decoration: none;
         color: inherit;
         cursor: pointer;
     }
-
     .swiper-container {
         width: 370px;
         height: 300px;
        
-      }
+    }
     /* //footer */
     .icons-set2 i {
         padding: 2px;
@@ -840,22 +813,16 @@ tr:hover td{
         cursor: pointer;
         color: var(--sub-headline);
         transition: 0.2s ease-out;
-        /* color: var(--buttons-Boston-before); */
       }
-      .card-rectangle {
-          /* max-width: fit-content; */
+      .card-rectangle { 
           max-width:100%;
-          /* border-radius: 8px; */
-          /* padding: 8px; */
       }
-    
       .card-rectangle .rec-elements p {
           font-size: 13px;
       }
       .card-rectangle.size{
           max-width: 100%;
       }
-
       .card-rectangle.size .rec-elements .verified-source{
           font-size: 14px;
       }
@@ -864,8 +831,6 @@ tr:hover td{
       }
   
     .navbar .page-title{
-        /* border: 2px solid red; */
-        /* float: left; */
         padding-top: 8px;
         align-items: center;
         width: 100%;
@@ -875,25 +840,18 @@ tr:hover td{
     .search-box {
         width: 100%;
     }
-    #date-time-clock {
-        /* margin-top: 5px; */
-        text-align: center;
-        /* border:2px solid blue; */
-        width: 100%;
-        height: 20px;
-        margin-bottom: 0px;
-    }
-
     .mychart {
-        width: 400px;
+        margin: 0 auto;
+        width: 100%;
         height: 100%;
         margin: 2px;
+       
      
     }
     .mapcard{
+        max-width:100% !important;
         margin-bottom: 10px !important;
     }
-
     #color-4 {
         margin-top:-2px;
     }
@@ -906,52 +864,38 @@ tr:hover td{
         margin-bottom: 20px !important;
     }
     .buttn {
-        /* border: 1px solid red; */
-      margin: 0 auto;
+        margin: 0 auto;
     }
-
     .maindiv .mainheading h1{
         font-size: 32px;
       
-    }   
-    .circle {     
-        /* transform: translate(148px,-110px); */
-    }
-      
+    }        
 }
+
 @media only screen and (max-width: 412px)
 {
     .vaccineslots{
-        /* border: 2px solid green; */
         width: 280px;
         margin: 0 auto;
         padding: 10px;
     }
     .vaccineslots input{
-        /* border: 1px solid blue; */
         margin-left: 0px;
         margin-bottom: 12px;
         width:100%;
-        /* padding: 8px; */
-        /* margin-bottom: 12px; */
-        /* font-size: 14px; */
     }
-    
     .vaccineslots button{
-      margin: 0 auto;
-      margin-left: 0px;
-      margin-top: 12px;
+        margin: 0 auto;
+        margin-left: 0px;
+        margin-top: 12px;
       }
     
       .heading {
-          width: 280px;
-          margin-top: 0px;
+        width: 280px;
+        margin-top: 0px;
       }
       .heading h2{
-      font-size: 16px;
-      }
-      .circle {     
-          /* transform: translate(130px,-110px); */
+        font-size: 16px;    
       }
 }
 
@@ -965,13 +909,9 @@ tr:hover td{
     }
     .vaccineslots input{
         margin: 0 auto;
-        /* border: 1px solid blue; */
         margin-left: 0px;
         margin-bottom: 12px;
         width:100%;
-        /* padding: 8px; */
-        /* margin-bottom: 12px; */
-        /* font-size: 14px; */
     }
     .vaccineslots button {
         margin: 0 auto;
@@ -984,16 +924,10 @@ tr:hover td{
     }
     .heading h2{
       font-size: 16px;
-      
     }
-  
     .maindiv {
         width: 95%;
-    }
-    .circle {     
-      /* transform: translate(125px,-110px); */
-  }
-   
+    }  
     .mainheading h1{
         font-size:28px !important;
     }
@@ -1002,8 +936,6 @@ tr:hover td{
 
 @media only screen and (max-width: 361px) {
     .navbar .page-title{
-        /* border: 2px solid red; */
-        /* float: left; */
         padding-top: 8px;
         align-items: center;
         width: 100%;
@@ -1014,16 +946,14 @@ tr:hover td{
         width: 100%;
     }
     #date-time-clock {
-        /* margin-top: 5px; */
         text-align: center;
-        /* border:2px solid blue; */
         width: 100%;
         height: 20px;
     }
     .swiper-container {
         width: 300px;
         height: 300px;
-      }
+    }
    
  .mychart {
         width:300px;
@@ -1036,9 +966,6 @@ tr:hover td{
         max-width: 350px;
         margin-bottom: 10px !important;
     }
-    /* .col-lg-12 {
-        padding: 8px;
-    } */
 
 }
 

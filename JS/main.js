@@ -14,12 +14,12 @@ async function getcovidapiIn(){
     const jsdata = await jsondata.json();
     const vaccinedata = Object.keys(jsdata.tested).length;
     const vaccinedatafinal = jsdata.tested[vaccinedata-1];
+    console.log(jsdata.tested)
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     const finaldata = jsdata.statewise[0];
-    // console.log(vaccinedatafinal);
-  
+    // console.log(vaccinedatafinal);  
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');
     yesterdaydate.innerText = `${yesterdayupdate.date}`;
@@ -44,20 +44,29 @@ async function getcovidapiIn(){
     {
         deltavaccine='0';
     }
-
     let todaysvac = document.querySelector('#deltavac');
     todaysvac.innerText = `${deltavaccine.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
+    if(deltavaccine=='0')
+    {
+        // console.log();
+        
+    let vaccinedose = document.querySelector('#vaccine-dose');
+    vaccinedose.innerText = `${(jsdata.tested[vaccinedata-2].totaldosesadministered).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+  
+    }
+    else{
+        let vaccinedose = document.querySelector('#vaccine-dose');
+        vaccinedose.innerText = `${(vaccinedatafinal.totaldosesadministered).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    }
+
    // yesterday's log
+
 
 //    vaccine 
 
-
-
-
-    let vaccinedose = document.querySelector('#vaccine-dose');
-    vaccinedose.innerText = `${(vaccinedatafinal.totaldosesadministered).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 //      vaccine
+
     let city = document.querySelector('#active-cases');
     city.innerText = `${finaldata.active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 

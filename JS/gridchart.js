@@ -12,8 +12,9 @@ async function getcovidapiInf(){
     const table2 = document.getElementById('tableid');
     var i=0;
     for(i=0;i < lengthofdata; i++){
-      // dataforchart[0].deltaconfirmed=='0'
-        if(dataj[dataforchart[i].statecode].delta!=null)
+      
+      // dataj[dataforchart[i].statecode].delta!=null
+        if(dataforchart[0].deltaconfirmed=='0')
         {
           if(dataj[dataforchart[i].statecode].delta.tested==null)
           {

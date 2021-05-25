@@ -14,7 +14,6 @@ async function getcovidapiIn(){
     const jsdata = await jsondata.json();
     const vaccinedata = Object.keys(jsdata.tested).length;
     const vaccinedatafinal = jsdata.tested[vaccinedata-1];
-    console.log(jsdata.tested)
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const onedaybeforevaccine = jsdata.tested[vaccinedata-2];

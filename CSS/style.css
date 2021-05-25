@@ -392,6 +392,7 @@ footer .footer-element p {
   height: 100%;
   font-size: 15px;
   font-weight: 300;
+  float: left;
   color: var(--white-text-light);
 }
 
@@ -401,7 +402,9 @@ footer .footer-element p a {
   cursor: pointer;
 }
 /* //footer */
-
+.icons-set2 {
+  float: right;
+}
 .icons-set2 i {
   /* float: right; */
   padding: 6px;
@@ -695,6 +698,12 @@ tr:hover td {
     margin: 2px;
     position: relative;
   }
+  .icons-set2 {
+    float: none;
+  }
+  footer .footer-element p {
+    float: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -755,6 +764,15 @@ tr:hover td {
   .bg {
       background: none;
   }
+  .icons-set2 {
+    float: none;
+  }
+  .icons-set2 {
+    float: none;
+  }
+  footer .footer-element p {
+    float: none;
+  }
 
 }
 
@@ -771,6 +789,7 @@ tr:hover td {
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 300;
+    float: none;
     color: var(--white-text-light);
   }
   footer .footer-element p a {
@@ -782,7 +801,9 @@ tr:hover td {
     width: 370px;
     height: 300px;
   }
-  /* //footer */
+  .icons-set2 {
+    float: none;
+  }
   .icons-set2 i {
     padding: 2px;
     margin: 4px;
@@ -869,6 +890,12 @@ tr:hover td {
   .heading h2 {
     font-size: 16px;
   }
+  .icons-set2 {
+    float: none;
+  }
+  footer .footer-element p {
+    float: none;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -900,6 +927,12 @@ tr:hover td {
   }
   .mainheading h1 {
     font-size: 28px !important;
+  }
+  .icons-set2 {
+    float: none;
+  }
+  footer .footer-element p {
+    float: none;
   }
 }
 
@@ -933,5 +966,11 @@ tr:hover td {
     min-width: 300px;
     max-width: 350px;
     margin-bottom: 10px !important;
+  }
+  .icons-set2 {
+    float: none;
+  }
+  footer .footer-element p {
+    float: none;
   }
 }

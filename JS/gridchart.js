@@ -6,13 +6,14 @@ async function getcovidapiInf(){
     const jsondata3 = await fetch('https://api.covid19india.org/v4/min/data.min.json');
     const dataj = await jsondata3.json();
     // const statedeltadata = Object.values(dataj);
+    // console.log(dataj)
     dataforchart.splice(31, 1);
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;
     for(i=0;i < lengthofdata; i++){
-    
-        if( dataforchart[0].deltaconfirmed=='0')
+      // dataforchart[0].deltaconfirmed=='0'
+        if(dataj[dataforchart[i].statecode].delta!=null)
         {
           if(dataj[dataforchart[i].statecode].delta.tested==null)
           {

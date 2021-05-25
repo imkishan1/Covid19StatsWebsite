@@ -18,7 +18,7 @@ async function getcovidapiIn(){
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     const finaldata = jsdata.statewise[0];
-    console.log(vaccinedatafinal);
+    // console.log(vaccinedatafinal);
   
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');
@@ -39,7 +39,7 @@ async function getcovidapiIn(){
     let todayvac = parseInt(vaccinedatafinal.totaldosesadministered)
     let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
     let deltavaccine = (todayvac-deltavac).toString();
-    console.log(deltavaccine);
+    // console.log(deltavaccine);
     if(isNaN(deltavaccine))
     {
         deltavaccine='0';

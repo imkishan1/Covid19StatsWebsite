@@ -6,7 +6,6 @@ async function getcovidapiInf(){
     const jsondata3 = await fetch('https://api.covid19india.org/v4/min/data.min.json');
     const dataj = await jsondata3.json();
     // const statedeltadata = Object.values(dataj);
-    // console.log(dataj)
     dataforchart.splice(31, 1);
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
@@ -25,14 +24,20 @@ async function getcovidapiInf(){
            
             dataj[dataforchart[i].statecode].delta.tested="0";
           }
+          if(dataj[dataforchart[i].statecode].delta.confirmed==null)
+          {
+            dataj[dataforchart[i].statecode].delta.confirmed="0";
+          }
+          if(dataj[dataforchart[i].statecode].delta.recovered==null)
+          {
+            dataj[dataforchart[i].statecode].delta.recovered="0";
+          }
           if(dataj[dataforchart[i].statecode].delta.deceased==null)
           {
-            
             dataj[dataforchart[i].statecode].delta.deceased="0";
           }
           if(dataj[dataforchart[i].statecode].delta.vaccinated==null)
           {
-            
             dataj[dataforchart[i].statecode].delta.vaccinated="0";
           }
         

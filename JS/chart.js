@@ -123,23 +123,7 @@ var datavaccine;
                 
                 ],
                 borderWidth: 1
-            },
-            // {
-            //     label: 'Daily Recovered Cases',
-            //     data: dailyrecoverd,
-            //     backgroundColor: [
-            //         // 'rgba(255, 99, 132, 0.2)',
-            //         'rgba(114, 194, 23, 0.2)'
-                   
-            //     ],
-            //     borderColor: [
-            //         // 'rgba(75, 192, 192, 1)',
-            //         'rgba(114, 194, 23, 1)',
-                    
-            //     ],
-            //     borderWidth: 1
-            // }
-        
+            },        
         ]
         },
         options: {
@@ -155,32 +139,17 @@ var datavaccine;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             labels: xaxis,
             datasets: [
             {
                 label: 'Daily Deceased',
                 data: deaths,
                 backgroundColor: [
-                    // 'rgba(255, 99, 132, 0.2)',
-
-                    // 'rgba(255, 7, 58, 0.2)'
-
                     'rgba(108, 117, 125, 0.2)',
                    
                 ],
                 borderColor: [
-                    // 'rgba(255, 99, 132, 1)',
-                    // 'rgba(54, 162, 235, 1)',
-                    // 'rgba(255, 206, 86, 1)',
-
-                    // 'rgba(255, 7, 58,1)',
-
-                    'rgba(108, 117, 125, 1)',
-                    
-                    // 'rgba(75, 192, 192, 1)',
-                    // 'rgba(153, 102, 255, 1)',
-                    // 'rgba(255, 159, 64, 1)'
+                      'rgba(108, 117, 125, 1)',
                 ],
                 borderWidth: 1
             }
@@ -199,7 +168,7 @@ var datavaccine;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+   
             labels: xaxis,
             datasets: [
             {
@@ -211,13 +180,7 @@ var datavaccine;
                    
                 ],
                 borderColor: [
-                    // 'rgba(255, 99, 132, 1)',
-                    // 'rgba(54, 162, 235, 1)',
-                    // 'rgba(255, 206, 86, 1)',
                     'rgba(114, 194, 23, 1)',
-                    // 'rgba(75, 192, 192, 1)',
-                    // 'rgba(153, 102, 255, 1)',
-                    // 'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }
@@ -236,28 +199,16 @@ var datavaccine;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             labels: xaxisdata,
             datasets: [
             {
                 label: 'Vaccine Doses Administered',
                 data: vaccinelast,
                 backgroundColor: [
-                    // 'rgba(255, 99, 132, 0.2)',
-                    'rgba(219, 85, 129,0.2)',
-                    // 'rgba(114, 194, 23, 0.2)'
-                   
+                    'rgba(219, 85, 129,0.2)', 
                 ],
                 borderColor: [
-                    // 'rgba(255, 99, 132, 1)',
-
                     'rgba(219, 85, 129,1)',
-                    // 'rgba(54, 162, 235, 1)',
-                    // 'rgba(255, 206, 86, 1)',
-                    // 'rgba(114, 194, 23, 1)',
-                    // 'rgba(75, 192, 192, 1)',
-                    // 'rgba(153, 102, 255, 1)',
-                    // 'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }
@@ -276,7 +227,6 @@ var datavaccine;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             labels: xaxisdatadate,
             datasets: [
             {
@@ -287,15 +237,7 @@ var datavaccine;
                    
                 ],
                 borderColor: [
-                    // 'rgba(255, 99, 132, 1)',
-
-                    // 'rgba(219, 85, 129,1)',
-                    // 'rgba(54, 162, 235, 1)',
-                    // 'rgba(255, 206, 86, 1)',
-                    // 'rgba(114, 194, 23, 1)',
-                    // 'rgba(75, 192, 192, 1)',
                     'rgba(153, 102, 255, 1)',
-                    // 'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }
@@ -315,7 +257,6 @@ var datavaccine;
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
             labels: xaxisdatadate,
             datasets: [
             {
@@ -326,15 +267,7 @@ var datavaccine;
                    
                 ],
                 borderColor: [
-                    // 'rgba(255, 99, 132, 1)',
-
-                    // 'rgba(219, 85, 129,1)',
-                    // 'rgba(54, 162, 235, 1)',
-                    // 'rgba(255, 206, 86, 1)',
-                    // 'rgba(114, 194, 23, 1)',
-                    // 'rgba(75, 192, 192, 1)',
                     'rgba(0,123,255,1)',
-                    // 'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }

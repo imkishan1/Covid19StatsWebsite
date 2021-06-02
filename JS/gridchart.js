@@ -12,8 +12,8 @@ async function getcovidapiInf(){
     var i=0;
     for(i=0;i < lengthofdata; i++){
       
-      
-        if(dataforchart[0].deltaconfirmed=='0')
+      // dataforchart[i].delta!=null
+        if(dataj[dataforchart[i].statecode].delta!=null)
         {
           if(dataj[dataforchart[i].statecode].delta==null)
           {

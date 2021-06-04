@@ -864,6 +864,9 @@ tr:hover td {
   .maindiv .mainheading h1 {
     font-size: 32px;
   }
+  .maindiv {
+    width: 95%;
+  }
 }
 
 @media only screen and (max-width: 412px) {
@@ -889,6 +892,9 @@ tr:hover td {
   }
   .heading h2 {
     font-size: 16px;
+  }
+  .maindiv {
+    width: 95%;
   }
   .icons-set2 {
     float: none;

@@ -20,7 +20,8 @@ async function getcovidapiIn(){
     const finaldata = jsdata.statewise[0];
     // console.log(vaccinedatafinal);  
     // console.log(onedaybeforevaccine)
-    // console.log(jsdata.tested)
+    // console.log(jsdata.cases_time_series)
+    // console.log(yesterdayupdate)
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');
     yesterdaydate.innerText = `${yesterdayupdate.date}`;

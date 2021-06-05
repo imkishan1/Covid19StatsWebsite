@@ -12,7 +12,7 @@
   --white-text-grey: rgba(177, 177, 177, 0.116);
   /* --recovered:#28A745;; */
   --active: #007bff;
-  --newcases: #d63152;
+  /* --newcases: #d63152; */
   --totalcases: #883ed5;
   --vaccine: rgb(216, 48, 102);
   --vaccine-dark: rgb(185, 40, 86, 1);
@@ -22,6 +22,7 @@
   --tested: rgba(153, 102, 255, 1);
   /* --deceased:#ff073a; */
   --deceased: rgba(108, 117, 125, 1);
+  --newcases: #ff073a;
 }
 
 html {

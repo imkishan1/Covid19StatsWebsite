@@ -28,7 +28,9 @@ html {
   scroll-behavior: smooth;
   -webkit-user-select: none;
 }
-
+::-webkit-scrollbar-button{
+  width: 10px;
+}
 ::-webkit-scrollbar {
   width: 10px;
   background: transparent;
@@ -42,6 +44,7 @@ html {
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
     inset -2px -2px -2px rgba(0, 0, 0, 0.25);
 }
+
 body {
   padding: 0;
   margin: 0;

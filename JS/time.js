@@ -42,6 +42,7 @@ function currentTime(){
     else {
       hour = hour;
       am = 'pm'
+      min = "0"+min;
     }
   }
   }

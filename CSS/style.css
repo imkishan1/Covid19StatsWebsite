@@ -121,7 +121,7 @@ nav {
 }
 .clock {
   font-size: 20px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-weight: 400;
   color: rgb(207, 207, 207,0.4);
 }

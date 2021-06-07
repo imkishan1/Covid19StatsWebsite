@@ -9,7 +9,6 @@ async function getcovidapiInf(){
     dataforchart.splice(31, 1);
     // console.log(dataforchart)
     // console.log(dataj)
-    console.log("Counted refresh")
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;

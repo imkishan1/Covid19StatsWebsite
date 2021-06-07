@@ -81,6 +81,7 @@ async function getcovidapiInf(){
             table2.innerHTML += row;
         }
     }
+    var z = setTimeout(function(){ getcovidapiInf() }, 60000); 
   }
 getcovidapiInf();
 

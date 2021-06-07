@@ -18,25 +18,43 @@ function currentTime(){
   // hour = updateTime(hour);
   // min = updateTime(min);
   var time = document.getElementById('time');
-  var amom = 'am'
+  var am = 'am'
   // var pm = 'pm'
-  if(hour>12)
+  // hour = 10
+  if(hour>=12)
   {
-    hour = hour-12;
+    if(hour==12)
+    {
+      hour=hour;
+      am = 'pm';
+    }
+    else{
+   hour = hour-12;
     if(hour<10)
     {
       hour = "0"+hour;
       am = 'pm'
       if(min<10){
-        min = "0"+min
+        min = "0"+min;
       }
+
     }
-    else{
-      hour = hour-12;
+    else {
+      hour = hour;
       am = 'pm'
-      if(min<10){
-        min = "0"+min
-      }
+    }
+  }
+  }
+  else{
+    hour = hour;
+    
+    if(hour<10)
+    {
+      hour = "0"+hour;
+      am = 'am'
+    }
+    if(min<10){
+      min = "0"+min;
     }
   }
   var time1 = hour+":"+min+" "+am;

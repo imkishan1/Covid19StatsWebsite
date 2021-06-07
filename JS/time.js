@@ -27,10 +27,16 @@ function currentTime(){
     {
       hour = "0"+hour;
       am = 'PM'
+      if(min<10){
+        min = "0"+min
+      }
     }
     else{
       hour = hour-12;
       am = 'PM'
+      if(min<10){
+        min = "0"+min
+      }
     }
   }
   var time1 = hour+":"+min+" "+am;

@@ -18,7 +18,7 @@ function currentTime(){
   // hour = updateTime(hour);
   // min = updateTime(min);
   var time = document.getElementById('time');
-  var amom = 'AM'
+  var amom = 'am'
   // var pm = 'pm'
   if(hour>12)
   {
@@ -26,14 +26,14 @@ function currentTime(){
     if(hour<10)
     {
       hour = "0"+hour;
-      am = 'PM'
+      am = 'pm'
       if(min<10){
         min = "0"+min
       }
     }
     else{
       hour = hour-12;
-      am = 'PM'
+      am = 'pm'
       if(min<10){
         min = "0"+min
       }

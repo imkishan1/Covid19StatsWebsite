@@ -119,7 +119,12 @@ nav {
   /* color: #05981B; */
   color: #d63152;
 }
-
+.clock {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgb(207, 207, 207,0.4);
+}
 /* //Navbar ended here */
 .headline {
   padding: 30px;
@@ -870,6 +875,10 @@ tr:hover td {
   }
   .maindiv {
     width: 95%;
+  }
+  .clock {
+    margin: 0 auto;
+    width: fit-content;
   }
 }
 

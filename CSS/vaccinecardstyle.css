@@ -124,7 +124,11 @@ ul li {
   /* padding: 10px; */
   border-radius: 3px;
   margin-top: 20px;
-  max-height: fit-content;
+  max-height: 600px;
+  overflow-y: auto;
+}
+.results::-webkit-scrollbar{
+  display: none;
 }
 .result .result-element {
   width: 350px;

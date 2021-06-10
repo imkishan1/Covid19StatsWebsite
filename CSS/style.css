@@ -611,8 +611,8 @@ tr:hover td {
 }
 
 .tablerow th {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
   background-color: var(--background-dark-blue);
   padding: 10px;
   margin: 2px;

@@ -5,3 +5,4 @@ API : https://api.covid19india.org/
 
 Link to site : https://covid19statsindia.netlify.app/
 
+![covid19statsindia netlify app_](https://user-images.githubusercontent.com/56466543/121812965-a5d84f00-cc87-11eb-811a-b37dff326e8c.png)

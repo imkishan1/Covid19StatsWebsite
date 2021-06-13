@@ -651,7 +651,8 @@ tr:hover td {
 }
 
 .recovered {
-  color: var(--recovered);
+  /* color: var(--recovered); */
+  color: #28a745;
 }
 .deaths {
   color: var(--deceased);

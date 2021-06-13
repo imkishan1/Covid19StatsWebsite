@@ -176,11 +176,15 @@ var datavaccine;
                 data: dailyrecoverd,
                 backgroundColor: [
                     // 'rgba(255, 99, 132, 0.2)',
-                    'rgba(114, 194, 23, 0.2)'
+                    // 'rgba(114, 194, 23, 0.2)'
+
+                    'rgba(40, 167, 69, 0.2)'
                    
                 ],
                 borderColor: [
-                    'rgba(114, 194, 23, 1)',
+                    // 'rgba(114, 194, 23, 1)',
+
+                    'rgba(40, 167, 69, 1)',
                 ],
                 borderWidth: 1
             }

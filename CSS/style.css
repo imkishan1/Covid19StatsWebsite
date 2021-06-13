@@ -308,7 +308,9 @@ nav {
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  color: #72c217;
+  /* color: #72c217; */
+  color: #28a745;
+  
   /* color: #28A745;  covid19 org*/
 }
 .card-base .data-1 .recovred-cases p {

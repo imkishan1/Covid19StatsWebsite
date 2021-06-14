@@ -621,6 +621,8 @@ tr:hover td {
   font-weight: 500;
   color: #6c757d;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
 }
 .color {
   background-color: var(--background-dark-blue) !important;
@@ -634,6 +636,8 @@ tr:hover td {
   margin: 2px;
   min-width: 120px;
   max-width: 120px;
+ 
+  /* max-width: min-content; */
   font-weight: 500;
   color: #6c757d;
   border-radius: 3px;
@@ -670,6 +674,8 @@ tr:nth-last-child(odd):hover td {
 .fixedright {
   position: sticky;
   left: 0;
+  display: flex;
+  align-items: center;
 }
 .tests {
   color: var(--tested);

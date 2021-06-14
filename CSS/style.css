@@ -631,7 +631,8 @@ tr:hover td {
 }
 
 .tablerow td {
-  background-color: var(--background-dark-blue2);
+  /* background-color: var(--background-dark-blue2); */
+  background-color:rgba(108,117,125,.06274509803921569);
   padding: 10px;
   margin: 2px;
   min-width: 120px;
@@ -643,7 +644,14 @@ tr:hover td {
 .dataletterspacing {
   letter-spacing: 1.3px;
 }
+/* tr:nth-last-child(odd) td{
+  background-color:#1e1e30;
+}
 
+tr:nth-last-child(odd):hover td {
+  transition: 0.1s ease-in-out;
+  background-color: var(--background-dark-blue);
+} */
 .delta-confirmed {
   /* font-weight: 400; */
   font-size: 12px;

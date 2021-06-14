@@ -618,7 +618,6 @@ tr:hover td {
   margin: 2px;
   min-width: 120px;
   max-width: 120px;
-  min-width: 120px;
   font-weight: 500;
   color: #6c757d;
   border-radius: 3px;
@@ -642,14 +641,14 @@ tr:hover td {
 .dataletterspacing {
   letter-spacing: 1.3px;
 }
-/* tr:nth-last-child(odd) td{
-  background-color:#1e1e30;
+tr:nth-last-child(odd) td{
+  background-color:transparent;
 }
 
 tr:nth-last-child(odd):hover td {
   transition: 0.1s ease-in-out;
   background-color: var(--background-dark-blue);
-} */
+}
 .delta-confirmed {
   /* font-weight: 400; */
   font-size: 12px;

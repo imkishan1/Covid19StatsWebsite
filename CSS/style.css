@@ -24,6 +24,14 @@
   /* --deceased:#ff073a; */
   --deceased: rgba(108, 117, 125, 1);
   --newcases: #ff073a;
+  
+  --newcase-cnf-bg: rgba(214, 49, 82, 0.2);
+  --active-bg: rgba(0, 123, 255, 0.2);
+  --vaccine-bg: rgb(216, 48, 102,0.2);
+  --deceased-bg: rgba(108, 117, 125, 0.2);
+  --tested-bg: rgba(153, 102, 255, 0.2);
+  --recovered-bg: rgba(40, 167, 69, 0.2);
+  
 }
 
 html {
@@ -455,18 +463,9 @@ footer .footer-element p a {
 #margin {
   margin-bottom: 60px;
 }
-.chartjs.conf {
-  /* background-color:rgba(204, 39, 72, 0.11); */
-  background-color: rgba(108, 117, 125, 0.11);
-}
-
-.chartjs.recove {
-  /* background-color: rgba(114, 194, 23, 0.11); */
-  background-color: rgba(108, 117, 125, 0.11);
-}
-
-.chartjs.death-new {
-  background-color: rgba(108, 117, 125, 0.11);
+.death-new {
+  /* background-color: rgba(108, 117, 125, 0.11); */
+  background-color:rgba(108,117,125,.06274509803921569) !important;
 }
 .mychart {
   /* width: 700px; */

@@ -154,6 +154,7 @@ ul li {
   border-radius: 3px;
   font-size: 18px;
   margin-bottom: 10px;
+  /* transition: 0.3s all ease-in-out; */
 }
 
 .results .centernames li .result-element {

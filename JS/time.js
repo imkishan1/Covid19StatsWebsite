@@ -49,12 +49,17 @@ function currentTime(){
   }
   else{
     hour = hour;
-    
+    if(hour==0)
+    {
+      hour = hour+12;
+    }
+    else{
     if(hour<10)
     {
       hour = "0"+hour;
       am = 'am'
     }
+  }
     if(min<10){
       min = "0"+min;
     }

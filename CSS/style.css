@@ -616,8 +616,8 @@ tr:hover td {
   background-color: var(--background-dark-blue);
   padding: 10px;
   margin: 2px;
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 100px;
+  max-width: 100px;
   font-weight: 500;
   color: #6c757d;
   border-radius: 3px;
@@ -634,8 +634,8 @@ tr:hover td {
   background-color:rgba(108,117,125,.06274509803921569);
   padding: 10px;
   margin: 2px;
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 100px;
+  max-width: 100px;
   font-weight: 500;
   color: #6c757d;
   border-radius: 3px;

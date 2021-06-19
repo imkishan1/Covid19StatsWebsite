@@ -907,6 +907,17 @@ tr:nth-last-child(odd):hover td {
     font-size: 18px;
     width: fit-content;
   }
+  .tablerow th {
+    min-width: 105px;
+    max-width: 105px;
+     justify-content: flex-start;
+  }
+  .tablerow td {
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 105px;
+    max-width: 105px;
+  }
 }
 
 @media only screen and (max-width: 412px) {

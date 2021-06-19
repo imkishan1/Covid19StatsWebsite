@@ -690,14 +690,10 @@ tr:nth-last-child(odd):hover td {
 .fixedright {
   position: sticky;
   left: 0;
-  /* display: block !important; */
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  /* display: flex;
-  align-items: flex-end !important;
-  justify-content: flex-start !important; */
 }
 .tests {
   color: var(--tested);

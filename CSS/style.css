@@ -615,7 +615,7 @@ tr:hover td {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
   background-color: var(--background-dark-blue);
   padding: 10px;
-  margin: 2px;
+  margin: 0px 4px 4px 0px;
   min-width: 120px;
   max-width: 120px;
   font-weight: 500;
@@ -633,7 +633,11 @@ tr:hover td {
   /* background-color: var(--background-dark-blue2); */
   background-color:rgba(108,117,125,.06274509803921569);
   padding: 10px;
-  margin: 2px;
+  margin: 0px 4px 4px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   min-width: 120px;
   max-width: 120px;
   font-weight: 500;
@@ -672,8 +676,14 @@ tr:nth-last-child(odd):hover td {
 .fixedright {
   position: sticky;
   left: 0;
-  display: flex;
-  align-items: center;
+  /* display: block !important; */
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  /* display: flex;
+  align-items: flex-end !important;
+  justify-content: flex-start !important; */
 }
 .tests {
   color: var(--tested);

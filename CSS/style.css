@@ -622,6 +622,7 @@ tr:hover td {
   color: #6c757d;
   border-radius: 3px;
   display: flex;
+  text-align: right;
   align-items: center;
   justify-content: flex-end;
 }
@@ -629,7 +630,18 @@ tr:hover td {
   background-color: var(--background-dark-blue) !important;
   font-weight: 500 !important;
 }
-
+.classwidth {
+  min-width: 80px !important;
+}
+.classwidth-population {
+  min-width: 90px !important;
+}
+.classwidth-active {
+  min-width: 85px !important;
+}
+.classwidth-population-vaccine {
+  max-width: 90px !important;
+}
 .tablerow td {
   /* background-color: var(--background-dark-blue2); */
   background-color:rgba(108,117,125,.06274509803921569);
@@ -908,6 +920,7 @@ tr:nth-last-child(odd):hover td {
     width: fit-content;
   }
   .tablerow th {
+    text-align: left;
     min-width: 105px;
     max-width: 105px;
      justify-content: flex-start;

@@ -639,6 +639,7 @@ tr:hover td {
 .classwidth-active {
   min-width: 85px !important;
 }
+
 .classwidth-population-vaccine {
   max-width: 90px !important;
 }

@@ -644,11 +644,11 @@ tr:hover td {
   letter-spacing: 1.3px;
 }
 
-tr:nth-last-child(odd) td{
+tr:nth-last-child(even) td{
   background-color:transparent;
 }
 
-tr:nth-last-child(odd):hover td {
+tr:nth-last-child(even):hover td {
   transition: 0.1s ease-in-out;
   background-color: var(--background-dark-blue);
 }

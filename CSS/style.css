@@ -932,8 +932,8 @@ tr:nth-last-child(odd):hover td {
   }
   .fixedright {
    
-    min-width: 110px !important;
-    max-width: 110px !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
   }
 }
 

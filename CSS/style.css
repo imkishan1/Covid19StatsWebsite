@@ -694,6 +694,8 @@ tr:nth-last-child(odd):hover td {
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
+  min-width: 130px !important;
+  max-width: 130px !important;
 }
 .tests {
   color: var(--tested);
@@ -927,6 +929,11 @@ tr:nth-last-child(odd):hover td {
     align-items: flex-start;
     min-width: 105px;
     max-width: 105px;
+  }
+  .fixedright {
+   
+    min-width: 110px !important;
+    max-width: 110px !important;
   }
 }
 

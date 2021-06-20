@@ -24,16 +24,16 @@ function getstatus()
                 <div id="add" class="hospital-address">
                   ${getdata.centers[i].address}
                   <p>${getdata.centers[i].sessions[0].vaccine}</p>
-                  <div class="free"><h6>${getdata.centers[i].fee_type}</h6> 
+                  <div class="free"><h6><i class="fas fa-rupee-sign"></i> ${getdata.centers[i].fee_type}</h6> 
                   </div>
                 </div>
               </div>
               <div class="slotsavail">
               <div class="circle">
-              <h6>${getdata.centers[i].sessions[0].min_age_limit+'+'}</h6>
+              <h6><i class="bi bi-people-fill"></i> ${getdata.centers[i].sessions[0].min_age_limit+'+'}</h6>
             </div>
                 <h5>Slots Available</h5>
-                <h6 id="slots">${getdata.centers[i].sessions[0].available_capacity}</h6>
+                <h6 id="slots"><i class="fas fa-syringe"></i> ${getdata.centers[i].sessions[0].available_capacity}</h6>
               </div>
             </div>
           </li>

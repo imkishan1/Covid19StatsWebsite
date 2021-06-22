@@ -9,7 +9,7 @@ function getstatus()
         const jsonurl = await fetch(url);
         const getdata = await jsonurl.json();
         const size = Object.keys(getdata.centers).length;
-        
+        // console.log(getdata);
         const cardul = document.getElementById('ulid');
         var text = "Sorry, No Vaccination center is available for booking.";
         if(size!=0)
@@ -18,7 +18,7 @@ function getstatus()
         for(var i =0;i<size;i++)
         {
           var sessions_size = Object.keys(getdata.centers[i].sessions).length;
-          for(var j =0;j<sessions_size;j++){
+          for(var j=0;j<sessions_size;j++){
             var card = `  <li class="centerdetails">
             <div class="result-element">
               <div class="hospitalname">

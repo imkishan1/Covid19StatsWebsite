@@ -17,6 +17,8 @@ function getstatus()
           $('#ulid .centerdetails').empty().append();
         for(var i =0;i<size;i++)
         {
+          var sessions_size = Object.keys(getdata.centers[i].sessions).length;
+          for(var j =0;j<sessions_size;j++){
             var card = `  <li class="centerdetails">
             <div class="result-element">
               <div class="hospitalname">
@@ -41,6 +43,7 @@ function getstatus()
           cardul.innerHTML +=card;
 
         }
+      }
       }
       else{
         $('#ulid .centerdetails').empty().append();

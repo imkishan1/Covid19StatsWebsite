@@ -13,14 +13,18 @@ async function getcovidapiIn(){
     const jsondata = await fetch('https://api.covid19india.org/data.json');
     const jsdata = await jsondata.json();
     const vaccinedata = Object.keys(jsdata.tested).length;
-    const vaccinedatafinal = jsdata.tested[vaccinedata-1];
+    var vaccinedatafinal = jsdata.tested[vaccinedata-1];
+    if(vaccinedatafinal.totaldosesadministered=='')
+    {
+         vaccinedatafinal = jsdata.tested[vaccinedata-2];
+    }
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
-    const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
+    const onedaybeforevaccine = jsdata.tested[vaccinedata-3];
     const finaldata = jsdata.statewise[0];
-    // console.log(vaccinedatafinal);  
-    // console.log(onedaybeforevaccine)
-    // console.log(jsdata.cases_time_series)
+    console.log(vaccinedatafinal);  
+    console.log(onedaybeforevaccine)
+    console.log(jsdata.tested)
     // console.log(yesterdayupdate)
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');

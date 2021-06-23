@@ -1,13 +1,3 @@
-
-// $(window).scroll(function(){
-//     if($(window).scrollTop()){
-//         $("nav").addClass("black");
-//     }
-//     else{
-//         $("nav").removeClass("black");
-//     }
-// })
-
 async function getcovidapiIn(){
 
     const jsondata = await fetch('https://api.covid19india.org/data.json');
@@ -22,10 +12,7 @@ async function getcovidapiIn(){
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const onedaybeforevaccine = jsdata.tested[vaccinedata-3];
     const finaldata = jsdata.statewise[0];
-    console.log(vaccinedatafinal);  
-    console.log(onedaybeforevaccine)
-    console.log(jsdata.tested)
-    // console.log(yesterdayupdate)
+
     // yesterday's log
     let yesterdaydate = document.querySelector('#yesterday-date');
     yesterdaydate.innerText = `${yesterdayupdate.date}`;
@@ -54,12 +41,9 @@ async function getcovidapiIn(){
     todaysvac.innerText = `${deltavaccine.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     if(deltavaccine=='0')
-    {
-        // console.log();
-        
+    {        
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${(jsdata.tested[vaccinedata-2].totaldosesadministered).replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-  
     }
     else{
         let vaccinedose = document.querySelector('#vaccine-dose');
@@ -67,11 +51,6 @@ async function getcovidapiIn(){
     }
 
    // yesterday's log
-
-
-//    vaccine 
-
-//      vaccine
 
     let city = document.querySelector('#active-cases');
     city.innerText = `${finaldata.active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
@@ -103,3 +82,17 @@ getcovidapiIn();
 
 
 
+
+// $(window).scroll(function(){
+//     if($(window).scrollTop()){
+//         $("nav").addClass("black");
+//     }
+//     else{
+//         $("nav").removeClass("black");
+//     }
+// })
+
+    // console.log(vaccinedatafinal);  
+    // console.log(onedaybeforevaccine)
+    // console.log(jsdata.tested)
+    // console.log(yesterdayupdate)

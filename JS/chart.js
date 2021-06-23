@@ -88,12 +88,24 @@ var datavaccine;
 
     for(var i=(testedlen-365);i<testedlen;i++)
     {
-        datavaccine = graphdata.tested[i].totaldosesadministered-graphdata.tested[i-1].totaldosesadministered;
-        updatetime = graphdata.tested[i-1].updatetimestamp;
-        var vals2 = updatetime.split('/');
-        updatetime = vals2[0]+'-'+vals2[1];
-        xaxisdata.push(updatetime);
-        vaccinelast.push(datavaccine);
+        if(graphdata.tested[i].totaldosesadministered=='')
+        {
+            datavaccine = graphdata.tested[i-1].totaldosesadministered-graphdata.tested[i-2].totaldosesadministered;
+            updatetime = graphdata.tested[i-2].updatetimestamp;
+            var vals2 = updatetime.split('/');
+            updatetime = vals2[0]+'-'+vals2[1];
+            xaxisdata.push(updatetime);
+            vaccinelast.push(datavaccine);
+        }
+        else {
+            datavaccine = graphdata.tested[i].totaldosesadministered-graphdata.tested[i-1].totaldosesadministered;
+            updatetime = graphdata.tested[i-1].updatetimestamp;
+            var vals2 = updatetime.split('/');
+            updatetime = vals2[0]+'-'+vals2[1];
+            xaxisdata.push(updatetime);
+            vaccinelast.push(datavaccine);
+        }
+     
         
     }
 

@@ -4,13 +4,15 @@ async function getcovidapiIn(){
     const jsdata = await jsondata.json();
     const vaccinedata = Object.keys(jsdata.tested).length;
     var vaccinedatafinal = jsdata.tested[vaccinedata-1];
+    const onedaybeforevaccine = jsdata.tested[vaccinedata-2];
     if(vaccinedatafinal.totaldosesadministered=='')
     {
          vaccinedatafinal = jsdata.tested[vaccinedata-2];
+         onedaybeforevaccine = jsdata.tested[vaccinedata-3];
     }
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
-    const onedaybeforevaccine = jsdata.tested[vaccinedata-3];
+  
     const finaldata = jsdata.statewise[0];
 
     // yesterday's log

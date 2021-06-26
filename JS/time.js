@@ -27,6 +27,9 @@ function currentTime(){
     {
       hour=hour;
       am = 'pm';
+      if(min<10){
+        min = "0"+min;
+      }
     }
     else{
    hour = hour-12;

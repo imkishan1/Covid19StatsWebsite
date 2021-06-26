@@ -12,7 +12,6 @@ async function getcovidapiIn(){
     }
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
-  
     const finaldata = jsdata.statewise[0];
 
     // yesterday's log

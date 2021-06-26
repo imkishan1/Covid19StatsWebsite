@@ -922,11 +922,13 @@ tr:nth-last-child(odd):hover td {
     text-align: left;
     min-width: 105px;
     max-width: 105px;
-     justify-content: flex-start;
+    justify-content: flex-start;
   }
   .tablerow td {
-    justify-content: flex-start;
-    align-items: flex-start;
+   
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    align-items:flex-start;
     min-width: 105px;
     max-width: 105px;
   }

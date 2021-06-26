@@ -646,7 +646,7 @@ tr:hover td {
 .tablerow td {
   /* background-color: var(--background-dark-blue2); */
   background-color:rgba(108,117,125,.06274509803921569);
-  padding: 10px;
+  padding: 7px;
   margin: 0px 4px 4px 0px;
   display: flex;
   flex-direction: column;

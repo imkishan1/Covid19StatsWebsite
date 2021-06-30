@@ -15,25 +15,27 @@ async function getcovidapiIn(){
     const finaldata = jsdata.statewise[0];
 
     // yesterday's log
-    let yesterdaydate = document.querySelector('#yesterday-date');
-    yesterdaydate.innerText = `${yesterdayupdate.date}`;
 
-    let dailycnf = document.querySelector('#daily-conf');
-    dailycnf.innerText = `${yesterdayupdate.dailyconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let yesterdaydate = document.querySelector('#yesterday-date');
+    // yesterdaydate.innerText = `${yesterdayupdate.date}`;
 
-    let dailyrec = document.querySelector('#daily-rec');
-    dailyrec.innerText = `${yesterdayupdate.dailyrecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let dailycnf = document.querySelector('#daily-conf');
+    // dailycnf.innerText = `${yesterdayupdate.dailyconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    let dailydeath = document.querySelector('#daily-death');
-    dailydeath.innerText = `${yesterdayupdate.dailydeceased.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let dailyrec = document.querySelector('#daily-rec');
+    // dailyrec.innerText = `${yesterdayupdate.dailyrecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    let dailyupdatedon = document.querySelector('#date-time-last');
-    dailyupdatedon.innerText = `${yesterdayupdate.dateymd}`;
+    // let dailydeath = document.querySelector('#daily-death');
+    // dailydeath.innerText = `${yesterdayupdate.dailydeceased.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+
+    // let dailyupdatedon = document.querySelector('#date-time-last');
+    // dailyupdatedon.innerText = `${yesterdayupdate.dateymd}`;
 
     let todayvac = parseInt(vaccinedatafinal.totaldosesadministered)
     let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
     let deltavaccine = (todayvac-deltavac).toString();
-    // console.log(deltavaccine);
+
+    console.log(deltavaccine);
     if(isNaN(deltavaccine))
     {
         deltavaccine='0';
@@ -66,7 +68,7 @@ async function getcovidapiIn(){
     totaldeath.innerText = `${finaldata.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     const newconfirm= document.querySelector('#new-confirm');
-    newconfirm.innerText = `${finaldata.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    newconfirm.innerText = `+${finaldata.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     const newrecovered= document.querySelector('#deltarec');
     newrecovered.innerText = `+${finaldata.deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;

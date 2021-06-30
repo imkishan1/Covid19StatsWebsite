@@ -162,8 +162,11 @@ nav {
 
 /* Card-base */
 .card-rectangle {
-  max-width: 350px;
-  height: 40px;
+  width: 400px;
+  max-width: fit-content !important;
+  /* width: 100%; */
+  min-height: 40px;
+  height: fit-content;
   outline: none;
   border-radius: 6px;
   padding: 10px;
@@ -176,7 +179,8 @@ nav {
 }
 .card-rectangle.size {
   /* border-radius: 5px; */
-  max-width: 350px;
+  /* max-width: 350px; */
+  width: 100% !important;
   margin-bottom: 20px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -205,6 +209,7 @@ nav {
   font-size: 14px;
   padding: 0px;
   text-align: center;
+  margin-bottom: 0px;
   color: rgb(219, 85, 129);
 }
 
@@ -681,7 +686,7 @@ tr:nth-last-child(odd):hover td {
 
 .recovered {
   /* color: var(--recovered); */
-  color: #28a745;
+  color: #28a745 !important;
 }
 .deaths {
   color: var(--deceased);
@@ -860,12 +865,13 @@ tr:nth-last-child(odd):hover td {
   }
   .card-rectangle {
     max-width: 100%;
+    width: 100%;
   }
   .card-rectangle .rec-elements p {
     font-size: 13px;
   }
   .card-rectangle.size {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .card-rectangle.size .rec-elements .verified-source {
     font-size: 14px;

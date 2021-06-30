@@ -1,4 +1,4 @@
-.total-cases{
+.total-cases-2{
     height: 120px;
     display: flex;
     justify-content: space-between;
@@ -7,67 +7,98 @@
     /* border: 1px solid red; */
     color: #6c757d;
 }
-.border{
-    margin: 0 !important;  
-    padding: 0 !important; 
-    width: 150px !important;
-}
 
-.total-cases h3 {
+
+.total-cases-2 h3 {
     font-size: 18px;
     /* border: 1px solid green; */
     color: #6c757d;
 }
 .margin-bottom {
     /* border: 1px solid gold; */
-    margin-bottom: 60px !important;
+    margin-bottom: 40px !important;
 }
-.total-cases p {
-    font-size: 24px;
+.total-cases-2 p {
+    font-size: 20px;
+   
+    letter-spacing: 1.2px;
 }
 .fs-18 {
     /* border: 1px solid gold; */
-    margin-top: 20px !important;
-    margin-bottom: 5px !important;
-    font-size: 18px !important;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+    font-size: 16px !important;
 }
-
+.main-bg .container .row .col-md-4{
+   
+    width: 25% !important;
+}
 .col-sm-6 {
     margin: 0px !important;
 }
-
+.notice {
+    font-size: 12px;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    font-weight: 400;
+    color: #6c757da1;
+    margin-top: 30px;
+}
 .main-bg{
     /* border: 1px solid red; */
     margin: 80px 0;
 }
 
 @media only screen and (max-width: 990px){
+    .main-bg .container .row {
+        padding: 2px;
+        /* margin: 0 auto; */
+        /* margin-right: 0px; */
+    }
    .main-bg .container .row .col-md-4{
         margin: 0px !important;
-        padding: 0px !important;
-        flex: 0 0 24.333333% !important;
-        max-width: 24.333333% !important;
-        /* max-width: 24% !important% */
+        padding: 2px !important;
+
+        /* flex: 0 0 24.333333% !important; */
+        /* max-width: 24.333333% !important; */
+        width: 25% !important;
     }
 } 
 
 @media only screen and (max-width: 700px){
-    .total-cases p {
+    .total-cases-2 p {
         font-size: 18px;
     }
-    .total-cases h3 {
+    .fs-18 {
+        font-size: 16px !important;
+    }
+    .total-cases-2 h3 {
         font-size: 14px;
         /* border: 1px solid green; */
         color: #6c757d;
     }
+    .notice {
+        margin-top: 0px !important;
+    }
+    .main-bg{
+        /* border: 1px solid red; */
+        margin: 20px 0;
+    }
 } 
 @media only screen and (max-width: 440px){
-    .total-cases p {
-        font-size: 16px;
+    .total-cases-2 p {
+        font-size: 14px;
     }
-    .total-cases h3 {
-        font-size: 12px;
+    .fs-18 {
+        font-size: 12px !important;
+    }
+    .total-cases-2 h3 {
+        font-size: 12px !important;
         /* border: 1px solid green; */
         color: #6c757d;
+    }
+    .total-cases-2{
+        justify-content: space-evenly;
     }
 } 

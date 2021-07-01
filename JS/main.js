@@ -55,26 +55,26 @@ async function getcovidapiIn(){
 
    // yesterday's log
 
-    let city = document.querySelector('#active-cases');
-    city.innerText = `${finaldata.active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let city = document.querySelector('#active-cases');
+    // city.innerText = `${finaldata.active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    const totalcase = document.querySelector('#total-cases');
-    totalcase.innerText = `${finaldata.confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // const totalcase = document.querySelector('#total-cases');
+    // totalcase.innerText = `${finaldata.confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    const totarecoverd = document.querySelector('#recovered');
-    totarecoverd.innerText = `${finaldata.recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // const totarecoverd = document.querySelector('#recovered');
+    // totarecoverd.innerText = `${finaldata.recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    const totaldeath = document.querySelector('#death');
-    totaldeath.innerText = `${finaldata.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // const totaldeath = document.querySelector('#death');
+    // totaldeath.innerText = `${finaldata.deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    const newconfirm= document.querySelector('#new-confirm');
-    newconfirm.innerText = `+${finaldata.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // const newconfirm= document.querySelector('#new-confirm');
+    // newconfirm.innerText = `+${finaldata.deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    const newrecovered= document.querySelector('#deltarec');
-    newrecovered.innerText = `+${finaldata.deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // const newrecovered= document.querySelector('#deltarec');
+    // newrecovered.innerText = `+${finaldata.deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
     
-    const newdeath= document.querySelector('#delta-death');
-    newdeath.innerText = `+${finaldata.deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // const newdeath= document.querySelector('#delta-death');
+    // newdeath.innerText = `+${finaldata.deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     const lastupdate= document.querySelector('#date-time');
     lastupdate.innerText = `${finaldata.lastupdatedtime}`;

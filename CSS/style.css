@@ -1055,4 +1055,7 @@ tr:nth-last-child(odd):hover td {
   footer .footer-element p {
     float: none;
   }
+  .rec-elements .text-small{
+    /* font-size: 11px !important; */
+  }
 }

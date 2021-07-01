@@ -70,7 +70,7 @@ async function getcovidapiIn(){
     {
       
         var finaltimeupdatemin = min-updatemin[1];
-        lastupdate.innerText = `Last Updated ${finaltimeupdatemin} mins ago.`;
+        lastupdate.innerText = `Last updated ${finaltimeupdatemin} mins ago.`;
     }
     else{
 
@@ -79,12 +79,12 @@ async function getcovidapiIn(){
             finaltimeupdatemin= -(finaltimeupdatemin);
         }
         if(finaltimeupdate==1){
-            lastupdate.innerText = `Last Updated ${finaltimeupdate} hr ago.`;
+            lastupdate.innerText = `Last updated ${finaltimeupdate} hr ago.`;
             
         }
         else{
 
-            lastupdate.innerText = `Last Updated ${finaltimeupdate} hrs ago.`;
+            lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
         }
         // console.log(finaltimeupdate);
     }

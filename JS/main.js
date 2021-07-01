@@ -42,7 +42,7 @@ async function getcovidapiIn(){
     var min = date.getMinutes();
     var timenow= hour;
     var updatedtimenew = finaldata.lastupdatedtime.split(' ');
-    console.log(finaldata.lastupdatedtime);
+    // console.log(finaldata.lastupdatedtime);
     var updatemin = updatedtimenew[1].split(':')
     var dateupdatedon = updatedtimenew[0].split('/');
     // console.log(updatemin[1]);

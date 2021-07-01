@@ -78,6 +78,35 @@ async function getcovidapiIn(){
 
     const lastupdate= document.querySelector('#date-time');
     lastupdate.innerText = `${finaldata.lastupdatedtime}`;
+    console.log(finaldata.lastupdatedtime);
+
+    var  date  =  new Date();
+    var datetoday = date.getDate();
+    var hour  = date.getHours();
+    var min = date.getMinutes();
+    var timenow= hour;
+    var updatedtimenew = finaldata.lastupdatedtime.split(' ');
+    var updatemin = updatedtimenew[1].split(':')
+    var dateupdatedon = updatedtimenew[0].split('/');
+    var updatehour = updatemin[0];
+    if(datetoday==dateupdatedon[0])
+    {
+        var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+    }
+    else {
+
+        if(hour==0)
+        {
+            timenow=24;
+        }
+        var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+    
+        if(finaltimeupdate<0)
+        {
+            finaltimeupdate = -(finaltimeupdate);
+        }
+    }
+    console.log(finaltimeupdate);
 
 }
 

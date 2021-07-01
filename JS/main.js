@@ -14,7 +14,6 @@ async function getcovidapiIn(){
     let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
     let deltavaccine = (todayvac-deltavac).toString();
 
-    // console.log(deltavaccine);
     if(isNaN(deltavaccine))
     {
         deltavaccine='0';
@@ -45,6 +44,8 @@ async function getcovidapiIn(){
     var updatedtimenew = finaldata.lastupdatedtime.split(' ');
     var updatemin = updatedtimenew[1].split(':')
     var dateupdatedon = updatedtimenew[0].split('/');
+    // console.log(updatemin[1]);
+    // console.log(min)
     var updatehour = updatemin[0];
     if(datetoday==dateupdatedon[0])
     {
@@ -63,8 +64,14 @@ async function getcovidapiIn(){
             finaltimeupdate = -(finaltimeupdate);
         }
     }
+    
+    lastupdate.innerText = `Last Updated ${finaltimeupdate} hrs ago.`;
+    if(finaltimeupdate==0)
+    {
+        finaltimeupdate = min-updatemin[1];
+        lastupdate.innerText = `Last Updated ${finaltimeupdate} mins ago.`;
+    }
     // console.log(finaltimeupdate);
-    lastupdate.innerText = `${finaltimeupdate}`;
 
 }
 

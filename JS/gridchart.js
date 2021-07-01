@@ -37,7 +37,7 @@ async function getcovidapiInf(){
     newrecovered.innerText = `+${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}`;
     
     const newdeath= document.querySelector('#delta-death');
-    newdeath.innerText = `+${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}`;
+    newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
 
       }
         if(dataj[dataforchart[i].statecode].delta!=null)

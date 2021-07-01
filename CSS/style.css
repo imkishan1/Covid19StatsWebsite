@@ -666,7 +666,9 @@ tr:hover td {
 .dataletterspacing {
   letter-spacing: 1.3px;
 }
-
+#deltavac {
+  letter-spacing: 1.2px;
+}
 tr:nth-last-child(odd) td{
   background-color:transparent;
 }

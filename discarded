@@ -1,0 +1,190 @@
+   <!-- <div class="col-lg-6 col-sm-6"> -->
+            <!-- Card -->
+            <!-- <div class="card-base content-fit" data-aos="fade-right">
+              <div class="card-elements">
+                <div class="card-heading">
+                  <h2 id="country-name">India</h2>
+                </div>
+                <div class="data-1">
+                  <div class="total-cases">
+                    <h3>Cases</h3>
+                    <p id="total-cases">0</p>
+                  </div>
+                  <div class="active-cases">
+                    <h3>Active</h3>
+                    <p id="active-cases">0</p>
+                  </div>
+                </div>
+                <div class="data-1">
+                  <div class="recovred-cases">
+                    <h3>Recovered</h3>
+                    <span id="deltarec" class="size-delta">+0</span>
+                    <p id="recovered">0</p>
+                  </div>
+                  <div class="death">
+                    <h3>Deceased</h3>
+                    <span id="delta-death" class="size-delta">+0</span>
+                    <p id="death">0</p>
+                  </div>
+                </div>
+                <div class="data-1">
+                  <div class="new-cases">
+                    <h3>New Cases Today</h3>
+                    <p>
+                      <span id="new-confirm">0</span>
+                      <i class="fas fa-chart-line"></i>
+                    </p>
+                  </div>
+                </div>
+                <div class="data-1">
+                  <div class="last-updated-on">
+                    <p>
+                      Last Updated<br />
+                      <span id="date-time">--/--/--</span>
+                    </p>
+                  </div>
+                  <div class="last-updated-on">
+                    <p>Source<br />Covid19india.org</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- Card -->
+          <!-- </div> -->
+
+          <!-- <div class="col-lg-6 col-sm-6">
+            Card
+            <div id="yesterday" class="card-base content-fit" data-aos="fade-left">
+              <div class="card-elements" >
+                <div class="card-heading">
+                  <h2 id="country-name">Yesterday's Stats</h2>
+                </div>
+
+                <div class="data-1">
+                  <div class="new-cases title">
+                    <p><span id="yesterday-date">--</span></p>
+                  </div>
+                </div>
+                <div class="data-1">
+                  <div class="new-cases">
+                    <h3>Confirmed</h3>
+                    <p><span id="daily-conf">0</span></p>
+                  </div>
+                  <div class="vaccine">
+                    <h3>Vaccinated</h3>
+                    <p><span id="deltavac">0</span></p>
+                  </div>
+                </div>
+                <div class="data-1">
+                  <div class="recovred-cases">
+                    <h3>Recovered</h3>
+                    <p id="daily-rec">0</p>
+                  </div>
+                  <div class="death">
+                    <h3>Deceased</h3>
+                    <p id="daily-death">0</p>
+                  </div>
+                </div>
+
+                <div class="data-1">
+                  <div class="last-updated-on">
+                    <p>
+                      Last Updated<br />
+                      <span id="date-time-last">--/--/--</span>
+                    </p>
+                  </div>
+                  <div class="last-updated-on">
+                    <p>Source<br />Covid19india.org</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-lg-12"> -->
+            <!-- <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              class="card-rectangle size"
+            >
+              <div class="rec-elements">
+                <a href="https://life.coronasafe.network/" target="_blank"
+                  ><p class="verified-source">
+                    <i class="far fa-heart"></i> &nbsp;Emergency Resources
+                  </p></a
+                >
+              </div>
+            
+            </div> -->
+            <!-- <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              class="card-rectangle size"
+            >
+              <div class="rec-elements">
+                <a href="#vaccinslot"><p class="verified-source">
+                  <i class="fas fa-syringe"></i> &nbsp;Vaccine Slots Availability
+                  </p></a
+                >
+              </div>
+             -->
+            <!-- </div> -->
+            <!-- <div  class="card-rectangle size">
+            <div class="rec-elements size">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+            </div>
+            </div> -->
+          <!-- </div> -->
+          
+
+          <!-- 
+          <div class="swiper-slide">
+            <div class="sqr-card" data-aos="fade-up">
+              <div class="sqr-ele">
+                <div class="elec-group">
+                  <div class="first-title">
+                    <h4 id="title-crowdsource">Emergency Services</h4>
+                    <h6>Verified<h6> comment this out
+                  </div>
+                  <div class="para">
+                    <p id="crowd-para">
+                      The links are of independent and governmental aggregators
+                      who are providing resources to those in need.
+                    </p>
+                  </div>
+                  <a
+                    href="https://www.covid19india.org/resources"
+                    target="_blank"
+                    >Click Here</a
+                  >
+                </div>
+              </div>
+              <div class="redborder" id="color-4"></div>
+            </div>
+          </div> -->

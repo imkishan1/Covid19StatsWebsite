@@ -872,11 +872,20 @@ tr:nth-last-child(odd):hover td {
   }
   .card-rectangle {
     max-width: 100%;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 40px;
+    min-height: 20px;
+    height: fit-content;
+  }
+  .card-rectangle .rec-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card-rectangle .rec-elements p {
     font-size: 11px;
+    /* line-height: 2px; */
   }
   .card-rectangle.size {
     max-width: 100% !important;

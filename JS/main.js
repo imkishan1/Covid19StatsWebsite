@@ -50,7 +50,10 @@ async function getcovidapiIn(){
     var updatehour = updatemin[0];
     if(datetoday==dateupdatedon[0])
     {
-        var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+  
+            var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+          
+        
     }
     else {
 

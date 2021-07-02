@@ -162,10 +162,15 @@ nav {
 
 /* Card-base */
 .card-rectangle {
-  width: 400px;
+  width: 200px;
+  /* width: 400px; */
   max-width: fit-content !important;
   /* width: 100%; */
-  min-height: 40px;
+  /* min-height: 40px; */
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: fit-content;
   outline: none;
   border-radius: 6px;
@@ -868,9 +873,10 @@ tr:nth-last-child(odd):hover td {
   .card-rectangle {
     max-width: 100%;
     width: 100%;
+    min-height: 40px;
   }
   .card-rectangle .rec-elements p {
-    font-size: 13px;
+    font-size: 11px;
   }
   .card-rectangle.size {
     max-width: 100% !important;

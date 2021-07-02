@@ -65,29 +65,20 @@ async function getcoviddata(){
     var tests=[];
     var xaxisdatadate=[];
     var datetested;
-  
-    for(var j=(testlen-365);j<testlen;j++)
+
+    var vaccinelast=[];
+    var xaxisdata = [];
+    var updatetime;
+    var datavaccine;
+
+    for(var i=(testlen-365);i<testlen;i++)
     {
-        tests.push(graphdata.tested[j].samplereportedtoday);
-        datetested = graphdata.tested[j-1].updatetimestamp;
+        tests.push(graphdata.tested[i].samplereportedtoday);
+        datetested = graphdata.tested[i-1].updatetimestamp;
         var vals3 = datetested.split('/');
         datetested = vals3[0]+'-'+ vals3[1];
         xaxisdatadate.push(datetested);
-    }
-    
 
-    // tests data
-
-// Vaccine data
-// Vaccine data
-
-var vaccinelast=[];
-var xaxisdata = [];
-var updatetime;
-var datavaccine;
-
-    for(var i=(testedlen-365);i<testedlen;i++)
-    {
         if(graphdata.tested[i].totaldosesadministered=='')
         {
             datavaccine = graphdata.tested[i-1].totaldosesadministered-graphdata.tested[i-2].totaldosesadministered;
@@ -106,8 +97,21 @@ var datavaccine;
             vaccinelast.push(datavaccine);
         }
      
-        
     }
+    
+
+    // tests data
+
+// Vaccine data
+// Vaccine data
+
+
+
+    // for(var i=(testedlen-365);i<testedlen;i++)
+    // {
+        
+        
+    // }
 
 // Vaccine data
 // Vaccine data

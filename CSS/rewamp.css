@@ -11,7 +11,7 @@
 
 
 .total-cases-2 h3 {
-    font-size: 18px;
+    font-size: 15px;
     /* border: 1px solid green; */
     color: #6c757d;
 }
@@ -21,7 +21,7 @@
 }
 .total-cases-2 p {
     font-size: 20px;
-   font-weight: 400;
+   font-weight: 500;
     letter-spacing: 1.2px;
 }
 .fs-18 {
@@ -29,6 +29,7 @@
     margin-top: 10px !important;
     margin-bottom: 0px !important;
     font-size: 16px !important;
+    font-weight: 500 !important;
 }
 .main-bg .container .row .col-md-4{
     width: 25% !important;

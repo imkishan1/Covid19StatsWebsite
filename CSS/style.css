@@ -341,7 +341,7 @@ nav {
   font-size: 14px;
   letter-spacing: 1.5px;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.7 !important;
 }
 .card-base .data-1 .death {
   /* border: 2px solid rgb(201, 150, 87); */
@@ -688,9 +688,11 @@ tr:nth-last-child(odd):hover td {
   font-size: 12px;
   letter-spacing: 1.5px;
   text-align: center;
-  color: var(--newcases);
+  color: var(--newcases) !important;
 }
-
+.confirm {
+  color: var(--newcases) !important;
+}
 .recovered {
   /* color: var(--recovered); */
   color: #28a745 !important;
@@ -698,7 +700,9 @@ tr:nth-last-child(odd):hover td {
 .deaths {
   color: var(--deceased);
 }
-
+.active {
+   color: #007bff !important;
+}
 .fixedright {
   position: sticky;
   left: 0;

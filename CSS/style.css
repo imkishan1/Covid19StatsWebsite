@@ -878,7 +878,7 @@ tr:nth-last-child(odd):hover td {
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
     min-height: 20px;
     height: fit-content;
   }

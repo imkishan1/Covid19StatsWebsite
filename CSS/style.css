@@ -688,7 +688,7 @@ tr:nth-last-child(odd):hover td {
   font-size: 12px;
   letter-spacing: 1.5px;
   text-align: center;
-  color: var(--newcases) !important;
+  color: var(--newcases);
 }
 .confirm {
   color: var(--newcases) !important;

@@ -71,7 +71,7 @@ function SetMinDate() {
       month+=1;
     }
     else{
-      day = day+1;
+      day = day;
     }
     month = month.toString();
     day = day.toString();

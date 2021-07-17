@@ -280,7 +280,7 @@ async function getcoviddata(){
             labels: xaxisdatadate,
             datasets: [
             {
-                label: 'Active',
+                label: 'Daily Active',
                 data: dailyactive,
                 backgroundColor: [
                     'rgba(0,123,255,0.2)',

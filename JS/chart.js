@@ -20,7 +20,7 @@ async function getcoviddata(){
     var avgmort;
     var recov=0;
     var avgrecov;
-    for(i=(xlen-365);i<(xlen);i++)
+    for(i=2;i<(xlen);i++)
     {
         
         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed); 
@@ -71,7 +71,7 @@ async function getcoviddata(){
     var updatetime;
     var datavaccine;
 
-    for(var i=(testlen-365);i<testlen;i++)
+    for(var i=2;i<testlen;i++)
     {
         tests.push(graphdata.tested[i].samplereportedtoday);
         datetested = graphdata.tested[i-1].updatetimestamp;

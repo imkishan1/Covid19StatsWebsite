@@ -1,6 +1,6 @@
 
 async function getcoviddata(){
-    const url ='https://api.covid19india.org/data.json';
+    const url ='https://data.covid19india.org/data.json';
     const jsonyeardata = await fetch(url);
     const graphdata = await jsonyeardata.json();
     const testedlen = Object.keys(graphdata.tested).length;

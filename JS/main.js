@@ -1,6 +1,6 @@
 async function getcovidapiIn(){
 
-    const jsondata = await fetch('https://api.covid19india.org/data.json');
+    const jsondata = await fetch('https://data.covid19india.org/data.json');
     const jsdata = await jsondata.json();
     const vaccinedata = Object.keys(jsdata.tested).length;
     var vaccinedatafinal = jsdata.tested[vaccinedata-1];

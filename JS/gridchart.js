@@ -15,7 +15,7 @@ async function getcovidapiInf(){
     const table2 = document.getElementById('tableid');
     var i=0;
     for(i=0;i < lengthofdata; i++){
-      
+    
       if(dataforchart[i].statecode=='TT')
       {
         
@@ -23,13 +23,13 @@ async function getcovidapiInf(){
     city.innerText = `${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     const totalcase = document.querySelector('#total-cases');
-    totalcase.innerText = `${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    totalcase.innerText = `${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}`;
 
     const totarecoverd = document.querySelector('#recovered');
-    totarecoverd.innerText = `${dataforchart[i].recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    totarecoverd.innerText = `${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}`;
 
     const totaldeath = document.querySelector('#death');
-    totaldeath.innerText = `${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    totaldeath.innerText = `${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}`;
       
     const newconfirm= document.querySelector('#new-confirm');
     newconfirm.innerText = `+${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}`;
@@ -42,6 +42,79 @@ async function getcovidapiInf(){
     const newdeath= document.querySelector('#delta-death');
     newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
     // newdeath.innerText =`+${dataforchart[i].deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+
+  
+    
+    // var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
+    var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
+    
+    // let todaysvac = document.querySelector('#deltavac');
+    // todaysvac.innerText = `${totaldeltavcaccinated.toLocaleString('en-IN')}`;
+        
+    let vaccinedose = document.querySelector('#vaccine-dose');
+    vaccinedose.innerText = `${totalvaccinated.toLocaleString('en-IN')}`;
+
+// Last Updated
+
+const lastupdate= document.querySelector('#date-time');
+    var  date  =  new Date();
+    var datetoday = date.getDate();
+    var hour  = date.getHours();
+    var min = date.getMinutes();
+    var timenow= hour;
+    var updatedtimenew = dataj[dataforchart[i].statecode].meta.last_updated.split('T');
+    // console.log(finaldata.lastupdatedtime);
+    var updatemin = updatedtimenew[1].split(':')
+    var dateupdatedon = updatedtimenew[0].split('/');
+    var updatehour = updatemin[0];
+    if(datetoday==dateupdatedon[0])
+    {
+  
+            var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+          
+        
+    }
+    else {
+
+        if(hour==0)
+        {
+            timenow=24;
+        }
+        var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+    
+        if(finaltimeupdate<0)
+        {
+            finaltimeupdate = -(finaltimeupdate);
+        }
+    }
+
+    if(finaltimeupdate==0)
+    {
+      
+        var finaltimeupdatemin = min-updatemin[1];
+        lastupdate.innerText = `Last updated ${finaltimeupdatemin} mins ago.`;
+    }
+    else{
+
+        var finaltimeupdatemin = min-updatemin[1];
+        if(finaltimeupdatemin<0){
+            finaltimeupdatemin= -(finaltimeupdatemin);
+        }
+        if(finaltimeupdate==1){
+            lastupdate.innerText = `Last updated ${finaltimeupdate} hr ago.`;
+            
+        }
+        else{
+
+            lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
+         
+        }
+        // console.log(finaltimeupdate);
+    }
+
+// Last Updated
+
+
 
       }
     
@@ -79,15 +152,16 @@ async function getcovidapiInf(){
           }  // dataforchart[i].delta!=null
 
           var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
-            var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
+          var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
+
           if(dataj[dataforchart[i].statecode].delta.vaccinated1!=0)
           {
             var row = `<tr class="tablerow">
             <td class="fixedright color">${dataforchart[i].state}</td>
             <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}</span>${dataforchart[i].recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}</span>${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+            <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}</span>$${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
+            <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}</span>${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed vaccinated"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.vaccinated1)}</span>${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed vaccinated"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.vaccinated2)}</span>${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated2)}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed vaccinated"><i class="fas fa-arrow-up"></i>${numDifferentiation(totaldeltavcaccinated)}</span>${numDifferentiation(totalvaccinated)}</td>
@@ -102,8 +176,8 @@ async function getcovidapiInf(){
             <td class="fixedright color">${dataforchart[i].state}</td>
             <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}</span>${dataforchart[i].recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}</span>${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+            <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
+            <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}</span>${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing">${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
             <td class="dataletterspacing">${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated2)}</td>
             <td class="dataletterspacing">${numDifferentiation(totalvaccinated)}</td>
@@ -120,8 +194,8 @@ async function getcovidapiInf(){
             <td class="fixedright color">${dataforchart[i].state}</td>
             <td class="dataletterspacing" > ${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-recovered"> ${dataforchart[i].recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-population"> ${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+            <td class="dataletterspacing classwidth-recovered"> ${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
+            <td class="dataletterspacing classwidth-population"> ${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing"> ${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
             <td class="dataletterspacing"> ${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated2)}</td>
             <td class="dataletterspacing">${numDifferentiation(totalvaccinated)}</td>

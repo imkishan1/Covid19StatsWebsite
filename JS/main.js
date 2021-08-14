@@ -9,7 +9,7 @@ async function getcovidapiIn(){
     const size = Object.keys(jsdata.cases_time_series).length;
     const yesterdayupdate = jsdata.cases_time_series[size-1];
     const finaldata = jsdata.statewise[0];
-
+    // console.log(jsdata)
     let todayvac = parseInt(vaccinedatafinal.totaldosesadministered)
     let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
     let deltavaccine = (todayvac-deltavac).toString();
@@ -87,7 +87,8 @@ async function getcovidapiIn(){
         }
         else{
 
-            lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
+            // lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
+            lastupdate.innerText = `Last updated on 11th August.`;
         }
         // console.log(finaltimeupdate);
     }

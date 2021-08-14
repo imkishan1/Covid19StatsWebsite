@@ -1,14 +1,16 @@
 async function getcovidapiInf(){
 
     const jsondata2 = await fetch('https://api.covid19india.org/data.json');
+    // const jsondata2 = await fetch('https://api.rootnet.in');
     const jsdata2 = await jsondata2.json();
     const dataforchart = jsdata2.statewise;
     const jsondata3 = await fetch('https://api.covid19india.org/v4/min/data.min.json');
     const dataj = await jsondata3.json();
     // const statedeltadata = Object.values(dataj);
+    // console.log(jsdata2)
     dataforchart.splice(31, 1);
-    console.log(dataforchart)
-    console.log(dataj)
+    // console.log(dataforchart)
+    // console.log(dataj)
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;
@@ -28,8 +30,18 @@ async function getcovidapiInf(){
 
     const totaldeath = document.querySelector('#death');
     totaldeath.innerText = `${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+      
+    const newconfirm= document.querySelector('#new-confirm');
+    // newconfirm.innerText = `+${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}`;
+    newconfirm.innerText = `+${dataforchart[i].deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-   
+    const newrecovered= document.querySelector('#deltarec');
+    // newrecovered.innerText = `+${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}`;
+    newrecovered.innerText = `+${dataforchart[i].deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    
+    const newdeath= document.querySelector('#delta-death');
+    // newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
+    newdeath.innerText =`+${dataforchart[i].deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
       }
     
@@ -65,32 +77,8 @@ async function getcovidapiInf(){
           {
             dataj[dataforchart[i].statecode].delta.vaccinated2=0;
           }  // dataforchart[i].delta!=null
-          if(dataforchart[i].statecode=='TT')
-          {
-            
-        let city = document.querySelector('#active-cases');
-        city.innerText = `${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-    
-        const totalcase = document.querySelector('#total-cases');
-        totalcase.innerText = `${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-    
-        const totarecoverd = document.querySelector('#recovered');
-        totarecoverd.innerText = `${dataforchart[i].recovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-    
-        const totaldeath = document.querySelector('#death');
-        totaldeath.innerText = `${dataforchart[i].deaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-    
-        const newconfirm= document.querySelector('#new-confirm');
-        newconfirm.innerText = `+${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}`;
-    
-        const newrecovered= document.querySelector('#deltarec');
-        newrecovered.innerText = `+${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}`;
-        
-        const newdeath= document.querySelector('#delta-death');
-        newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
-    
-          }
-            var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
+
+          var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
             var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
           if(dataj[dataforchart[i].statecode].delta.vaccinated1!=0)
           {
@@ -154,6 +142,7 @@ async function getcovidapiInf(){
     //     </tr>`
             table2.innerHTML += row;
         }
+        
     }
  
   }

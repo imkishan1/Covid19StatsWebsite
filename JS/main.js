@@ -87,8 +87,8 @@ async function getcovidapiIn(){
         }
         else{
 
-            // lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
-            lastupdate.innerText = `Last updated on 11th August.`;
+            lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
+         
         }
         // console.log(finaltimeupdate);
     }

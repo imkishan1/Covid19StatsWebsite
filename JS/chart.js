@@ -34,9 +34,10 @@ async function getcoviddata(){
         dailyrecoverd.push(graphdata.cases_time_series[i].dailyrecovered); 
         deaths.push(graphdata.cases_time_series[i].dailydeceased);      
         
-            activedata = parseInt(graphdata.cases_time_series[i].dailyconfirmed);
+        activedata = parseInt(graphdata.cases_time_series[i].dailyconfirmed);
+        var deathsdata = parseInt(graphdata.cases_time_series[i].dailydeceased);
         recovery= parseInt(graphdata.cases_time_series[i].dailyrecovered);
-        difference = activedata-recovery;
+        difference = activedata-(recovery+deathsdata);
         dailyactive.push(difference);
     
     }
@@ -98,7 +99,6 @@ async function getcoviddata(){
         }
      
     }
-    
 
     // tests data
 
@@ -277,7 +277,8 @@ async function getcoviddata(){
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: xaxisdatadate,
+            // labels: xaxisdatadate,
+            labels: xaxis,
             datasets: [
             {
                 label: 'Daily Active',

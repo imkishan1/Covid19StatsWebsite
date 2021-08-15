@@ -43,13 +43,28 @@ async function getcovidapiInf(){
     newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
     // newdeath.innerText =`+${dataforchart[i].deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-  
-    
+    const vaccinedata = Object.keys(jsdata2.tested).length;
+    var vaccinedatafinal = jsdata2.tested[vaccinedata-1];
+    const onedaybeforevaccine = jsdata2.tested[vaccinedata-2];
+    let todayvac = parseInt(vaccinedatafinal.totaldosesadministered)
+    let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
+    let deltavaccine = (todayvac-deltavac).toString();
     var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
+    if(isNaN(totaldeltavcaccinated))
+    {
+      let todaysvac = document.querySelector('#deltavac');
+      todaysvac.innerText = `${deltavaccine.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+        // deltavaccine='0';
+    }
+    else{
+      let todaysvac = document.querySelector('#deltavac');
+      todaysvac.innerText = `${totaldeltavcaccinated.toLocaleString('en-IN')}`;
+    }
     var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
     
-    let todaysvac = document.querySelector('#deltavac');
-    todaysvac.innerText = `${totaldeltavcaccinated.toLocaleString('en-IN')}`;
+
+
+
         
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${totalvaccinated.toLocaleString('en-IN')}`;

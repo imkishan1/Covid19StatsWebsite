@@ -73,7 +73,9 @@
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 16px;
 }
-
+.flex-row-dose h6:last-child{
+  margin-right: 0px;
+}
 .flex-row-dose h6{
   font-size: 14px;
   margin-right: 10px;

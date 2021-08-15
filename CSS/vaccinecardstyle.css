@@ -59,6 +59,25 @@
   color: #6c757d;
 }
 
+.flex-row-dose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 0px;
+  background-color:  rgb(216, 48, 102,0.2);
+  padding-top: 5px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.flex-row-dose h6{
+  font-size: 14px;
+  margin-right: 10px;
+  color: rgb(207, 24, 82);
+}
 .vaccineslots input {
   /* border: 1px solid blue; */
   /* margin: 5px; */
@@ -150,7 +169,7 @@ ul li {
   max-width: 300px;
   /* max-height: 120px; */
   max-height: fit-content;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 3px;
   font-size: 18px;
   margin-bottom: 10px;
@@ -161,7 +180,8 @@ ul li {
   display: flex;
   max-height: fit-content;
   align-items: center;
-  /* background-color: #fff; */
+  background-color: #fff;
+  border-radius:4px;
 }
 
 .results .centernames li .result-element .hospitalname {
@@ -201,11 +221,13 @@ ul li {
   font-weight: 500;
 }
 .results .centernames li .result-element .slotsavail {
-  padding: 10px;
+  padding: 5px;
+  background-color: #fff;
+  height: 100%;
 }
 
 .results .centernames li .result-element .slotsavail h5 {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   color: #6c757d;
   margin-bottom: 5px;

@@ -9,7 +9,7 @@ function getstatus()
         const jsonurl = await fetch(url);
         const getdata = await jsonurl.json();
         const size = Object.keys(getdata.centers).length;
-        // console.log(getdata);
+        console.log(getdata);
         const cardul = document.getElementById('ulid');
         var text = "Sorry, No Vaccination center is available for booking.";
         if(size!=0)
@@ -36,8 +36,12 @@ function getstatus()
             </div>
                 <h5>Slots Available</h5>
                 <h6 id="slots"><i class="fas fa-syringe"></i> ${getdata.centers[i].sessions[j].available_capacity}</h6>
-              </div>
-            </div>
+                </div>
+                </div>
+                <div class="flex-row-dose">
+                <h6 id="slots">Dose 1: ${getdata.centers[i].sessions[j].available_capacity_dose1}</h6>
+                <h6 id="slots">Dose 2: ${getdata.centers[i].sessions[j].available_capacity_dose2}</h6>
+                </div>
           </li>
        `
           cardul.innerHTML +=card;

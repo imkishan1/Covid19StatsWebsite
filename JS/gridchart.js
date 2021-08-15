@@ -61,11 +61,7 @@ async function getcovidapiInf(){
       todaysvac.innerText = `${totaldeltavcaccinated.toLocaleString('en-IN')}`;
     }
     var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
-    
-
-
-
-        
+         
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${totalvaccinated.toLocaleString('en-IN')}`;
 

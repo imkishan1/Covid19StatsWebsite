@@ -61,6 +61,35 @@
     margin: 80px 0;
 }
 
+
+.progress-bar-1 {
+    background-color: rgba(219,85,129,.12549019607843137);
+    border-radius: 5px;
+    color: #db5581;
+    height: 24px;
+    margin-bottom: .1rem;
+    margin-top: .1rem;
+    position: relative;
+
+}
+
+.progress-bar-1 .value {
+    background-image: linear-gradient(
+45deg
+,rgba(219,85,129,.6) 25%,rgba(219,85,129,.12549019607843137) 0,rgba(219,85,129,.12549019607843137) 50%,rgba(219,85,129,.6) 0,rgba(219,85,129,.6) 75%,rgba(219,85,129,.12549019607843137) 0,rgba(219,85,129,.12549019607843137));
+    background-size: 14px 14px;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    opacity: .6;
+    position: absolute;
+}
 @media only screen and (max-width: 990px){
     .main-bg .container .row {
         padding: 0px;

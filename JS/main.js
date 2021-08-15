@@ -13,12 +13,12 @@ async function getcovidapiIn(){
     let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
     let deltavaccine = (todayvac-deltavac).toString();
     // console.log(deltavaccine)
-    // if(isNaN(deltavaccine))
-    // {
-    //     deltavaccine='0';
-    // }
-    // let todaysvac = document.querySelector('#deltavac');
-    // todaysvac.innerText = `${deltavaccine.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    if(isNaN(deltavaccine))
+    {
+        deltavaccine='0';
+    }
+    let todaysvac = document.querySelector('#deltavac');
+    todaysvac.innerText = `${deltavaccine.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     // if(deltavaccine=='0')
     // {        

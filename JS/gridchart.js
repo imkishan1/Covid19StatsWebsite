@@ -45,11 +45,11 @@ async function getcovidapiInf(){
 
   
     
-    var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
+    // var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
     var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
     
-    let todaysvac = document.querySelector('#deltavac');
-    todaysvac.innerText = `${totaldeltavcaccinated.toLocaleString('en-IN')}`;
+    // let todaysvac = document.querySelector('#deltavac');
+    // todaysvac.innerText = `${totaldeltavcaccinated.toLocaleString('en-IN')}`;
         
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${totalvaccinated.toLocaleString('en-IN')}`;

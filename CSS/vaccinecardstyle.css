@@ -25,7 +25,7 @@
   margin-bottom: 0px;
   padding: 10%;
   width: 100%;
-  backdrop-filter:blur(1px);
+  /* backdrop-filter:blur(1px); */
   /* border-radius: 3px; */
   /* background-color: rgba(80, 48, 155, 0.13); */
   /* background-color: rgba(155, 48, 123, 0.192); */
@@ -334,6 +334,6 @@ ul li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 0.3s all ease-in-out;
+    /* transition: 0.3s all ease-in-out; */
     /* border: 1px solid red; */
 }

@@ -49,6 +49,7 @@ async function getcovidapiInf(){
     let todayvac = parseInt(vaccinedatafinal.totaldosesadministered)
     let deltavac = parseInt(onedaybeforevaccine.totaldosesadministered);
     let deltavaccine = (todayvac-deltavac).toString();
+    // console.log(deltavaccine)
     var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
     if(isNaN(totaldeltavcaccinated))
     {

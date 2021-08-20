@@ -26,9 +26,9 @@ async function getcoviddata(){
         yaxis.push(graphdata.cases_time_series[i].dailyconfirmed); 
         date = graphdata.cases_time_series[i].dateymd;
         var vals = date.split('-');
-        var year = vals[0];
-        var month = vals[1];
-        var day = vals[2];
+        // var year = vals[0];
+        // var month = vals[1];
+        // var day = vals[2];
         var newdate = vals[2]+'-'+vals[1];
         xaxis.push(newdate);
         dailyrecoverd.push(graphdata.cases_time_series[i].dailyrecovered); 

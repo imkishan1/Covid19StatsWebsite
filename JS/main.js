@@ -35,7 +35,7 @@ async function getcovidapiIn(){
 
 }
 
-getcovidapiIn();
+// getcovidapiIn();
 
 
 

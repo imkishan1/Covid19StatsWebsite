@@ -42,24 +42,24 @@ async function getcoviddata(){
     
     }
 
-    for(i=(xlen-7);i<(xlen);i++)
-    {
-        sum = sum+ parseInt(graphdata.cases_time_series[i].dailyconfirmed);
-        mort = mort + parseInt(graphdata.cases_time_series[i].dailydeceased);
-        recov = recov + parseInt(graphdata.cases_time_series[i].dailyrecovered);
-    }
-    avgrecov = (Math.round(recov/7)).toString();
-    avgmort = Math.round(mort/7).toString();
-    avg = Math.round((sum)/7).toString();
+    // for(i=(xlen-7);i<(xlen);i++)
+    // {
+    //     sum = sum+ parseInt(graphdata.cases_time_series[i].dailyconfirmed);
+    //     mort = mort + parseInt(graphdata.cases_time_series[i].dailydeceased);
+    //     recov = recov + parseInt(graphdata.cases_time_series[i].dailyrecovered);
+    // }
+    // avgrecov = (Math.round(recov/7)).toString();
+    // avgmort = Math.round(mort/7).toString();
+    // avg = Math.round((sum)/7).toString();
   
-    let sevendayavg = document.getElementById('avg');
-    sevendayavg.innerText = `${avg.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let sevendayavg = document.getElementById('avg');
+    // sevendayavg.innerText = `${avg.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    let sevendayavgmort = document.getElementById('mort');
-    sevendayavgmort.innerText = `${avgmort.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let sevendayavgmort = document.getElementById('mort');
+    // sevendayavgmort.innerText = `${avgmort.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
-    let sevendayavgrecov = document.getElementById('recov');
-    sevendayavgrecov.innerText = `${avgrecov.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // let sevendayavgrecov = document.getElementById('recov');
+    // sevendayavgrecov.innerText = `${avgrecov.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
     
 
     // tests data

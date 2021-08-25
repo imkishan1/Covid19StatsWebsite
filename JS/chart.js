@@ -3,7 +3,7 @@ async function getcoviddata(){
     const url ='https://data.covid19india.org/data.json';
     const jsonyeardata = await fetch(url);
     const graphdata = await jsonyeardata.json();
-    const testedlen = Object.keys(graphdata.tested).length;
+    // const testedlen = Object.keys(graphdata.tested).length;
     const testlen = Object.keys(graphdata.tested).length; 
     const xlen = Object.keys(graphdata.cases_time_series).length;
     var i=0;
@@ -14,12 +14,12 @@ async function getcoviddata(){
     var deaths=[];
     var dailyactive = [];
     var activedata,recovery,difference;
-    var avg;
-    var sum=0;
-    var mort=0;
-    var avgmort;
-    var recov=0;
-    var avgrecov;
+    // var avg;
+    // var sum=0;
+    // var mort=0;
+    // var avgmort;
+    // var recov=0;
+    // var avgrecov;
     for(i=2;i<(xlen);i++)
     {
         

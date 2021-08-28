@@ -24,7 +24,7 @@ function getstatus()
               <div class="hospitalname">
                 <h5 id="name">${getdata.centers[i].name}</h5>
                 <div id="add" class="hospital-address">
-                  ${getdata.centers[i].address}
+                  ${getdata.centers[i].address},  ${getdata.centers[i].district_name}
                   <p>${getdata.centers[i].sessions[j].vaccine}</p>
                   <div class="free"><h6><i class="fas fa-rupee-sign"></i> ${getdata.centers[i].fee_type}</h6> 
                   </div>

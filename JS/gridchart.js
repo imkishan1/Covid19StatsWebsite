@@ -18,9 +18,20 @@ async function getcovidapiInf(){
     
       if(dataforchart[i].statecode=='TT')
       {
-        
+    var deltaconfirmedforactive = parseInt(dataj[dataforchart[i].statecode].delta.confirmed)
+    var deltadeceasedforactive = parseInt(dataj[dataforchart[i].statecode].delta.deceased)
+    var deltarecoveredforactive = parseInt(dataj[dataforchart[i].statecode].delta.recovered)
+    if(isNaN(deltaconfirmedforactive))
+    {
+      deltadeceasedforactive = 0
+      deltaconfirmedforactive = 0
+      deltarecoveredforactive =0
+    }
+
     let city = document.querySelector('#active-cases');
-    city.innerText = `${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)+deltaconfirmedforactive) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased) +deltadeceasedforactive+deltarecoveredforactive)).toString();
+    // city.innerText = `${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    city.innerText = `${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     const totalcase = document.querySelector('#total-cases');
     totalcase.innerText = `${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}`;

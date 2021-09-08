@@ -18,21 +18,11 @@ async function getcovidapiInf(){
     
       if(dataforchart[i].statecode=='TT')
       {
-    var deltaconfirmedforactive = parseInt(dataj[dataforchart[i].statecode].delta.confirmed)
-    var deltadeceasedforactive = parseInt(dataj[dataforchart[i].statecode].delta.deceased)
-    var deltarecoveredforactive = parseInt(dataj[dataforchart[i].statecode].delta.recovered)
-    if(isNaN(deltaconfirmedforactive))
-    {
-      deltadeceasedforactive = 0
-      deltaconfirmedforactive = 0
-      deltarecoveredforactive =0
-    }
-
     let city = document.querySelector('#active-cases');
-    var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)+deltaconfirmedforactive) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased) +deltadeceasedforactive+deltarecoveredforactive)).toString();
+    var activecount2 = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
     // city.innerText = `${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-    city.innerText = `${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
-
+    city.innerText = `${activecount2.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
+    // console.log(activecount)
     const totalcase = document.querySelector('#total-cases');
     totalcase.innerText = `${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}`;
 
@@ -69,67 +59,61 @@ async function getcovidapiInf(){
     var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${totalvaccinated.toLocaleString('en-IN')}`;
-    
-
+      }
+     
 // Last Updated
-
+// Last Updated   
 const lastupdate= document.querySelector('#date-time');
-    var  date  =  new Date();
-    var datetoday = date.getDate();
-    var hour  = date.getHours();
-    var min = date.getMinutes();
-    var timenow= hour;
-    var updatedtimenew = dataj[dataforchart[i].statecode].meta.last_updated.split('T');
-    var updatemin = updatedtimenew[1].split(':')
-    var dateupdatedon = updatedtimenew[0].split('/');
-    var updatehour = updatemin[0];
-    if(datetoday==dateupdatedon[0])
-    {  
-            var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
-    }
-    else {
-
-        if(hour==0)
-        {
-            timenow=24;
-        }
+var  date  =  new Date();
+var datetoday = date.getDate();
+var hour  = date.getHours();
+var min = date.getMinutes();
+var timenow= hour;
+var updatedtimenew = dataj[dataforchart[i].statecode].meta.last_updated.split('T');
+var updatemin = updatedtimenew[1].split(':')
+var dateupdatedon = updatedtimenew[0].split('/');
+var updatehour = updatemin[0];
+if(datetoday==dateupdatedon[0])
+{  
         var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
-    
-        if(finaltimeupdate<0)
-        {
-            finaltimeupdate = -(finaltimeupdate);
-        }
-    }
+}
+else {
 
-    if(finaltimeupdate==0)
+    if(hour==0)
     {
-      
-        var finaltimeupdatemin = min-updatemin[1];
-        lastupdate.innerText = `Last updated ${finaltimeupdatemin} mins ago.`;
+        timenow=24;
+    }
+    var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+
+    if(finaltimeupdate<0)
+    {
+        finaltimeupdate = -(finaltimeupdate);
+    }
+}
+
+if(finaltimeupdate==0)
+{
+  
+    var finaltimeupdatemin = min-updatemin[1];
+    lastupdate.innerText = `Last updated ${finaltimeupdatemin} mins ago.`;
+}
+else{
+
+    var finaltimeupdatemin = min-updatemin[1];
+    if(finaltimeupdatemin<0){
+        finaltimeupdatemin= -(finaltimeupdatemin);
+    }
+    if(finaltimeupdate==1){
+        lastupdate.innerText = `Last updated ${finaltimeupdate} hr ago.`;
+        
     }
     else{
 
-        var finaltimeupdatemin = min-updatemin[1];
-        if(finaltimeupdatemin<0){
-            finaltimeupdatemin= -(finaltimeupdatemin);
-        }
-        if(finaltimeupdate==1){
-            lastupdate.innerText = `Last updated ${finaltimeupdate} hr ago.`;
-            
-        }
-        else{
-
-            lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
-         
-        }
-        // console.log(finaltimeupdate);
+        lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
+     
     }
-
-// Last Updated
-
-
-
-      }
+    // console.log(finaltimeupdate);
+}
     
         if(dataj[dataforchart[i].statecode].delta!=null)
         {
@@ -164,18 +148,25 @@ const lastupdate= document.querySelector('#date-time');
             dataj[dataforchart[i].statecode].delta.vaccinated2=0;
           }  // dataforchart[i].delta!=null
 
+
           var totaldeltavcaccinated = parseInt(dataj[dataforchart[i].statecode].delta.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].delta.vaccinated2)
           var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
-
+          
           if(dataj[dataforchart[i].statecode].delta.vaccinated1!=0)
           {
             if( dataj[dataforchart[i].statecode].delta.deceased<0 )
             {
+              
+          if(dataj[dataforchart[i].statecode].total.other == null){
+            dataj[dataforchart[i].statecode].total.other = 0;
+          }
+                  var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
+   
               // var delta_recoverd_negative = ();
               var row = `<tr class="tablerow">
               <td class="fixedright color">${dataforchart[i].state}</td>
-              <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-              <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+              <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}</td>
+              <td class="dataletterspacing classwidth-active">${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
               <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${Math.abs(dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN'))}</span>${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
               <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-down"></i>${numDifferentiation(Math.abs(dataj[dataforchart[i].statecode].delta.deceased))}</span>${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
               <td class="dataletterspacing">${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
@@ -188,11 +179,14 @@ const lastupdate= document.querySelector('#date-time');
             }
             else{
 
-            
+              if(dataj[dataforchart[i].statecode].total.other == null){
+                dataj[dataforchart[i].statecode].total.other = 0;
+              }
+              var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
             var row = `<tr class="tablerow">
             <td class="fixedright color">${dataforchart[i].state}</td>
-            <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+            <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}</td>
+            <td class="dataletterspacing classwidth-active">${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}</span>${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed vaccinated"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.vaccinated1)}</span>${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
@@ -208,11 +202,16 @@ const lastupdate= document.querySelector('#date-time');
            
             if(dataj[dataforchart[i].statecode].delta.recovered<0)
             {
+              
+          if(dataj[dataforchart[i].statecode].total.other == null){
+            dataj[dataforchart[i].statecode].total.other = 0;
+          }
+              var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
               // var delta_recoverd_negative = ();
               var row = `<tr class="tablerow">
               <td class="fixedright color">${dataforchart[i].state}</td>
-              <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-              <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+              <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}</td>
+              <td class="dataletterspacing classwidth-active">${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
               <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-down"></i>${Math.abs(dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN'))}</span>${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
               <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(Math.abs(dataj[dataforchart[i].statecode].delta.deceased))}</span>${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
               <td class="dataletterspacing">${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
@@ -225,11 +224,14 @@ const lastupdate= document.querySelector('#date-time');
             }
             else{
 
-          
+              if(dataj[dataforchart[i].statecode].total.other == null){
+                dataj[dataforchart[i].statecode].total.other = 0;
+              }
+              var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
             var row = `<tr class="tablerow">
             <td class="fixedright color">${dataforchart[i].state}</td>
-            <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+            <td class="dataletterspacing" > <span class="delta-confirmed"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.confirmed.toLocaleString('en-IN')}</td>
+            <td class="dataletterspacing classwidth-active">${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing"> <span class="delta-confirmed recovered classwidth-recovered"><i class="fas fa-arrow-up"></i>${dataj[dataforchart[i].statecode].delta.recovered.toLocaleString('en-IN')}</span>${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing classwidth-population"> <span class="delta-confirmed deaths"><i class="fas fa-arrow-up"></i>${numDifferentiation(dataj[dataforchart[i].statecode].delta.deceased)}</span>${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing">${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>
@@ -243,11 +245,16 @@ const lastupdate= document.querySelector('#date-time');
         }
         }
         else{
+          
+          if(dataj[dataforchart[i].statecode].total.other == null){
+            dataj[dataforchart[i].statecode].total.other = 0;
+          }
+          var activecount = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
           var totalvaccinated= parseInt(dataj[dataforchart[i].statecode].total.vaccinated1)+parseInt(dataj[dataforchart[i].statecode].total.vaccinated2)
     var row = `<tr class="tablerow">
             <td class="fixedright color">${dataforchart[i].state}</td>
             <td class="dataletterspacing" > ${dataforchart[i].confirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
-            <td class="dataletterspacing classwidth-active">${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
+            <td class="dataletterspacing classwidth-active">${activecount.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}</td>
             <td class="dataletterspacing classwidth-recovered"> ${dataj[dataforchart[i].statecode].total.recovered.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing classwidth-population"> ${dataj[dataforchart[i].statecode].total.deceased.toLocaleString('en-IN')}</td>
             <td class="dataletterspacing"> ${numDifferentiation(dataj[dataforchart[i].statecode].total.vaccinated1)}</td>

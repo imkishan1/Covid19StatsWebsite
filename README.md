@@ -4,6 +4,7 @@ CovidStats gives you the latest update on covid19 in India. It is fetching the r
 API : https://api.covid19india.org/
 
 Link to site : https://covid19statsindia.netlify.app/
-![127 0 0 1_5503_index html](https://user-images.githubusercontent.com/56466543/124349462-b8053780-dc0c-11eb-8189-fca0a996abdd.png)
+![covid19statsindia netlify app_ (1)](https://user-images.githubusercontent.com/56466543/135963939-63f48174-2b1a-416f-8081-41e6bb495e4c.png)
+
 
 

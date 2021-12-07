@@ -12,7 +12,7 @@ async function getcovidapiInf(){
     // console.log(jsdata2)
     dataforchart.splice(31, 1);
     // console.log(dataforchart)
-    console.log(dataj)
+    // console.log(dataj)
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;
@@ -20,6 +20,62 @@ async function getcovidapiInf(){
     
       if(dataforchart[i].statecode=='TT')
       {
+            
+// Last Updated
+// Last Updated   
+const lastupdate= document.querySelector('#date-time');
+var  date  =  new Date();
+var datetoday = date.getDate();
+var hour  = date.getHours();
+var min = date.getMinutes();
+var timenow= hour;
+var updatedtimenew = dataj[dataforchart[i].statecode].meta.last_updated.split('T');
+var updatemin = updatedtimenew[1].split(':')
+var dateupdatedon = updatedtimenew[0].split('/');
+var updatehour = updatemin[0];
+
+if(datetoday==dateupdatedon[0])
+{  
+        var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+}
+else {
+
+    if(hour==0)
+    {
+        timenow=24;
+        // timenow= hour;
+    }
+    var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
+
+    if(finaltimeupdate<0)
+    {
+        finaltimeupdate = -(finaltimeupdate);
+    }
+}
+
+if(finaltimeupdate==0)
+{
+  
+    var finaltimeupdatemin = min-updatemin[1];
+    lastupdate.innerText = `Last updated ${finaltimeupdatemin} mins ago.`;
+}
+else{
+
+    var finaltimeupdatemin = min-updatemin[1];
+    if(finaltimeupdatemin<0){
+        finaltimeupdatemin= -(finaltimeupdatemin);
+    }
+    if(finaltimeupdate==1){
+        lastupdate.innerText = `Last updated ${finaltimeupdate} hr ago.`;
+        
+    }
+    else{
+
+        lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
+     
+    }
+    // console.log(finaltimeupdate);
+}
     let city = document.querySelector('#active-cases');
     var activecount2 = ((parseInt(dataj[dataforchart[i].statecode].total.confirmed)) - ( parseInt(dataj[dataforchart[i].statecode].total.recovered) + parseInt(dataj[dataforchart[i].statecode].total.deceased)+ parseInt(dataj[dataforchart[i].statecode].total.other))).toString();
     // city.innerText = `${dataforchart[i].active.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
@@ -62,60 +118,7 @@ async function getcovidapiInf(){
     let vaccinedose = document.querySelector('#vaccine-dose');
     vaccinedose.innerText = `${totalvaccinated.toLocaleString('en-IN')}`;
       }
-     
-// Last Updated
-// Last Updated   
-const lastupdate= document.querySelector('#date-time');
-var  date  =  new Date();
-var datetoday = date.getDate();
-var hour  = date.getHours();
-var min = date.getMinutes();
-var timenow= hour;
-var updatedtimenew = dataj[dataforchart[i].statecode].meta.last_updated.split('T');
-var updatemin = updatedtimenew[1].split(':')
-var dateupdatedon = updatedtimenew[0].split('/');
-var updatehour = updatemin[0];
-if(datetoday==dateupdatedon[0])
-{  
-        var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
-}
-else {
-
-    if(hour==0)
-    {
-        timenow=24;
-    }
-    var finaltimeupdate = parseInt(timenow)-parseInt(updatehour);
-
-    if(finaltimeupdate<0)
-    {
-        finaltimeupdate = -(finaltimeupdate);
-    }
-}
-
-if(finaltimeupdate==0)
-{
-  
-    var finaltimeupdatemin = min-updatemin[1];
-    lastupdate.innerText = `Last updated ${finaltimeupdatemin} mins ago.`;
-}
-else{
-
-    var finaltimeupdatemin = min-updatemin[1];
-    if(finaltimeupdatemin<0){
-        finaltimeupdatemin= -(finaltimeupdatemin);
-    }
-    if(finaltimeupdate==1){
-        lastupdate.innerText = `Last updated ${finaltimeupdate} hr ago.`;
-        
-    }
-    else{
-
-        lastupdate.innerText = `Last updated ${finaltimeupdate} hrs ago.`;
-     
-    }
-    // console.log(finaltimeupdate);
-}
+ 
     
         if(dataj[dataforchart[i].statecode].delta!=null)
         {

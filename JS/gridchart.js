@@ -4,13 +4,15 @@ async function getcovidapiInf(){
     // const jsondata2 = await fetch('https://api.rootnet.in');
     const jsdata2 = await jsondata2.json();
     const dataforchart = jsdata2.statewise;
-    const jsondata3 = await fetch('https://data.covid19india.org/v4/min/data.min.json');
+    // const jsondata3 = await fetch('https://data.covid19india.org/v4/min/data.min.json');
+    // const jsondata3 = await fetch('https://data.covid19bharat.org/v4/min/timeseries.min.json');
+    const jsondata3 = await fetch('https://data.covid19bharat.org/v4/min/data.min.json');
     const dataj = await jsondata3.json();
     // const statedeltadata = Object.values(dataj);
     // console.log(jsdata2)
     dataforchart.splice(31, 1);
     // console.log(dataforchart)
-    // console.log(dataj)
+    console.log(dataj)
     const lengthofdata = Object.keys(dataforchart).length;
     const table2 = document.getElementById('tableid');
     var i=0;

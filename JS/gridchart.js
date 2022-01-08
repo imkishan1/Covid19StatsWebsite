@@ -99,7 +99,15 @@ else{
     // newrecovered.innerText = `+${dataforchart[i].deltarecovered.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
     
     const newdeath= document.querySelector('#delta-death');
-    newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
+    if(dataj[dataforchart[i].statecode].delta.deceased==null)
+    {
+      newdeath.innerText = 0;
+    }
+    else
+    {
+      newdeath.innerText = `+${dataj[dataforchart[i].statecode].delta.deceased.toLocaleString('en-IN')}`;
+
+    }
     // newdeath.innerText =`+${dataforchart[i].deltadeaths.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     // console.log(deltavaccine)

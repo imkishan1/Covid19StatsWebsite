@@ -18,6 +18,7 @@
   background-color: rgba(189, 41, 88, 0.76);
 }
 
+
 .maindiv {
   /* border: 1px solid red; */
   margin: 0 auto;
@@ -132,6 +133,10 @@
   /* border: 2px solid rgba(80, 48, 155, 0.568); */
   border: 2px solid var(--vaccine-border);
   background-color: var(--vaccine-dark);
+}
+
+.vaccineslots button:active{
+  transform: scale(0.98);
 }
 /* .vaccineslots button:active {
     border: 2px solid rgba(80, 48, 155, 0.568);

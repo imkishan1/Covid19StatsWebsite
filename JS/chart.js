@@ -1,8 +1,10 @@
 
 async function getcoviddata(){
-    const url ='https://data.covid19india.org/data.json';
+    // const url ='https://data.covid19india.org/data.json';
+    const url ='https://data.covid19bharat.org/v4/min/timeseries.min.json';
     const jsonyeardata = await fetch(url);
     const graphdata = await jsonyeardata.json();
+    // console.log(graphdata)
     // const testedlen = Object.keys(graphdata.tested).length;
     const testlen = Object.keys(graphdata.tested).length; 
     const xlen = Object.keys(graphdata.cases_time_series).length;

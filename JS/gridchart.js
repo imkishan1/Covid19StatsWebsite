@@ -92,6 +92,10 @@ else{
       
     const newconfirm= document.querySelector('#new-confirm');
     newconfirm.innerText = `+${dataj[dataforchart[i].statecode].delta.confirmed.toLocaleString('en-IN')}`;
+
+    const new_active = parseInt(dataj[dataforchart[i].statecode].delta.confirmed - dataj[dataforchart[i].statecode].delta.recovered)
+    const active_valaue = document.getElementById('delta-active')
+    active_valaue.innerText = new_active;
     // newconfirm.innerText = `+${dataforchart[i].deltaconfirmed.replace(/(\d)(?=(\d\d)+\d$)/g, "$1,")}`;
 
     const newrecovered= document.querySelector('#deltarec');

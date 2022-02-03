@@ -1,5 +1,5 @@
 .total-cases-2{
-    height: 120px;
+    height: 140px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -146,7 +146,7 @@
         color: #6c757d;
     }
     .total-cases-2{
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
     }
     .margin-bottom {
         /* border: 1px solid gold; */

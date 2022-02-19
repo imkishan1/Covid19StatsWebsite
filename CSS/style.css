@@ -304,13 +304,10 @@ nav {
   letter-spacing: 1.5px;
 }
 .card-base .data-1 .active-cases {
-  /* border: 2px solid rgb(201, 150, 87); */
-  /* width: fit-content; */
   display: block;
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  /* color: #106bc0; */
   color: #007bff;
 }
 .card-base .data-1 .active-cases p {

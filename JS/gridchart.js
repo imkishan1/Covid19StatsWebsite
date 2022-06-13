@@ -49,7 +49,7 @@ else {
 
     if(finaltimeupdate<0)
     {
-        finaltimeupdate = -(finaltimeupdate);
+        finaltimeupdate = abs(finaltimeupdate);
     }
 }
 
